@@ -1,5 +1,83 @@
 body{
-    height: 4000px;
+    height: 5000px;
+}
+#bioNavbar{
+    background-color: #F5F5F5;
+    .navMenu{
+        display: flex;
+        justify-content: space-between;
+        .contactBio{
+           
+            ul{
+                display: flex;
+                margin-top: 11px;
+                margin-bottom: 15px;
+                
+                li{
+                    list-style: none;
+                    margin-left: 20px;
+                    i{
+                        color: #A4AAB3;
+                        font-size: 14px;
+                        margin-right: 10px;
+                    }
+                    a{
+                        color: #999;
+                    }
+                    span{
+                        color: #999;
+                    }
+                }
+            }
+        }
+        .socialMediaBio{
+            .searchForm{
+                position: absolute;
+                left: 80px;
+                display: flex;
+                input{
+                    width: 170px;
+                    border-radius: 0px;
+                    
+                    height: 35px;
+                }
+                i{
+                    color: #999;
+                    cursor: pointer;
+                    font-size: 21px;
+                    margin-top: 7px;
+                }
+            }
+           
+            ul{
+                display: flex;
+                margin-top: 11px;
+                margin-bottom: 15px;
+                li{
+                    list-style: none;
+                    margin-left: 25px;
+                    cursor: pointer;
+                    a{
+                        color: #999;
+                        width: 14px;
+                        &:hover{
+                            color: #777;
+                        }
+                       
+                    }
+                    .searchIcon{
+                        color: #999;
+                        width: 14px;
+                        
+                        &:hover{
+                            color: #777;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
 }
 .header-logo{
     h1{
@@ -515,3 +593,97 @@ p{
         }
     }
 
+#companyOverview{
+    .overviews{
+        margin-top: 20px;
+        h5{
+            letter-spacing: 1.3px;
+            font-weight: 500;
+            font-size: 17px;
+        }
+        div{
+            display: flex;
+            i{
+                font-size: 40px;
+                color: #1E69B8;
+                margin-right: 13px;
+                margin-top:25px;
+            }
+        }
+    }
+    .companyOverview{
+        margin-bottom:30px;
+        h2{
+            text-align: center;
+            font-weight: 300;
+        }
+        hr{
+            width: 95px;
+            height: 2px;
+            background: #1E69B8;
+        }
+        p{
+
+            text-align: center;
+            font-size: 19px;
+            font-weight: 300;
+        
+        }
+    }
+}
+
+#home-services{
+    .servicesHome{
+        padding: 0px;
+        img{
+            position: relative;
+            
+        }
+        .service-content{
+            position: absolute;
+            left: 120px;
+            top: 74px;
+            z-index: 22;
+            overflow: hidden;
+            height: 130px;
+            h6{
+                margin-bottom: 19px;
+                font-size: 18px;
+                font-weight: 600;
+                text-align: center;
+                position: relative;
+                top: -25px;
+            }
+            a{
+                position: relative;
+                bottom: -90px;
+                border: 1px solid white;
+                border-radius: 0px;
+                background-color: transparent;
+                width: 126px;
+                height: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+               
+                &:hover{
+                    background-color:#1E69B8;
+                    transition: 0.7s ;
+                }
+                
+               
+            }
+        }
+        .layer{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            background: gray;
+            opacity: 0;
+            transition: 0.7s;
+        }
+    }
+    
+}

@@ -14,6 +14,42 @@
 </head>
 
 <body>
+    <nav id="bioNavbar"> 
+        <div class="container-fluid">
+            <div class="row navMenu">
+                <div class="col-7 contactBio">
+                    <ul>
+                        <li>
+                            <i class="fa fa-phone" aria-hidden="true"></i>
+                            <a href="#">(+994) 950 2763</a>
+                        </li>
+                        <li>
+                            <i class="far fa-envelope"></i>
+                            <a href="#">mubarizShm@code.edu.az</a>
+                        </li>
+                        <li >
+                            <i class="fa fa-clock-o" aria-hidden="true"></i>
+                            <span>Mon-Fri:7:30am-5:30am</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-3 socialMediaBio">
+                    <ul>
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></i></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                        <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                        <li><i class="fas fa-search searchIcon"></i></li>
+                    </ul>
+                    <form class="form-group searchForm d-none">
+                        <input type="text" class="form-control" placeholder="Search" id="search">
+                        <i class="fas fa-search searchh"></i>
+                    </form>
+                    
+                </div>
+            </div>
+        </div>
+    </nav>
     <header>
         <div class="container">
             <div class="row">
@@ -126,29 +162,34 @@
     <main>
 
         <section id="slider">
-            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="img/slider/image_01.jpg" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="img/slider/image_02.jpg" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="img/slider/image_03.jpg" class="d-block w-100" alt="...">
+            <div class="container-fluid">
+                <div class="row">
+                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="img/slider/image_01.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/slider/image_02.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/slider/image_03.jpg" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button"
+                            data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleControls" role="button"
+                            data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
                     </div>
                 </div>
-                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
             </div>
-        </section>
-        </div>
+
         </section>
         <section id="whychooseus">
             <div class="container">
@@ -279,7 +320,7 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="parallax w-100" style="background-image: url(img/parallax/image_012.jpg);">
-                        <div class="owl-carousel owl-theme ">
+                        <div class="owl-carousel owl-theme owl-carousel-parallax ">
                             <div class="item">
                                 <div class="casousell">
                                     <div id="icon">
@@ -314,9 +355,120 @@
             </div>
 
         </section>
+        <section id="companyOverview">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-12 col-sm-12 col-lg-12 companyOverview mt-5">
+                        <h2>COMPANY OVERVIEW</h2>
+                        <hr>
+                        <p class="mt-5">We can help you with everything from an oil change to an engine change.</p>
+                        <p>We can handle any problem on both foreign and domestic vehicles.</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-12 overviews">
+                        <h5>CAR AUDIO SERVICE</h5>
+                        <div>
+                            <i class="fab fa-searchengin"></i>
+                            <p>Services consequat luctus at justo auctor metus est donec. Tempus terminal morbi nulla
+                                donec
+                                elite maecenas modern forte elementum vehicula.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-12 overviews">
+                        <h5>FREE OIL CHANGE</h5>
+                        <div>
+                            <i class="fas fa-car"></i>
+                            <p>Services consequat luctus at justo auctor metus est donec. Tempus terminal morbi nulla
+                                donec
+                                elite maecenas modern forte elementum vehicula.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-12 overviews">
+                        <h5>ENGINE DIAGNOSTICS</h5>
+                        <div>
+                            <i class="fas fa-exclamation-circle"></i>
+                            <p>Services consequat luctus at justo auctor metus est donec. Tempus terminal morbi nulla
+                                donec
+                                elite maecenas modern forte elementum vehicula.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-12 overviews">
+                        <h5>CAR A/C RECHARGE </h5>
+                        <div>
+                            <i class="fas fa-temperature-high"></i>
+                            <p>Services consequat luctus at justo auctor metus est donec. Tempus terminal morbi nulla
+                                donec
+                                elite maecenas modern forte elementum vehicula.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-12 overviews">
+                        <h5>PARKING SENSORS CALIBRATION</h5>
+                        <div>
+                            <i class="fas fa-wifi"></i>
+                            <p>Services consequat luctus at justo auctor metus est donec. Tempus terminal morbi nulla
+                                donec
+                                elite maecenas modern forte elementum vehicula.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-12 overviews">
+                        <h5>CAR BATTERY REPAIRS</h5>
+                        <div>
+                            <i class="fas fa-car-battery"></i>
+                            <p>Services consequat luctus at justo auctor metus est donec. Tempus terminal morbi nulla
+                                donec
+                                elite maecenas modern forte elementum vehicula.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+        <section id="home-services" class="mt-5">
+            <div class="container-fluid">
+                <div class="row ">
+                    <div class="col-3 col-sm-3 col-md-3 col-lg-3 servicesHome">
+                        <img class="img-fluid" src="img/services/image_02.jpg" alt="">
+
+                        <div class="service-content">
+                            <h6>Tire Change</h6>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                        <div class="layer"></div>
+
+
+                    </div>
+                    <div class="col-3 col-sm-3 col-md-3 col-lg-3 servicesHome">
+                        <img class="img-fluid" src="img/services/image_05.jpg" alt="">
+                        <div class="service-content">
+                            <h6>Tire Change</h6>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                        <div class="layer"></div>
+                    </div>
+                    <div class="col-3 col-sm-3 col-md-3 col-lg-3 servicesHome">
+                        <img class="img-fluid" src="img/services/image_06.jpg" alt="">
+                        <div class="service-content">
+                            <h6>Tire Change</h6>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                        <div class="layer"></div>
+                    </div>
+                    <div class="col-3 col-sm-3 col-md-3 col-lg-3 servicesHome">
+                        <img class="img-fluid" src="img/services/image_08.jpg" alt="">
+                        <div class="service-content">
+                            <h6>Tire Change</h6>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                        <div class="layer"></div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
 
 
     </main>
+    
     <script src="https://kit.fontawesome.com/195360f8c8.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
