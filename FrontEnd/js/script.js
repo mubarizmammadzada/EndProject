@@ -66,10 +66,19 @@ $(document).ready(function () {
             transition:"0.7s linear"
         })
     })
-    
-
 
     $(".searchIcon").click(function(){
         $(".searchForm").toggleClass("d-none");
+    })
+
+
+    $(".header-question").click(function(){
+        // $(this).slideDown();
+        $(this).next().children().first().slideToggle(function(){
+            $(".body-text").css("display","block !important")
+        });
+        $(this).children().first().toggleClass("d-none")
+        $(this).children().first().next().toggleClass("d-none")
+
     })
 })

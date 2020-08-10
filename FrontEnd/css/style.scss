@@ -1,5 +1,5 @@
 body{
-    height: 5000px;
+    
 }
 #bioNavbar{
     background-color: #F5F5F5;
@@ -298,6 +298,97 @@ body{
                 &:hover{
                     color:#1E69B8 ;
                 }
+            }
+        }
+    }
+}
+#footer{
+    margin-top: 40px;
+    .head{
+        display: flex;
+        
+        .head-icon{
+            font-size: 31px;
+            margin-top: 10px;
+            margin-right: 33px;
+        }
+        .head-text{
+                font-size: 21px;
+                line-height: 32px;
+                margin-top: 0;
+                color: #FFF;
+                font-weight: 400;
+        }
+    }
+    .footer-bio{
+        h6{
+            font-size: 14px;
+            line-height: 26px;
+            font-weight: 600;
+            color: #FFF;
+        }
+        hr{
+            background-color: white;
+            width: 51px;
+            height: 1.5px;
+            margin: 0px;
+            margin-bottom: 13px;
+        
+        }
+        p{
+            font-family: 'Open Sans';
+            font-size: 17px;
+            line-height: 24px;
+            color: #FFF;
+        }
+        ul{
+            padding: 0px !important;
+            margin: 0;
+
+            li{
+                list-style: none;
+                list-style: none;
+                padding-left: 0px !important;
+                padding-top: 1px;
+                padding-bottom: 1px;
+                font-family: 'Open Sans';
+                font-size: 17px;
+                line-height: 24px;
+                padding-left: 30px;
+                border: none;
+                color: #FFF;
+                a{
+                    color: #FFF;
+                    
+
+                }
+                span{
+                    margin-right: 10px;
+                }
+                i{
+                    color: #AEAFB0;
+                    margin-right:5px;
+                }
+            }
+        }
+        #footer-socilamedia{
+            display: flex;
+            margin-top: 17px;
+            li{
+                list-style: none;
+                a{
+                    transition: 0.4s;
+                    i{
+                        font-size: 18px;
+                        margin-left: 15px;
+                        &:hover{
+                            color: #FFF;
+                            transition: 0.4s;
+                        }
+                    }
+                    
+                }
+                
             }
         }
     }
@@ -686,4 +777,84 @@ p{
         }
     }
     
+}
+#mission-questions{
+    h3{
+        font-size: 22px;
+        line-height: 34px;
+        font-weight: 400;
+    }
+    hr{
+        width: 60px;
+        position: relative;
+        left: 0px;
+        margin: 0px;
+        height: 2px;
+        background-color: #1E69B8;
+        margin-bottom: 20px;
+    }
+    #first-mission-text{
+        font-size: 18px;
+        font-weight: 300;
+        letter-spacing: 0px;
+        line-height: 32px;
+        margin-top: 34px;
+    }
+    #second-mission-text{
+        font-weight: 400;
+        line-height: 26px;
+        margin-top: 24px;
+        padding: 0;
+    }
+    a{
+        width: 145px;
+        height: 59px;
+        border-radius: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color:#1E69B8 ;
+    }
+    .header-question{
+        border-width: thin !important;
+        border: solid #77777B;
+        height: 46px;
+        padding: 6px 10px;
+        transition: 0.3s;
+        &:hover{
+            padding-left: 30px;
+            padding-right: 10px;
+            transition: 0.3s;
+        }
+    
+        cursor: pointer;
+        i{
+            cursor: pointer;
+            font-size: 20px;
+            color: #1E69B8;
+            margin-right: 8px;
+        }
+        span{
+            font-weight: 300;
+            font-size: 15px;
+            color: #777;
+            letter-spacing: normal;
+            line-height: 28px;
+            margin-bottom: 1px;
+        }
+    }
+    .body-question{
+        border-width: thin !important;
+        border: solid #77777B;
+        -webkit-transition: 0.3s;
+        transition: 0.3s;
+        cursor: pointer;
+        border-top: none;
+        p{
+            font-weight: 300;
+            line-height: 26px;
+            padding: 0;
+            text-align: justify;
+        }
+    }
 }
