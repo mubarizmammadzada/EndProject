@@ -14,10 +14,11 @@
 </head>
 
 <body>
+    <!-- Navbar Start -->
     <nav id="bioNavbar">
         <div class="container-fluid">
             <div class="row navMenu">
-                <div class="col-7 contactBio">
+                <div class="col-lg-7 col-md-7 col-sm-12 col-12 contactBio">
                     <ul>
                         <li>
                             <i class="fa fa-phone" aria-hidden="true"></i>
@@ -33,7 +34,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-3 socialMediaBio">
+                <div class="col-lg-3 col-md-3 col-sm-12 col-12 socialMediaBio">
                     <ul>
                         <li><a href="#"><i class="fab fa-facebook-f"></i></a></i></li>
                         <li><a href="#"><i class="fab fa-twitter"></i></a></li>
@@ -50,22 +51,71 @@
             </div>
         </div>
     </nav>
-    <header>
+    <!-- Navbar End -->
+    <!-- Responsive Navbar start -->
+    <nav id="responsiveNav">
+        <div class="container ">
+            <div class="col-lg-12 d-flex justify-content-center downResponsive">
+                <i class="fas fa-chevron-down down"></i>
+            </div>
+            <div class="row responsiveRow d-none">
+
+                <div class="col-lg-12 contactBioResponsive">
+                    <div>
+                        <ul>
+                            <li>
+                                <i class="fa fa-phone" aria-hidden="true"></i>
+                                <a href="#">(+994) 950 2763</a>
+                            </li>
+                            <li>
+                                <i class="far fa-envelope"></i>
+                                <a href="#">mubarizShm@code.edu.az</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                <span>Mon-Fri:7:30am-5:30am</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="col-lg-12 socialMediaBioResponsive">
+                    <div>
+                        <ul>
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></i></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                            <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                            <li><i class="fas fa-search searchIconResponsive"></i></li>
+                        </ul>
+                        <form class="form-group searchFormResponsive d-none">
+                            <input type="text" class="form-control" placeholder="Search" id="search">
+                            <i class="fas fa-search searchh"></i>
+                        </form>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+    </nav>
+    <!-- Responsive Navbar End -->
+    <!-- Header start -->
+    <header class="headerlg">
         <div class="container">
             <div class="row">
-                <div class="col-3 header-logo">
+                <div class="col-lg-3 col-md-3 col-sm-3 col-3  header-logo">
                     <h1>
                         <a href=#>CARSERVICE</a>
                     </h1>
                 </div>
-                <div class="col-8 header-nav">
+                <div class="col-lg-8 col-md-8 col-sm-8 col-8 header-nav">
                     <ul id="main-ul">
                         <li id="home" class="main-li"><a href="#">Home</a>
                             <div id="home-content" class="d-none">
                                 <ul>
-                                    <li><a href="#">Home Style1</a></li>
-                                    <hr class="w-100">
-                                    <li><a href="#">Home Style2</a></li>
+                                    <li><a href="#">Home</a></li>
                                 </ul>
                             </div>
                         </li>
@@ -109,21 +159,6 @@
                         </li>
                         <li class="main-li"><a href="#">Our Team</a></li>
                         <li id="blog" class="main-li"><a href="#">Blog</a>
-                            <div id="blog-content" class="d-none">
-                                <ul>
-                                    <li><a href="#">Blog</a></li>
-                                    <hr class="w-100">
-                                    <li><a href="#">Blog Left Sidebar</a></li>
-                                    <hr class="w-100">
-                                    <li><a href="#">Blog 2 Columns</a></li>
-                                    <hr class="w-100">
-                                    <li><a href="#">Blog 3 Columns</a></li>
-                                    <hr class="w-100">
-                                    <li><a href="#">Single Post</a></li>
-                                    <hr class="w-100">
-                                    <li><a href="#">Search Template</a></li>
-                                </ul>
-                            </div>
                         </li>
                         <li id="appointment" class="main-li"><a href="#">Appointment</a>
                             <div id="appointment-content" class="d-none">
@@ -146,21 +181,117 @@
                             </div>
                         </li>
                         <li id="contact" class="main-li"><a href="#">Contact</a>
-                            <div id="contact-content" class="d-none">
-                                <ul>
-                                    <li><a href="#">Contact Style 1</a></li>
-                                    <hr class="w-100">
-                                    <li><a href="#">Contact Style 2</a></li>
-                                </ul>
-                            </div>
                         </li>
                     </ul>
                 </div>
             </div>
+
         </div>
     </header>
-    <main>
+    <!-- Header End -->
+    <!-- Responsive Header Start -->
+    <header id="responsiveHeader">
+        <div class="container">
+            <div class="row">
+                <div class="logoandburdger col-12">
+                    <div class="col-3 header-logo">
+                        <h1>
+                            <a href=#>CARSERVICE</a>
+                        </h1>
+                    </div>
+                    <div class="col-1">
+                        <i class="fas fa-bars burger d-none"></i>
+                        <i class="fas fa-times cancel"></i>
+                    </div>
+                </div>
+                
+                <div class="col-12 responsiveUl">
+                    
+                    <ul>
+                        <li class="mainLiResponsiveD"><a href="#">Home </a>
+                            <i class="fas fa-angle-down"> <i class="fas fa-angle-up d-none"></i></i>
+                        </li>
+                        <div class="responsive pre-ul">
+                            <ul>
+                                <li><a href="#">Home</a> </li>
+                            </ul>
+                        </div>
 
+                        <li  class="mainLiResponsiveD"><a href="#">Services </a>
+                            <i class="fas fa-angle-down"></i> <i class="fas fa-angle-up d-none"></i>
+                        </li>
+                        <div class="responsive pre-ul">
+                            <ul>
+                                <li><a href="#">Engine Diagnostics</a></li>
+                                <hr class="w-100">
+                                <li><a href="#">Lube Oil and Filters</a></li>
+                                <hr class="w-100">
+                                <li><a href="#">Belts and Hoses</a></li>
+                                <hr class="w-100">
+                                <li><a href="#">Air Conditioning</a></li>
+                                <hr class="w-100">
+                                <li><a href="#">Brake Repair</a></li>
+                                <hr class="w-100">
+                                <li><a href="#">Tire and Wheel Sevices</a></li>
+                            </ul>
+                        </div>
+                        <li  class="mainLiResponsiveD"><a href="#">Gallery </a>
+                            <i class="fas fa-angle-down"></i> <i class="fas fa-angle-up d-none"></i>
+                        </li>
+                        <div class="responsive pre-ul">
+                            <ul>
+                                <li><a href="#">Engine Diagnostics</a></li>
+                                <hr class="w-100">
+                                <li><a href="#">Oil Change</a></li>
+                                <hr class="w-100">
+                                <li><a href="#">Belts and Hoses</a></li>
+                                <hr class="w-100">
+                                <li><a href="#">Tire Change</a></li>
+                                <hr class="w-100">
+                                <li><a href="#">Wheel Services</a></li>
+                                <hr class="w-100">
+                                <li><a href="#">Lube Services</a></li>
+                                <hr class="w-100">
+                                <li><a href="#">Brake Repair</a></li>
+                                <hr class="w-100">
+                                <li><a href="#">Other Car Services</a></li>
+                            </ul>
+                        </div>
+                        <li class="mainLiResponsive" ><a href="#">Our Team</a></li>
+                        <li class="mainLiResponsive"><a href="#">Blog</a></li>
+                        <li class="mainLiResponsiveD"><a href="#">Appointment </a>
+                            <i class="fas fa-angle-down"></i> <i class="fas fa-angle-up d-none"></i>
+                        </li>
+                        <div class="responsive pre-ul">
+                            <ul>
+                                <li><a href="#">Appointment</a></li>
+                                <hr class="w-100">
+                                <li><a href="#">Cost Caculator</a></li>
+                            </ul>
+                        </div>
+                        <li class="mainLiResponsiveD"><a href="#">Shop </a>
+                            <i class="fas fa-angle-down"></i><i class="fas fa-angle-up d-none"></i>
+                        </li>
+                        <div class="responsive pre-ul">
+                            <ul>
+                                <li><a href="#">Products</a></li>
+                                <hr class="w-100">
+                                <li><a href="#">Cart</a></li>
+                                <hr class="w-100">
+                                <li><a href="#">My Account</a></li>
+                            </ul>
+                        </div>
+                        <li class="mainLiResponsive"><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <!-- Responsive Header End -->
+    <!-- Main Start -->
+    <main>
+        <!-- Slider Start -->
         <section id="slider">
             <div class="container-fluid">
                 <div class="row">
@@ -191,6 +322,8 @@
             </div>
 
         </section>
+        <!-- Slider End -->
+        <!-- Why Choose Us Start -->
         <section id="whychooseus">
             <div class="container">
                 <h2>WHY CHOOSE US?</h2>
@@ -224,6 +357,8 @@
                 </div>
             </div>
         </section>
+        <!-- Why Choose Us End -->
+        <!-- Vehicle Service Start -->
         <section id="vehiclesservice">
             <div class="container-fluid p-0 ">
                 <div class="row no-gutters">
@@ -270,6 +405,8 @@
 
             </div>
         </section>
+        <!-- Vehicle Service End -->
+        <!-- Repair start -->
         <section id="repair">
             <div class="container">
                 <h1>AUTO REPAIR SERVICES</h1>
@@ -316,6 +453,8 @@
 
             </div>
         </section>
+        <!-- Repair End -->
+        <!-- Prallax Start -->
         <section id="parallax" class="mt-5">
             <div class="container-fluid">
                 <div class="row">
@@ -355,6 +494,8 @@
             </div>
 
         </section>
+        <!-- Parallax End -->
+        <!-- Company Overview Start -->
         <section id="companyOverview">
             <div class="container">
                 <div class="row">
@@ -423,6 +564,8 @@
 
 
         </section>
+        <!-- Company Overview End -->
+        <!-- Home Service Start -->
         <section id="home-services" class="mt-5">
             <div class="container-fluid">
                 <div class="row ">
@@ -465,16 +608,20 @@
             </div>
             </div>
         </section>
+        <!-- Home Service End -->
+        <!-- Mission Questions Start -->
         <section id="mission-questions" class="mt-5">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 col-md-6 col-sm-12 col-12">
                         <h3>OUR MISSION</h3>
                         <hr>
-                        <p id="first-mission-text">We offer a full range of garage services to vehicle owners located in Tucson area. All
+                        <p id="first-mission-text">We offer a full range of garage services to vehicle owners located in
+                            Tucson area. All
                             mechanic services are performed by highly qualified mechanics. We can handle any car
                             problem.</p>
-                        <p id="second-mission-text">We offer a full range of garage services to vehicle owners in Tucson. Our professionals know
+                        <p id="second-mission-text">We offer a full range of garage services to vehicle owners in
+                            Tucson. Our professionals know
                             how to handle a wide range of car services. Whether you drive a passenger car or medium
                             sized truck or SUV, our mechanics strive to ensure that your vehicle will be performing at
                             its best before leaving our car shop.</p>
@@ -490,7 +637,8 @@
                                 <span>Should I consider using synthetic motor oil?</span>
                             </div>
                             <div class="body-question">
-                                <p class="body-text">Synthetic engine oils are produced through a synthesis process that takes very small
+                                <p class="body-text">Synthetic engine oils are produced through a synthesis process that
+                                    takes very small
                                     molecules and assembles them into larger designer molecules with premium lubricating
                                     properties.</p>
                             </div>
@@ -502,7 +650,8 @@
                                 <span>Should I consider using synthetic motor oil?</span>
                             </div>
                             <div class="body-question">
-                                <p class="body-text ">Synthetic engine oils are produced through a synthesis process that takes very small
+                                <p class="body-text ">Synthetic engine oils are produced through a synthesis process
+                                    that takes very small
                                     molecules and assembles them into larger designer molecules with premium lubricating
                                     properties.</p>
                             </div>
@@ -514,7 +663,8 @@
                                 <span>Should I consider using synthetic motor oil?</span>
                             </div>
                             <div class="body-question ">
-                                <p class="body-text">Synthetic engine oils are produced through a synthesis process that takes very small
+                                <p class="body-text">Synthetic engine oils are produced through a synthesis process that
+                                    takes very small
                                     molecules and assembles them into larger designer molecules with premium lubricating
                                     properties.</p>
                             </div>
@@ -523,8 +673,11 @@
                 </div>
             </div>
         </section>
+        <!-- Mission Questions End -->
 
     </main>
+    <!-- Main End -->
+    <!-- Footer Start -->
     <footer id="footer" style="background-color: #73767A;">
         <div class="container">
             <div class="row">
@@ -553,28 +706,28 @@
                         501 Archwood Lane</p>
                     <ul>
                         <li>
-                            <span>Modile:</span>(520) 577 2710 
+                            <span>Modile:</span>(520) 577 2710
                         </li>
                         <li>
-                            <span>Assistance:</span>(520) 577 2710 
+                            <span>Assistance:</span>(520) 577 2710
                         </li>
                         <li>
                             <span>E-mail:</span><a href="#">mubarizShm@code.edu.az</a>
                         </li>
                     </ul>
-                    <ul id="footer-socilamedia" >
+                    <ul id="footer-socilamedia">
                         <li><a href="#">
-                            <i class="fab fa-facebook-f"></i>
-                        </a></li>
+                                <i class="fab fa-facebook-f"></i>
+                            </a></li>
                         <li><a href="#">
-                            <i class="fab fa-twitter"></i>
-                        </a></li>
+                                <i class="fab fa-twitter"></i>
+                            </a></li>
                         <li><a href="#">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a></li>
+                                <i class="fab fa-linkedin-in"></i>
+                            </a></li>
                         <li><a href="#">
-                            <i class="fab fa-pinterest"></i>
-                        </a></li>
+                                <i class="fab fa-pinterest"></i>
+                            </a></li>
                     </ul>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-6 col-6 footer-bio">
@@ -606,6 +759,7 @@
             </div>
         </div>
     </footer>
+    <!-- Footer End -->
     <script src="https://kit.fontawesome.com/195360f8c8.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"

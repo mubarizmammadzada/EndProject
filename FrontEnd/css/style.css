@@ -91,9 +91,235 @@
   color: #777;
 }
 
+.downResponsive i {
+  color: #999;
+  font-size: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+@media only screen and (max-width: 700px) {
+  .downResponsive i {
+    display: block;
+  }
+  #bioNavbar {
+    display: none !important;
+  }
+}
+
+#responsiveHeader {
+  display: none;
+}
+
+@media only screen and (max-width: 770px) {
+  #responsiveHeader {
+    display: block;
+  }
+  .headerlg {
+    display: none;
+  }
+}
+
+#responsiveNav {
+  background-color: #F5F5F5;
+}
+
+#responsiveNav .responsiveRow .socialMediaBioResponsive {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#responsiveNav .responsiveRow .socialMediaBioResponsive div .searchFormResponsive {
+  position: relative;
+  left: 41px;
+  top: 7px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#responsiveNav .responsiveRow .socialMediaBioResponsive div .searchFormResponsive input {
+  width: 170px;
+  border-radius: 0px;
+  height: 35px;
+}
+
+#responsiveNav .responsiveRow .socialMediaBioResponsive div .searchFormResponsive i {
+  color: #999;
+  cursor: pointer;
+  font-size: 21px;
+  margin-top: 7px;
+}
+
+#responsiveNav .responsiveRow .socialMediaBioResponsive div ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 11px;
+  margin-bottom: 15px;
+  padding: 0px;
+}
+
+#responsiveNav .responsiveRow .socialMediaBioResponsive div ul li {
+  list-style: none;
+  margin-left: 25px;
+  cursor: pointer;
+}
+
+#responsiveNav .responsiveRow .socialMediaBioResponsive div ul li a {
+  color: #999;
+  width: 14px;
+}
+
+#responsiveNav .responsiveRow .socialMediaBioResponsive div ul li a:hover {
+  color: #777;
+}
+
+#responsiveNav .responsiveRow .socialMediaBioResponsive div ul li .searchIconResponsive {
+  color: #999;
+  width: 14px;
+}
+
+#responsiveNav .responsiveRow .socialMediaBioResponsive div ul li .searchIconResponsive:hover {
+  color: #777;
+}
+
+#responsiveNav .responsiveRow .contactBioResponsive {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#responsiveNav .responsiveRow .contactBioResponsive div ul {
+  margin-top: 11px;
+  margin-bottom: 15px;
+}
+
+#responsiveNav .responsiveRow .contactBioResponsive div ul li {
+  list-style: none;
+  margin-left: 20px;
+}
+
+#responsiveNav .responsiveRow .contactBioResponsive div ul li i {
+  color: #A4AAB3;
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+#responsiveNav .responsiveRow .contactBioResponsive div ul li a {
+  color: #999;
+}
+
+#responsiveNav .responsiveRow .contactBioResponsive div ul li span {
+  color: #999;
+}
+
 .header-logo h1 a {
   text-decoration: none;
   color: #1E69B8;
+}
+
+#responsiveHeader .logoandburdger {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#responsiveHeader .logoandburdger .burger {
+  cursor: pointer;
+}
+
+#responsiveHeader .logoandburdger .cancel {
+  cursor: pointer;
+}
+
+#responsiveHeader .responsiveUl ul .mainLiResponsiveD {
+  background-color: #F5F5F5;
+  list-style: none;
+  font-size: 18px;
+  height: 56px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#responsiveHeader .responsiveUl ul .mainLiResponsiveD i {
+  font-size: 35px;
+  color: #777;
+}
+
+#responsiveHeader .responsiveUl ul .mainLiResponsive {
+  background-color: #F5F5F5;
+  list-style: none;
+  font-size: 18px;
+  height: 56px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#responsiveHeader .responsiveUl ul .mainLiResponsive .inLiResponsiveD {
+  background-color: #F5F5F5;
+  list-style: none;
+  font-size: 18px;
+  height: 56px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#responsiveHeader .responsiveUl ul .pre-ul {
+  border-width: thin !important;
+  border: #777 solid;
+}
+
+#responsiveHeader .responsiveUl ul .pre-ul ul {
+  padding-left: 0px;
+}
+
+#responsiveHeader .responsiveUl ul .pre-ul ul li {
+  list-style: none;
+  height: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#responsiveHeader .responsiveUl ul .pre-ul ul hr {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+#responsiveHeader .responsiveUl a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #777;
 }
 
 .header-nav #main-ul {
@@ -1004,5 +1230,76 @@
   line-height: 26px;
   padding: 0;
   text-align: justify;
+}
+
+#services-word {
+  background-color: #F5F5F5;
+}
+
+#services-word .ourServices {
+  height: 100px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#services-word .ourServices h1 {
+  font-size: 30px;
+  line-height: 34px;
+}
+
+#servicess .service-type {
+  padding: 0px !important;
+}
+
+#servicess .service-type div {
+  position: relative;
+}
+
+#servicess .service-type div .overlay-service {
+  background-color: grey;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  opacity: 0;
+  z-index: -333;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+#servicess .service-type h1 {
+  font-size: 21px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #F5F5F5;
+  font-weight: 400;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+#servicess .service-type h1 a {
+  text-decoration: none;
+  color: black;
+  margin-left: 14px;
+}
+
+#servicess .service-type h1 a i {
+  color: #1E69B8;
+}
+
+#servicess .service-type h1:hover {
+  opacity: 0.7;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
 }
 /*# sourceMappingURL=style.css.map */
