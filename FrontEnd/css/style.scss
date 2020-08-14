@@ -1081,9 +1081,6 @@ p{
         padding: 0px !important;
         div{
             position: relative;
-            .service-img{
-                opacity: ;
-            }
             
             .overlay-service{
                 background-color: grey;
@@ -1126,3 +1123,185 @@ p{
     }
     
 }
+#servicedetailName{
+    height: 95px;
+    display: flex;
+    align-items: center;
+    background: #F5F5F5;
+
+    h3{
+        font-weight: 400;
+    }
+}
+#sevicedetails{
+    .servicesNamesList{
+        .selected{
+            background-color:#1E69B8 ;
+            color: white;
+        }
+        ul{
+            padding: 0px;
+            li{
+                list-style: none;
+                display: flex;
+                justify-content: space-between;
+                background: transparent;
+                border-bottom: 1px solid #E2E6E7;
+                padding: 17px 18px 18px 19px;
+                line-height: 24px;
+                color: #777;
+                cursor: pointer;
+                i{
+                    color: #777;
+                    cursor: pointer;
+                    color: #777;
+                    cursor: pointer;
+                    margin-top: 2px;
+                    font-size: 20px;
+                }
+            }
+            hr{
+                margin: 0px;
+            }
+        }
+    }
+    .serviceDetails{
+        .servicesImages{
+
+            img{
+                transition: 0.7s;
+                &:hover{
+                    opacity: 0.7;
+                    transition: 0.7s;
+                }
+            }
+        }
+        .serviceDetailOverView{
+            margin-top: 50px;
+            h3{
+                font-size: 22px;
+                line-height: 34px;
+                font-weight: 400;
+            }
+            hr{
+                margin: 0px;
+                margin-bottom: 25px;
+                width: 60px;
+                height: 2px;
+                background: #1E69B8;
+               
+            }
+            p{
+                font-weight: 400;
+                line-height: 26px;
+                margin-top: 24px;
+                padding: 0;
+            }
+        }
+        .serviceDetailPricing{
+            margin-top: 40px;
+            h3{
+                font-size: 22px;
+                line-height: 34px;
+                font-weight: 400;
+            }
+            hr{
+                margin: 0px;
+                margin-bottom: 30px;
+                width: 79px;
+                height: 2px;
+                background: #1E69B8;
+            }
+            table{
+                width: 100%;
+                tr{
+                    .name{
+                        font-weight: 500;
+                        padding: 18px 30px;
+                        font-size: 14px;
+                        line-height: 24px;
+                        text-align: right;
+                        border-left: none;
+                    }
+                    .value{
+                        font-weight: 500;
+                        padding: 18px 30px;
+                        font-size: 14px;
+                        line-height: 24px;
+                        border-left: 1px solid #E2E6E7;
+                    }
+                }
+            }
+            
+        }
+        .serviceDetailDropDown-WhyCooshe{
+            margin-top: 40px;
+            display: flex;
+            .serviceWhyCooshe{
+                h3{
+                    font-size: 24px;
+                    font-weight: 400;
+                }
+                hr{
+                    
+                    margin: 0px;
+                    margin-bottom: 30px;
+                    width: 59px;
+                    height: 1px;
+                    background-color: #1E69B8;
+                }
+                p{
+                    font-size: 15px;
+                    font-weight: 400;
+                }
+                ul{
+                    padding: 0px;
+                    li{
+                        list-style: none;
+                        color: #777;
+                        i{
+                            color: #1E69B8;
+                        }
+                    }
+                }
+            }
+            .serviceDetailDropDown{
+                .question{
+                    .header-question{
+                        border-width: thin !important;
+                        border: 1px solid;
+                        height: 46px;
+                        display: flex;
+                        align-items: center;
+                        i{
+                            float: left;
+                            margin-right: 20px;
+                            font-size: 24px;
+                            color: #1E69B8;
+                            text-indent: 0;
+                        }
+                        span{
+                            cursor: pointer;
+                            font-weight: 300;
+                            font-size: 18px;
+                            color: #777;
+                            letter-spacing: normal;
+                            line-height: 28px;
+                        }
+                    }
+                    .body-question{
+                        .body-text{
+                            border-width: thin !important;
+                            border: 1px solid;
+                            border-top: none;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+    
+}
+
+

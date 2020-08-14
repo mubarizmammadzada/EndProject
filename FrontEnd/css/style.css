@@ -1302,4 +1302,205 @@
   -webkit-transition: 0.6s;
   transition: 0.6s;
 }
+
+#servicedetailName {
+  height: 95px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #F5F5F5;
+}
+
+#servicedetailName h3 {
+  font-weight: 400;
+}
+
+#sevicedetails .servicesNamesList .selected {
+  background-color: #1E69B8;
+  color: white;
+}
+
+#sevicedetails .servicesNamesList ul {
+  padding: 0px;
+}
+
+#sevicedetails .servicesNamesList ul li {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: transparent;
+  border-bottom: 1px solid #E2E6E7;
+  padding: 17px 18px 18px 19px;
+  line-height: 24px;
+  color: #777;
+  cursor: pointer;
+}
+
+#sevicedetails .servicesNamesList ul li i {
+  color: #777;
+  cursor: pointer;
+  color: #777;
+  cursor: pointer;
+  margin-top: 2px;
+  font-size: 20px;
+}
+
+#sevicedetails .servicesNamesList ul hr {
+  margin: 0px;
+}
+
+#sevicedetails .serviceDetails .servicesImages img {
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+#sevicedetails .serviceDetails .servicesImages img:hover {
+  opacity: 0.7;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+#sevicedetails .serviceDetails .serviceDetailOverView {
+  margin-top: 50px;
+}
+
+#sevicedetails .serviceDetails .serviceDetailOverView h3 {
+  font-size: 22px;
+  line-height: 34px;
+  font-weight: 400;
+}
+
+#sevicedetails .serviceDetails .serviceDetailOverView hr {
+  margin: 0px;
+  margin-bottom: 25px;
+  width: 60px;
+  height: 2px;
+  background: #1E69B8;
+}
+
+#sevicedetails .serviceDetails .serviceDetailOverView p {
+  font-weight: 400;
+  line-height: 26px;
+  margin-top: 24px;
+  padding: 0;
+}
+
+#sevicedetails .serviceDetails .serviceDetailPricing {
+  margin-top: 40px;
+}
+
+#sevicedetails .serviceDetails .serviceDetailPricing h3 {
+  font-size: 22px;
+  line-height: 34px;
+  font-weight: 400;
+}
+
+#sevicedetails .serviceDetails .serviceDetailPricing hr {
+  margin: 0px;
+  margin-bottom: 30px;
+  width: 79px;
+  height: 2px;
+  background: #1E69B8;
+}
+
+#sevicedetails .serviceDetails .serviceDetailPricing table {
+  width: 100%;
+}
+
+#sevicedetails .serviceDetails .serviceDetailPricing table tr .name {
+  font-weight: 500;
+  padding: 18px 30px;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: right;
+  border-left: none;
+}
+
+#sevicedetails .serviceDetails .serviceDetailPricing table tr .value {
+  font-weight: 500;
+  padding: 18px 30px;
+  font-size: 14px;
+  line-height: 24px;
+  border-left: 1px solid #E2E6E7;
+}
+
+#sevicedetails .serviceDetails .serviceDetailDropDown-WhyCooshe {
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#sevicedetails .serviceDetails .serviceDetailDropDown-WhyCooshe .serviceWhyCooshe h3 {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+#sevicedetails .serviceDetails .serviceDetailDropDown-WhyCooshe .serviceWhyCooshe hr {
+  margin: 0px;
+  margin-bottom: 30px;
+  width: 59px;
+  height: 1px;
+  background-color: #1E69B8;
+}
+
+#sevicedetails .serviceDetails .serviceDetailDropDown-WhyCooshe .serviceWhyCooshe p {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+#sevicedetails .serviceDetails .serviceDetailDropDown-WhyCooshe .serviceWhyCooshe ul {
+  padding: 0px;
+}
+
+#sevicedetails .serviceDetails .serviceDetailDropDown-WhyCooshe .serviceWhyCooshe ul li {
+  list-style: none;
+  color: #777;
+}
+
+#sevicedetails .serviceDetails .serviceDetailDropDown-WhyCooshe .serviceWhyCooshe ul li i {
+  color: #1E69B8;
+}
+
+#sevicedetails .serviceDetails .serviceDetailDropDown-WhyCooshe .serviceDetailDropDown .question .header-question {
+  border-width: thin !important;
+  border: 1px solid;
+  height: 46px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#sevicedetails .serviceDetails .serviceDetailDropDown-WhyCooshe .serviceDetailDropDown .question .header-question i {
+  float: left;
+  margin-right: 20px;
+  font-size: 24px;
+  color: #1E69B8;
+  text-indent: 0;
+}
+
+#sevicedetails .serviceDetails .serviceDetailDropDown-WhyCooshe .serviceDetailDropDown .question .header-question span {
+  cursor: pointer;
+  font-weight: 300;
+  font-size: 18px;
+  color: #777;
+  letter-spacing: normal;
+  line-height: 28px;
+}
+
+#sevicedetails .serviceDetails .serviceDetailDropDown-WhyCooshe .serviceDetailDropDown .question .body-question .body-text {
+  border-width: thin !important;
+  border: 1px solid;
+  border-top: none;
+}
 /*# sourceMappingURL=style.css.map */

@@ -120,5 +120,32 @@ $(document).ready(function () {
         $(this).css({"opacity":"1","transition":"0.7s"})
         
     })
+
+    let lists=$(".servicesNamesList li");
+    let services=$(".serviceDetails");
+    let serviceNames=$(".namme")
+    for(let list of lists){
+           $(list).click(function(){
+            $(".selected").removeClass("selected");
+            $(this).addClass("selected")
+            let data_id=$(this).attr("data-id");
+            console.log();
+            for(let service of services){
+                if(data_id==$(service).attr("data-id")){
+                    $(service).removeClass("d-none")
+                }else{
+                    $(service).addClass("d-none")
+                }
+                // console.log("ok");
+            }
+            for(let serviceName of serviceNames){
+                if(data_id==$(serviceName).attr("data-id")){
+                    $(serviceName).removeClass("d-none")
+                }else{
+                    $(serviceName).addClass("d-none")
+                }
+            }
+        })
+    }
 })
 
