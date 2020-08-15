@@ -932,37 +932,28 @@ p{
 #home-services{
     .servicesHome{
         padding: 0px;
+        
         img{
             position: relative;
             
         }
         .service-content{
             position: absolute;
-            left: 120px;
-            top: 74px;
-            z-index: 22;
-            overflow: hidden;
+            left: 34%;
+            top: 30%;
+           overflow: hidden;
             height: 130px;
             h6{
-                margin-bottom: 19px;
-                font-size: 18px;
-                font-weight: 600;
-                text-align: center;
                 position: relative;
-                top: -25px;
+                 bottom: 20px; 
+                color: white;
             }
             a{
+                border-radius: 0;
+                border: 1px solid;
+                background: transparent;
                 position: relative;
-                bottom: -90px;
-                border: 1px solid white;
-                border-radius: 0px;
-                background-color: transparent;
-                width: 126px;
-                height: 50px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-               
+                top: 103px;
                 &:hover{
                     background-color:#1E69B8;
                     transition: 0.7s ;
@@ -971,16 +962,7 @@ p{
                
             }
         }
-        .layer{
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            left: 0px;
-            top: 0px;
-            background: gray;
-            opacity: 0;
-            transition: 0.7s;
-        }
+        
     }
     
 }
@@ -1303,5 +1285,90 @@ p{
     }
     
 }
+#galleryName{
+    background-color: #F5F5F5;
+    height: 93px;
+    display: flex;
+    align-items: center;
+    h3{
+        font-size: 22px;
+        line-height: 34px;
+    }
+}
+#gallery{
+    .galleryNameList{
+        justify-content: center;
+        margin-top: 38px;
+        ul{
+            padding: 0;
+            .selected{
+                background-color:#1E69B8 ;
+                color: white;
+            }
+            display: flex;
+            li{
+                list-style: none;
+                margin-right: 10px;
+                cursor: pointer;
+                border-width: initial;
+                border: 1px solid #f5f5f5;
+                height: 60px;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: #555;
+                transition: 0.5s;
+                &:hover{
+                    background-color: #1E69B8;
+                    color:white;
+                    transition: 0.5s;
+                }
 
+
+
+            }
+        }
+    }
+}
+.galleries{
+    .gallery{
+        margin-bottom: 20px;
+        img{
+            position: relative;
+            transition: 0.2s;
+        }
+        div{
+            
+            position: absolute;
+            left: 31%;
+            top: 22%;
+            overflow: hidden;
+            height: 100px;
+            z-index: 222;
+            transition: 0.2s;
+            p{
+                position: relative;
+                bottom: 18px;
+            }
+            
+            a{
+                border-radius: 0;
+                background: transparent;
+                border: 1px solid white;
+                position: relative;
+                top: 60px;
+                transition: 0.2s;
+                &:hover{
+                    background-color:#1E69B8 ;
+                    transition: 0.2s;
+                }
+            }
+        }
+        
+        
+        
+    }
+
+}
 
