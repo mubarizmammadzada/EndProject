@@ -21,19 +21,19 @@ $(document).ready(function () {
 
 
     $(".servicesHome").mouseover(function(){
-        $(this).children().last().children().first().animate({
+        $(this).children().last().children().first().stop(true,true).animate({
             top:"20px"
         });
-        $(this).children().last().children().last().animate({
+        $(this).children().last().children().last().stop(true,true).animate({
             top:"30px"
         });
     })
 
     $(".servicesHome").mouseleave(function(){
-        $(this).children().last().children().first().animate({
+        $(this).children().last().children().first().stop(true,true).animate({
             top:"-20px"
         });
-        $(this).children().last().children().last().animate({
+        $(this).children().last().children().last().stop(true,true).animate({
             top:"103px"
         });
     })
@@ -145,39 +145,26 @@ $(document).ready(function () {
         })
 
     }
-    $(".gallery").mouseover(function () {
-
-        $(this).children().last().children().first().animate(
-            {
-                top: "18px",
-                transition: "0.2s"
-            }
-        )
-        $(this).children().last().children().last().animate(
-            {
-                top: "13px",
-                transition: "0.2s"
-            }
-        )
-        $(this).children().first().css("opacity", "0.8")
+    $(".gallery").mouseover(function(){
+        $(this).children().last().children().first().animate({
+            top:"20px"
+            
+        });
+        $(this).children().last().children().last().animate({
+            top:"17px",
+        })
     })
-    $(".gallery").mouseleave(function () {
-
-        $(this).children().last().children().first().animate(
-            {
-                top: "-18px",
-
-            }
-        )
-        $(this).children().last().children().last().animate(
-            {
-                top: "60px"
-            }
-        )
-        $(this).children().first().css({ "opacity": "1", "transition": "0.2s" })
-
+    $(".gallery").mouseleave(function(){
+        $(this).children().last().children().first().animate({
+            top:"-20px"
+            
+        });
+        $(this).children().last().children().last().animate({
+            top:"60px",
+        })
     })
 
+    
 
 
 
