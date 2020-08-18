@@ -181,15 +181,26 @@ $(document).ready(function () {
     $(".worker").mouseleave(function(){
         $(this).children().last().children().stop(true,true).animate({
             top:"66px",
-            transition:"0.3s ease"
+            transition:"0.3s ease 0s"
         })
         $(this).children().first().children().animate({
             opacity:"1",
-            transition:"0.3s ease"
+            transition:"0.3s ease 0s"
         })
     })
 
-
+    $(".ourteamdetailImg").mouseover(function(){
+        $(this).children().last().children().stop(true,false).animate({
+            top:"0px",
+            transition:"0.3s ease 0s"
+        })
+    })
+    $(".ourteamdetailImg").mouseleave(function(){
+        $(this).children().last().children().stop(true,true).animate({
+            top:"61px",
+            transition:"0.3s ease 0s"
+        })
+    })
 
 
 })

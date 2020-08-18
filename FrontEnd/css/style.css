@@ -1779,7 +1779,7 @@
 }
 
 #progressbar h3 {
-  ont-size: 22px;
+  font-size: 22px;
   line-height: 34px;
   font-weight: 400;
 }
@@ -1801,5 +1801,152 @@
   color: #777;
   padding: 0;
   margin-top: 8px;
+}
+
+#ourteamdetailName {
+  background-color: #F5F5F5;
+  height: 115px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#ourteamdetailName h3 {
+  font-size: 20px;
+}
+
+#ourteamdetail img {
+  position: relative;
+  -webkit-transition: 0.3s ease 0s;
+  transition: 0.3s ease 0s;
+}
+
+#ourteamdetail img:hover {
+  opacity: 0.8;
+  -webkit-transition: 0.3s ease 0s;
+  transition: 0.3s ease 0s;
+}
+
+#ourteamdetail .ourteamdetails {
+  background: #F5F5F5;
+  height: 76px;
+}
+
+#ourteamdetail .ourteamdetails h4 {
+  color: #333;
+  font-size: 21px;
+  text-align: center;
+}
+
+#ourteamdetail .ourteamdetails span {
+  color: #777;
+  font-size: 14px;
+  margin-left: 35%;
+}
+
+#ourteamdetail .ourteamdetailsoicalmedia {
+  position: absolute;
+  top: 47%;
+  left: 30%;
+  overflow: hidden;
+}
+
+#ourteamdetail .ourteamdetailsoicalmedia ul {
+  position: relative;
+  top: 61px;
+  padding: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#ourteamdetail .ourteamdetailsoicalmedia ul li {
+  list-style: none;
+  color: #777;
+  border-width: thin !important;
+  border: 1px solid white;
+  width: 45px;
+  height: 45px;
+  font-size: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  margin-left: 5px;
+  background-color: white;
+  -webkit-transition: 0.3s ease 0s;
+  transition: 0.3s ease 0s;
+}
+
+#ourteamdetail .ourteamdetailsoicalmedia ul li:hover {
+  background-color: #1E69B8;
+  -webkit-transition: 0.3s ease 0s;
+  transition: 0.3s ease 0s;
+}
+
+#ourteamdetail .ourteamdetailsoicalmedia ul li:hover a {
+  color: white;
+}
+
+#ourteamdetail .ourteamdetailsoicalmedia ul li a {
+  color: #777;
+}
+
+#ourteamdetail .ourteamdetailInform {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#ourteamdetail .ourteamdetailInform .leftside h3 {
+  font-size: 22px;
+  line-height: 34px;
+  font-weight: 400;
+}
+
+#ourteamdetail .ourteamdetailInform .leftside hr {
+  margin: 0;
+  margin-bottom: 23px;
+  width: 56px;
+  height: 1.8px;
+  background-color: #1E69B8;
+}
+
+#ourteamdetail .ourteamdetailInform .leftside table tr td {
+  color: #777;
+  font-weight: 400;
+  font-size: 15px;
+  padding: 17px 16px;
+}
+
+#ourteamdetail .ourteamdetailInform .rightside h3 {
+  font-size: 22px;
+  line-height: 34px;
+  font-weight: 400;
+}
+
+#ourteamdetail .ourteamdetailInform .rightside hr {
+  margin: 0;
+  margin-bottom: 23px;
+  width: 56px;
+  height: 1.8px;
+  background-color: #1E69B8;
+}
+
+#ourteamdetail .ourteamdetailInform .rightside p {
+  font-size: 15.6px;
+  color: #777;
 }
 /*# sourceMappingURL=style.css.map */
