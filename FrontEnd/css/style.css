@@ -1655,4 +1655,151 @@
   margin-right: 14px;
   color: #1E69B8;
 }
+
+#ourTeamName {
+  height: 91px;
+  background-color: #F5F5F5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#ourTeam .worker a img {
+  position: relative;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+#ourTeam .worker .wrokerInformation h4 {
+  margin-top: 15px;
+  text-align: center;
+}
+
+#ourTeam .worker .wrokerInformation h4 a {
+  color: #333;
+  -webkit-transition: opacity 0.3s ease 0s;
+  transition: opacity 0.3s ease 0s;
+  opacity: 1;
+  text-decoration: none;
+}
+
+#ourTeam .worker .wrokerInformation span {
+  display: block;
+  font-weight: 500;
+  font-size: 11px;
+  color: #999;
+  line-height: 21px;
+  letter-spacing: 1px;
+  padding-top: 7px;
+  text-align: center;
+}
+
+#ourTeam .worker .wrokerInformation hr {
+  margin: 0;
+  width: 52px;
+  height: 1.3px;
+  margin-left: 42%;
+  background-color: #1E69B8;
+}
+
+#ourTeam .worker .wrokerInformation p {
+  text-align: center;
+  padding: 24px 25px 0;
+  color: #777;
+  font-size: 14px;
+}
+
+#ourTeam .worker .worker-socialMedia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  top: 150px;
+  left: 99px;
+  overflow: hidden;
+}
+
+#ourTeam .worker .worker-socialMedia ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0px;
+  position: relative;
+  top: 66px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#ourTeam .worker .worker-socialMedia ul li {
+  list-style: none;
+  border-width: thin !important;
+  border: 1px solid #f5f5f5;
+  width: 50px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: white;
+  margin-left: 5px;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+  cursor: pointer;
+}
+
+#ourTeam .worker .worker-socialMedia ul li:hover {
+  background-color: #1E69B8;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+#ourTeam .worker .worker-socialMedia ul li:hover a {
+  color: white;
+}
+
+#ourTeam .worker .worker-socialMedia ul li a {
+  text-decoration: none;
+  color: #777;
+}
+
+#progressbar {
+  margin-top: 60px;
+  background-color: #F5F5F5;
+}
+
+#progressbar h3 {
+  ont-size: 22px;
+  line-height: 34px;
+  font-weight: 400;
+}
+
+#progressbar hr {
+  margin: 0px;
+  margin-bottom: 70px;
+  width: 50px;
+  height: 1.9px;
+  background-color: #1E69B8;
+}
+
+#progressbar .prog {
+  margin-bottom: 45px;
+}
+
+#progressbar .prog p {
+  font-size: 15px;
+  color: #777;
+  padding: 0;
+  margin-top: 8px;
+}
 /*# sourceMappingURL=style.css.map */

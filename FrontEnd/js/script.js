@@ -164,7 +164,30 @@ $(document).ready(function () {
         })
     })
 
-    
+    $(".worker").mouseover(function(){
+        $(this).children().last().children().animate({
+            top:"0px",
+            transition:"0.3s ease"
+        });
+        $(this).children().first().children().animate({
+            opacity:"0.6",
+            transition:"0.3s ease"
+        })
+        $(this).children().last().children().children().mouseover(function(){
+            console.log($(this).children().last().children().children().children());
+        })
+          
+    })
+    $(".worker").mouseleave(function(){
+        $(this).children().last().children().stop(true,true).animate({
+            top:"66px",
+            transition:"0.3s ease"
+        })
+        $(this).children().first().children().animate({
+            opacity:"1",
+            transition:"0.3s ease"
+        })
+    })
 
 
 
