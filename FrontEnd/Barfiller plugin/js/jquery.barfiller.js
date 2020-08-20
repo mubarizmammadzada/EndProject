@@ -10,7 +10,6 @@
 */
 
 (function ($) {
-
     $.fn.barfiller = function (options) {
 
         var defaults = $.extend({

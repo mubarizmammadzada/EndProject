@@ -165,11 +165,11 @@ $(document).ready(function () {
     })
 
     $(".worker").mouseover(function(){
-        $(this).children().last().children().animate({
+        $(this).children().last().children().stop(true,true).animate({
             top:"0px",
             transition:"0.3s ease"
         });
-        $(this).children().first().children().animate({
+        $(this).children().first().children().stop(true,false).animate({
             opacity:"0.6",
             transition:"0.3s ease"
         })
@@ -183,7 +183,7 @@ $(document).ready(function () {
             top:"66px",
             transition:"0.3s ease 0s"
         })
-        $(this).children().first().children().animate({
+        $(this).children().first().children().stop(true,false).animate({
             opacity:"1",
             transition:"0.3s ease 0s"
         })
@@ -201,7 +201,7 @@ $(document).ready(function () {
             transition:"0.3s ease 0s"
         })
     })
-
+    
 
 })
 
