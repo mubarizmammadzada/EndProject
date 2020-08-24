@@ -1,3 +1,7 @@
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Open Sans";
+}
+
 #bioNavbar {
   background-color: #F5F5F5;
 }
@@ -2456,5 +2460,350 @@
   color: #777;
   -webkit-transition: 0.3s ease 0s;
   transition: 0.3s ease 0s;
+}
+
+#shopName {
+  background-color: #F5F5F5;
+  height: 95px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#shopName h3 {
+  font-weight: 400;
+}
+
+@media only screen and (max-width: 992px) {
+  #shoppingElements {
+    display: none !important;
+  }
+  #shoppingElementsResponsive {
+    display: block !important;
+  }
+}
+
+#shoppingElementsResponsive {
+  margin-top: 75px;
+  display: none;
+}
+
+#shoppingElementsResponsive .shopLeftSide .shoppingElement {
+  float: left;
+  margin-bottom: 35px;
+}
+
+#shoppingElementsResponsive .shopLeftSide .shoppingElement .image:hover img {
+  opacity: 0.8;
+  -webkit-transition: 0.3s ease 0s;
+  transition: 0.3s ease 0s;
+}
+
+#shoppingElementsResponsive .shopLeftSide .shoppingElement .image a img {
+  width: 100%;
+  -webkit-transition: 0.3s ease 0s;
+  transition: 0.3s ease 0s;
+}
+
+#shoppingElementsResponsive .shopLeftSide .shoppingElement a {
+  color: #7C7C7C;
+  text-decoration: none;
+}
+
+#shoppingElementsResponsive .shopLeftSide .shoppingElement a h4 {
+  margin-top: 24px;
+}
+
+#shoppingElementsResponsive .shopLeftSide .shoppingElement p {
+  font-family: 'Open Sans';
+  font-size: 18px;
+  color: #777;
+}
+
+#shoppingElementsResponsive .shopLeftSide .shoppingElement .addToCart {
+  border-radius: 0px;
+  background: transparent;
+  color: #1E69B8;
+  border: 1px solid #F5F5F5;
+  width: 166px;
+  height: 54px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.3s ease 0s;
+  transition: 0.3s ease 0s;
+}
+
+#shoppingElementsResponsive .shopLeftSide .shoppingElement .addToCart:hover {
+  background-color: #1E69B8;
+  color: white;
+  -webkit-transition: 0.3s ease 0s;
+  transition: 0.3s ease 0s;
+}
+
+#shoppingElementsResponsive .shopPagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-top: 10px;
+}
+
+#shoppingElementsResponsive .shopPagination ul {
+  padding: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#shoppingElementsResponsive .shopPagination ul li {
+  list-style: none;
+  border: 1px solid #F5F5F5;
+  width: 38px;
+  height: 39px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  margin-right: 5px;
+  -webkit-transition: 0.3s ease 0s;
+  transition: 0.3s ease 0s;
+}
+
+#shoppingElementsResponsive .shopPagination ul li:hover {
+  background-color: #1E69B8;
+}
+
+#shoppingElementsResponsive .shopPagination ul li:hover a {
+  color: white;
+}
+
+#shoppingElementsResponsive .shopPagination ul li a {
+  text-decoration: none;
+  color: #777;
+  font-size: 17px;
+  font-weight: 400;
+}
+
+#shoppingElementsResponsive .ShopRightSide .shopCategories h6 {
+  font-size: 17px;
+}
+
+#shoppingElementsResponsive .ShopRightSide .shopCategories hr {
+  margin: 0px;
+  margin-bottom: 20px;
+  width: 57px;
+  height: 1.7px;
+  background-color: #1E69B8;
+}
+
+#shoppingElementsResponsive .ShopRightSide .shopCategories ul {
+  padding: 0px;
+}
+
+#shoppingElementsResponsive .ShopRightSide .shopCategories ul li {
+  list-style: none;
+  border: 1px solid #F5F5F5;
+  padding: 7px 14px;
+  margin-right: 7px;
+  float: left;
+  margin-bottom: 5px;
+  -webkit-transition: 0.3s ease 0s;
+  transition: 0.3s ease 0s;
+}
+
+#shoppingElementsResponsive .ShopRightSide .shopCategories ul li:hover {
+  background-color: #1E69B8;
+  -webkit-transition: 0.3s ease 0s;
+  transition: 0.3s ease 0s;
+}
+
+#shoppingElementsResponsive .ShopRightSide .shopCategories ul li:hover a {
+  color: white;
+  -webkit-transition: 0.3s ease 0s;
+  transition: 0.3s ease 0s;
+}
+
+#shoppingElementsResponsive .ShopRightSide .shopCategories ul li a {
+  text-decoration: none;
+  color: #777;
+  font-size: 13px;
+}
+
+#shoppingElements {
+  margin-top: 75px;
+}
+
+#shoppingElements .shopLeftSide .shoppingElement {
+  float: left;
+  margin-bottom: 35px;
+}
+
+#shoppingElements .shopLeftSide .shoppingElement .image:hover img {
+  opacity: 0.8;
+  -webkit-transition: 0.3s ease 0s;
+  transition: 0.3s ease 0s;
+}
+
+#shoppingElements .shopLeftSide .shoppingElement .image a img {
+  width: 100%;
+  -webkit-transition: 0.3s ease 0s;
+  transition: 0.3s ease 0s;
+}
+
+#shoppingElements .shopLeftSide .shoppingElement a {
+  color: #7C7C7C;
+  text-decoration: none;
+}
+
+#shoppingElements .shopLeftSide .shoppingElement a h4 {
+  margin-top: 24px;
+}
+
+#shoppingElements .shopLeftSide .shoppingElement p {
+  font-family: 'Open Sans';
+  font-size: 18px;
+  color: #777;
+}
+
+#shoppingElements .shopLeftSide .shoppingElement .addToCart {
+  border-radius: 0px;
+  background: transparent;
+  color: #1E69B8;
+  border: 1px solid #F5F5F5;
+  width: 166px;
+  height: 54px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.3s ease 0s;
+  transition: 0.3s ease 0s;
+}
+
+#shoppingElements .shopLeftSide .shoppingElement .addToCart:hover {
+  background-color: #1E69B8;
+  color: white;
+  -webkit-transition: 0.3s ease 0s;
+  transition: 0.3s ease 0s;
+}
+
+#shoppingElements .shopPagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-top: 10px;
+}
+
+#shoppingElements .shopPagination ul {
+  padding: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#shoppingElements .shopPagination ul li {
+  list-style: none;
+  border: 1px solid #F5F5F5;
+  width: 38px;
+  height: 39px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  margin-right: 5px;
+  -webkit-transition: 0.3s ease 0s;
+  transition: 0.3s ease 0s;
+}
+
+#shoppingElements .shopPagination ul li:hover {
+  background-color: #1E69B8;
+}
+
+#shoppingElements .shopPagination ul li:hover a {
+  color: white;
+}
+
+#shoppingElements .shopPagination ul li a {
+  text-decoration: none;
+  color: #777;
+  font-size: 17px;
+  font-weight: 400;
+}
+
+#shoppingElements .ShopRightSide .shopCategories h6 {
+  font-size: 17px;
+}
+
+#shoppingElements .ShopRightSide .shopCategories hr {
+  margin: 0px;
+  margin-bottom: 20px;
+  width: 57px;
+  height: 1.7px;
+  background-color: #1E69B8;
+}
+
+#shoppingElements .ShopRightSide .shopCategories ul {
+  padding: 0px;
+}
+
+#shoppingElements .ShopRightSide .shopCategories ul li {
+  list-style: none;
+  border: 1px solid #F5F5F5;
+  padding: 7px 14px;
+  margin-right: 7px;
+  float: left;
+  margin-bottom: 5px;
+  -webkit-transition: 0.3s ease 0s;
+  transition: 0.3s ease 0s;
+}
+
+#shoppingElements .ShopRightSide .shopCategories ul li:hover {
+  background-color: #1E69B8;
+  -webkit-transition: 0.3s ease 0s;
+  transition: 0.3s ease 0s;
+}
+
+#shoppingElements .ShopRightSide .shopCategories ul li:hover a {
+  color: white;
+  -webkit-transition: 0.3s ease 0s;
+  transition: 0.3s ease 0s;
+}
+
+#shoppingElements .ShopRightSide .shopCategories ul li a {
+  text-decoration: none;
+  color: #777;
+  font-size: 13px;
 }
 /*# sourceMappingURL=style.css.map */
