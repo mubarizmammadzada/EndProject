@@ -201,7 +201,30 @@ $(document).ready(function () {
             transition:"0.3s ease 0s"
         })
     })
-    
+    let imagesShop=$(".downImgShopDetail")
+    for(let img of imagesShop){
+        $(img).click(function(){
+         $(this).parent().children().first().attr("src",$(this).children().attr("src"));
+        })
+    }
+    let count=0;
+    $(".minus").click(function(){
+        if(count>0){
+            count-=1;
+        }
+        
+        if($(this).parent().next().text()!="0"){
+            $(this).parent().next().text(count);
+        }
+       
+    })
+    $(".plus").click(function(){
+        count+=1;
+        
+        $(this).parent().prev().text(count);
+        
+       
+    })
 
 })
 
