@@ -2656,13 +2656,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 35px;
 }
 
-#shoppingElements .shopLeftSide .shoppingElement .image:hover img {
-  opacity: 0.8;
-  -webkit-transition: 0.3s ease 0s;
-  transition: 0.3s ease 0s;
-}
-
-#shoppingElements .shopLeftSide .shoppingElement .image a img {
+#shoppingElements .shopLeftSide .shoppingElement a img {
   width: 100%;
   -webkit-transition: 0.3s ease 0s;
   transition: 0.3s ease 0s;
@@ -2863,16 +2857,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Open Sans";
 }
 
-#shopDetail .leftSideShopDetail .shoppingElementAbout #elementCount {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-}
-
-#shopDetail .leftSideShopDetail .shoppingElementAbout #elementCount ul {
+#shopDetail .leftSideShopDetail .shoppingElementAbout ul {
   padding: 0px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2883,13 +2868,13 @@ h1, h2, h3, h4, h5, h6 {
           align-items: center;
 }
 
-#shopDetail .leftSideShopDetail .shoppingElementAbout #elementCount ul li {
+#shopDetail .leftSideShopDetail .shoppingElementAbout ul li {
   list-style: none;
   -webkit-transition: 0.3s ease 0s;
   transition: 0.3s ease 0s;
 }
 
-#shopDetail .leftSideShopDetail .shoppingElementAbout #elementCount ul .minus {
+#shopDetail .leftSideShopDetail .shoppingElementAbout ul .minus {
   color: #777;
   font-size: 10px;
   border: 1px solid #777;
@@ -2904,14 +2889,14 @@ h1, h2, h3, h4, h5, h6 {
           justify-content: center;
 }
 
-#shopDetail .leftSideShopDetail .shoppingElementAbout #elementCount ul .minus:hover {
+#shopDetail .leftSideShopDetail .shoppingElementAbout ul .minus:hover {
   background-color: #1E69B8;
   -webkit-transition: 0.3s ease 0s;
   transition: 0.3s ease 0s;
   color: white;
 }
 
-#shopDetail .leftSideShopDetail .shoppingElementAbout #elementCount ul .plus {
+#shopDetail .leftSideShopDetail .shoppingElementAbout ul .plus {
   color: #777;
   font-size: 10px;
   border: 1px solid #777;
@@ -2926,14 +2911,14 @@ h1, h2, h3, h4, h5, h6 {
           justify-content: center;
 }
 
-#shopDetail .leftSideShopDetail .shoppingElementAbout #elementCount ul .plus:hover {
+#shopDetail .leftSideShopDetail .shoppingElementAbout ul .plus:hover {
   background-color: #1E69B8;
   -webkit-transition: 0.3s ease 0s;
   transition: 0.3s ease 0s;
   color: white;
 }
 
-#shopDetail .leftSideShopDetail .shoppingElementAbout #elementCount ul #liCount {
+#shopDetail .leftSideShopDetail .shoppingElementAbout ul #liCount {
   border: 1px solid #777;
   font-size: 17px;
   padding: 3px;
@@ -2947,7 +2932,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #777;
 }
 
-#shopDetail .leftSideShopDetail .shoppingElementAbout #elementCount a {
+#shopDetail .leftSideShopDetail .shoppingElementAbout .addToCart {
   border: 1px solid #777;
   border-radius: 0px;
   margin-left: 15px;
@@ -2968,23 +2953,23 @@ h1, h2, h3, h4, h5, h6 {
   transition: 0.3s ease 0s;
 }
 
-#shopDetail .leftSideShopDetail .shoppingElementAbout #elementCount a:hover {
+#shopDetail .leftSideShopDetail .shoppingElementAbout .addToCart:hover {
   background-color: #1E69B8;
   -webkit-transition: 0.3s ease 0s;
   transition: 0.3s ease 0s;
   color: white;
 }
 
-#shopDetail .shoipDetailRightSide {
+.shoipDetailRightSide {
   width: 100%;
 }
 
-#shopDetail .shoipDetailRightSide h6 {
+.shoipDetailRightSide h6 {
   font-size: 15px;
   font-weight: 500;
 }
 
-#shopDetail .shoipDetailRightSide hr {
+.shoipDetailRightSide hr {
   margin: 0px;
   margin-bottom: 22px;
   margin-top: 14px;
@@ -2993,11 +2978,11 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #1E69B8;
 }
 
-#shopDetail .shoipDetailRightSide ul {
+.shoipDetailRightSide ul {
   padding: 0px;
 }
 
-#shopDetail .shoipDetailRightSide ul li {
+.shoipDetailRightSide ul li {
   list-style: none;
   border: 1px solid #F5F5F5;
   float: left;
@@ -3009,17 +2994,17 @@ h1, h2, h3, h4, h5, h6 {
   transition: 0.3s ease 0s;
 }
 
-#shopDetail .shoipDetailRightSide ul li:hover {
+.shoipDetailRightSide ul li:hover {
   background-color: #1E69B8;
   -webkit-transition: 0.3s ease 0s;
   transition: 0.3s ease 0s;
 }
 
-#shopDetail .shoipDetailRightSide ul li:hover a {
+.shoipDetailRightSide ul li:hover a {
   color: white;
 }
 
-#shopDetail .shoipDetailRightSide ul li a {
+.shoipDetailRightSide ul li a {
   text-decoration: none;
   color: #777;
   font-size: 13px;
@@ -3027,12 +3012,12 @@ h1, h2, h3, h4, h5, h6 {
   transition: 0.3s ease 0s;
 }
 
-#shopDetail .shopDetailRelatedElements h3 {
+.shopDetailRelatedElements h3 {
   font-size: 25px;
   margin-top: 10px;
 }
 
-#shopDetail .shopDetailRelatedElements hr {
+.shopDetailRelatedElements hr {
   width: 50px;
   height: 1.7px;
   margin: 0px;
@@ -3041,38 +3026,29 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #1E69B8;
 }
 
-#shopDetail .shopDetailRelatedElements .relatedElement {
+.shopDetailRelatedElements .relatedElement {
   padding-left: 0px;
   float: left;
   margin-bottom: 35px;
 }
 
-#shopDetail .shopDetailRelatedElements .relatedElement a:hover img {
+.shopDetailRelatedElements .relatedElement:hover img {
   opacity: 0.8;
   -webkit-transition: 0.3s ease 0s;
   transition: 0.3s ease 0s;
 }
 
-#shopDetail .shopDetailRelatedElements .relatedElement a img {
+.shopDetailRelatedElements .relatedElement img {
   -webkit-transition: 0.3s ease 0s;
   transition: 0.3s ease 0s;
 }
 
-#shopDetail .shopDetailRelatedElements .relatedElement .relatedelementName {
-  text-decoration: none;
-  color: #333;
-}
-
-#shopDetail .shopDetailRelatedElements .relatedElement .relatedelementName h4 {
-  margin-top: 12px;
-}
-
-#shopDetail .shopDetailRelatedElements .relatedElement p {
+.shopDetailRelatedElements .relatedElement p {
   color: #777;
   font-size: 19px;
 }
 
-#shopDetail .shopDetailRelatedElements .relatedElement .relatedAddCart {
+.shopDetailRelatedElements .relatedElement .addToCart {
   border: 1px solid #F5F5F5;
   border-radius: 0px;
   background: transparent;
@@ -3082,11 +3058,20 @@ h1, h2, h3, h4, h5, h6 {
   transition: 0.3s ease 0s;
 }
 
-#shopDetail .shopDetailRelatedElements .relatedElement .relatedAddCart:hover {
+.shopDetailRelatedElements .relatedElement .addToCart:hover {
   background-color: #1E69B8;
   color: white;
   -webkit-transition: 0.3s ease 0s;
   transition: 0.3s ease 0s;
+}
+
+.shopDetailRelatedElements .relatedelementName {
+  text-decoration: none;
+  color: #333;
+}
+
+.shopDetailRelatedElements .relatedelementName h4 {
+  margin-top: 12px;
 }
 
 #shopDetailResponsive {
@@ -3353,5 +3338,92 @@ h1, h2, h3, h4, h5, h6 {
   color: white;
   -webkit-transition: 0.3s ease 0s;
   transition: 0.3s ease 0s;
+}
+
+#cartName {
+  height: 91px;
+  background: #F5F5F5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#cartDetail {
+  margin-top: 45px;
+}
+
+#cartDetail .emptyCart {
+  width: 100%;
+  height: 91px;
+  background: #F5F5F5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-left: 1px solid #1E69B8;
+  border-width: 3px;
+}
+
+#cartDetail .emptyCart i {
+  font-size: 27px;
+  margin-left: 26px;
+  margin-right: 15px;
+  color: #1E69B8;
+}
+
+#cartDetail .emptyCart span {
+  color: #777;
+  font-size: 16px;
+}
+
+#cartDetail .returnShopBtn {
+  margin-top: 38px;
+}
+
+#cartDetail .returnShopBtn a {
+  border: 1px solid #F5F5F5;
+  border-radius: 0px;
+  color: #1E69B8;
+  background: transparent;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  -webkit-transition: 0.3s ease 0s;
+  transition: 0.3s ease 0s;
+  font-weight: 500;
+}
+
+#cartDetail .returnShopBtn a:hover {
+  background: #1E69B8;
+  color: white;
+}
+
+#cartDetail .cartDetailTable {
+  margin-top: 26px;
+}
+
+#cartDetail .cartDetailTable table tbody tr:first-child {
+  width: 100%;
+}
+
+#cartDetail .cartDetailTable table tbody tr td {
+  width: 15.5%;
+}
+
+#cartDetail .cartDetailTable table tbody tr td i {
+  cursor: pointer;
+  font-size: 19px;
+  margin-top: 10px;
+  color: #777;
+}
+
+#cartDetail .cartDetailTable table tbody tr td img {
+  height: auto;
 }
 /*# sourceMappingURL=style.css.map */

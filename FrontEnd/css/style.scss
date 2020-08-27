@@ -2258,18 +2258,13 @@ p{
         .shoppingElement{
             float: left;
             margin-bottom: 35px;
-            .image{
-                &:hover img{
-                    opacity: 0.8;
-                    transition: 0.3s ease 0s;
-                }
+            
                 a{
                     img{
                         width: 100%;
                         transition: 0.3s ease 0s;
                     }
                 }
-            }
             
             a{
                 color: #7C7C7C;
@@ -2431,9 +2426,6 @@ p{
                 font-family: "Open Sans";
             
             }
-            #elementCount{
-                display: flex;
-                justify-content:flex-start;
                 ul{
                     padding: 0px;
                     display: flex;
@@ -2485,7 +2477,7 @@ p{
     
                     }
                 }
-                a{
+                .addToCart{
                     border: 1px solid #777;
                     border-radius: 0px;
                     margin-left: 15px;
@@ -2565,13 +2557,30 @@ p{
             padding-left: 0px;
             float: left;
             margin-bottom: 35px;
-            a{
+            
                 &:hover img{
                     opacity: 0.8;
                     transition: 0.3s ease 0s;
                 }
                 img{
                     transition: 0.3s ease 0s;
+                }
+                p{
+                    color: #777;
+                    font-size: 19px;
+                }
+                .addToCart{
+                    border: 1px solid #F5F5F5;
+                    border-radius: 0px;
+                    background: transparent;
+                    color: #1E69B8;
+                    padding: 13px;
+                    transition: 0.3s ease 0s;
+                    &:hover{
+                        background-color:#1E69B8;
+                        color: white;
+                        transition: 0.3s ease 0s;
+                    }
                 }
             }
             .relatedelementName{
@@ -2582,27 +2591,11 @@ p{
                     margin-top: 12px;
                 }
             }
-            p{
-                color: #777;
-                font-size: 19px;
-            }
-            .relatedAddCart{
-                border: 1px solid #F5F5F5;
-                border-radius: 0px;
-                background: transparent;
-                color: #1E69B8;
-                padding: 13px;
-                transition: 0.3s ease 0s;
-                &:hover{
-                    background-color:#1E69B8;
-                    color: white;
-                    transition: 0.3s ease 0s;
-                }
-            }
+           
         }
-    }
     
-}
+
+
 #shopDetailResponsive{
     display: none;
     .leftSideShopDetail{
@@ -2812,4 +2805,79 @@ p{
         }
     }
 }
+#cartName{
+    height: 91px;
+    background: #F5F5F5;
+    display: flex;
+    align-items: center;
+    
+}
+#cartDetail{
+    margin-top: 45px;
 
+    .emptyCart{
+        width: 100%;
+        height: 91px;
+        background: #F5F5F5;
+        display: flex;
+        align-items: center;
+        border-left: 1px solid #1E69B8;
+        border-width: 3px;
+        i{
+            font-size: 27px;
+            margin-left: 26px;
+            margin-right: 15px;
+            color:#1E69B8 ;
+        }
+        span{
+            color: #777;
+            font-size: 16px;
+        }
+    }
+    .returnShopBtn{
+        margin-top: 38px;
+        a{
+            border: 1px solid #F5F5F5;
+            border-radius: 0px;
+            color: #1E69B8;
+            background: transparent;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 18px;
+            padding-bottom: 18px;
+            transition: 0.3s ease 0s;
+            font-weight: 500;
+            &:hover{
+                background: #1E69B8;
+                color: white;
+            }
+        
+        }
+    }
+    .cartDetailTable{
+        margin-top: 26px;
+        table{
+            tbody{
+                tr{
+                    &:first-child{
+                        width: 100%;
+                    }
+                    td{
+                        width: 15.5%;
+                        i{
+                            cursor: pointer;
+                            font-size: 19px;
+                            margin-top: 10px;
+                            color: #777;
+                        }
+                        img{
+                            
+                            height: auto;
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

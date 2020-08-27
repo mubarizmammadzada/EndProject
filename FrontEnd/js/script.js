@@ -226,5 +226,96 @@ $(document).ready(function () {
        
     })
 
-})
+    if(localStorage.getItem("basket")==null){
+        localStorage.setItem("basket",JSON.stringify([]))
+    }
+    let addToCartAll=$(".addToCart");
+    
+    for(let addToCart of addToCartAll){
+        $(addToCart).click(function(e){
+            if(localStorage.getItem("basket")==null){
+                localStorage.setItem("basket",JSON.stringify([]))
+            }
+            e.preventDefault()
+            let basket=JSON.parse(localStorage.getItem("basket"))
+            
+            let name=$(this).parent().children().first().next().children().first().text();
+            let ImgSrc=$(this).parent().children().first().children().first().attr("src")
+            let ShopData_id=$(this).parent().attr("data-id")
+            let price=$(this).prev().text();
+            let priceInt=$(this).prev().text().split("$")
 
+            console.log();
+            let exist=basket.find(p=>p.Id==ShopData_id)
+            if(exist==undefined){
+                basket.push({
+                    Id:ShopData_id,
+                    Name:name,
+                    Image:ImgSrc,
+                    Price:price,
+                    PriceInt:priceInt[1].split(".")[0],
+                    Count:1,
+                    
+                })
+             }
+            else{
+                 exist.Count+=1;
+            }
+            localStorage.setItem("basket",JSON.stringify(basket))
+            $(CountBasket())
+            
+        })
+    }
+    
+    function CountBasket(){
+            let basket=JSON.parse(localStorage.getItem("basket"));
+           $("#bbb").text(basket.length)
+            
+    }
+    $(CountBasket())
+    let products=JSON.parse(localStorage.getItem("basket")) 
+    for(let product of products){
+        let tdDeleteAll=document.createElement("td")
+        let tdImg=document.createElement("td")
+        let tdProName=document.createElement("td")
+        let tdPrice=document.createElement("td")
+        let tdCount=document.createElement("td")
+        let tdTotal=document.createElement("td")
+        let tdDecriese=document.createElement("td")
+        let deleteAllIcon=document.createElement("i")
+        let decreeseIcon=document.createElement("i");
+        decreeseIcon.className="fas fa-minus decreeseElementCount"
+        tdDecriese.append(decreeseIcon)
+        deleteAllIcon.className="fas fa-times deleteAllCart"
+        tdDeleteAll.append(deleteAllIcon);
+        let img=document.createElement("img")
+        img.setAttribute("src",product.Image);
+        img.style.width="25%"
+        img.style.height="auto"
+        tdImg.append(img);
+        let Id=document.createElement("td");
+        Id.innerText=product.Id
+        // Id.className="d-none"
+        
+        tdProName.innerText=product.Name;
+        tdPrice.innerText=product.Price;
+        tdCount.innerText=product.Count;
+        
+        tdTotal.innerText=product.Count*product.PriceInt+"$"
+        let tr=document.createElement("tr");
+        tr.append(Id,tdDeleteAll,tdImg,tdProName,tdPrice,tdCount,tdTotal,tdDecriese)
+        
+        // $(".decreeseElementCount").click(function(){
+        //     let element=Number($(this).parent().parent().children().first().text())
+        //     let productsCart=JSON.parse(localStorage.getItem("basket")) 
+        //     let thisElement=productsCart.find(i=>i.Id==element)
+        //     if(thisElement.Count>0){
+        //         thisElement.Count-=1
+        //     }
+        //     console.log(thisElement.Count);
+        // })
+        document.getElementById("cartTable").lastElementChild.append(tr)
+
+    }
+    
+})
