@@ -37,7 +37,7 @@
                         <li><a href="#"><i class="fab fa-twitter"></i></a></li>
                         <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
                         <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
-                        <sup class="basketCount">0</sup>
+                        <sup id="bbb">0</sup>
                         <li><i class="fas fa-search searchIcon"></i></li>
                     </ul>
                     <form class="form-group searchForm d-none">
@@ -289,201 +289,101 @@
     <!-- Responsive Header End -->
     <!-- Main Start -->
     <main>
-        <section id="shopDetailName">
-            <div class="container">
+        <section>
+            <div class="container-fluid">
                 <div class="row">
-                    <h3>FLYING NINJA</h3>
+                    <div class="mapouter">
+                        <div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas"
+                                src="https://maps.google.com/maps?q=naximov&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                                frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
+                                href="https://2torrentz.net">torrentz file search</a></div>
+                        <style>
+                            .mapouter {
+                                position: relative;
+                                text-align: right;
+                                height: 500px;
+                                width: 100% !important;
+                            }
+
+                            .gmap_canvas {
+                                overflow: hidden;
+                                background: none !important;
+                                height: 500px;
+                                width: 100% !important;
+                            }
+                        </style>
+                        <style>
+                            iframe {
+                                width: 100%;
+                                height: 100%;
+                            }
+                        </style>
+                    </div>
+                    </style>
                 </div>
             </div>
+            </div>
         </section>
-        <section id="shopDetail">
+        <section id="contactInform">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-9 col-md-12 col-sm-12 col-12 leftSideShopDetail">
-                        <div class="col-lg-7 col-md-12 col-sm-12 col-12 imagesShopDetail">
-                            <img class="img-fluid" src="img/shop/poster_2_up.jpg" alt="">
-                            <div class="col-6 downImgShopDetail">
-                                <img class="img-fluid" src="img/shop/hoodie_3_front.jpg" alt="">
-                            </div>
-                            <div class="col-6 downImgShopDetail second">
-                                <img class="img-fluid" src="img/shop/poster_2_up.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="col-lg-5 col-md-12 col-sm-12 col-12 shoppingElementAbout" data-id="10">
-                            <h3>FLYING NINJA</h3>
-                            <p id="elementPrice">$12.00</p>
-                            <hr>
-                            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
-                                egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.
-                                Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris
-                                placerat eleifend leo.</p>
-                            <hr>
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+                        <h5>CALL US NOW AT</h5>
+                        <div id="informContact">
+                            <i class="fas fa-phone-alt"></i>
                             <ul>
-                                <li><i class="fas fa-minus minus"></i></li>
-                                <li id="liCount">0</li>
-                                <li><i class="fas fa-plus plus"></i></li>
+                                <li>
+                                    Mobile: <span>(520) 577 2710</span>
+                                </li>
+                                <li>
+                                    Assistance: <span> (520) 577 2725</span>
+                                </li>
+                                <li>
+                                    Weekdays: <span>(520) 577 7212</span>
+                                </li>
                             </ul>
+                        </div>
 
-                            <a href="#" class="btn btn-primary addToCartDetail" style="float: left;">ADD TO CART</a>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+                        <h5>TUCSON CAR SERVICE</h5>
+                        <div id="informContact">
+                            <i class="fas fa-map-marked-alt"></i>
+                            <span>Tucson, Arizona 80210 <br>
+                                501 Archwood Lane</span>
+                        </div>
 
-
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+                        <h5>24/7 ASSISTANCE</h5>
+                        <div id="informContact">
+                            <i class="fas fa-truck-moving"></i>
+                            <span>Services consequat luctus at justo auctor metus est donec. Tempus terminal morbi nulla
+                                donec elite maecenas.</span>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-12 col-sm-12 col-12 shoipDetailRightSide">
-                        <h6>PRODUCT CATEGORIES</h6>
-                        <hr>
-                        <ul>
-                            <li><a href="#">ALBUMS</a></li>
-                            <li><a href="#">CLOTHING</a></li>
-                            <li><a href="#">HOODIES</a></li>
-                            <li><a href="#">MUSIC</a></li>
-                            <li><a href="#">POSTERS</a></li>
-                            <li><a href="#">SINGLES</a></li>
-                            <li><a href="#">T-SHIRTS</a></li>
-                        </ul>
-
-                    </div>
-                    <div class="col-lg-9 col-md-12 col-sm-12 col-12 shopDetailRelatedElements">
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-12">
-                            <h3>RELATED PRODUCTS</h3>
-                            <hr>
-                            <div class="col-lg-4 col-md-6 col-sm-12 col-12 relatedElement" data-id="7">
-                                <a href="#"><img class="img-fluid" src="img/shop/poster_1_up.jpg" alt=""></a>
-                                <a href="#" class="relatedelementName">
-                                    <h4>SHIP YOUR IDEA</h4>
-                                </a>
-                                <hr>
-                                <p>$15.00</p>
-                                <a href="#" class="btn btn-primary addToCart">ADD TO CART</a>
-                                
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-12 col-12 relatedElement" data-id="8">
-                                <a href="#"><img class="img-fluid" src="img/shop/poster_2_up.jpg" alt=""></a>
-                                <a href="#" class="relatedelementName">
-                                    <h4>SHIP YOUR IDEA</h4>
-                                </a>
-                                <hr>
-                                <p>$15.00</p>
-                                <a href="#" class="btn btn-primary addToCart">ADD TO CART</a>
-                               
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-12 col-12 relatedElement" data-id="9">
-                                <a href="#"><img class="img-fluid" src="img/shop/poster_3_up.jpg" alt=""></a>
-                                <a href="#" class="relatedelementName">
-                                    <h4>SHIP YOUR IDEA</h4>
-                                </a>
-                                <hr>
-                                <p>$15.00</p>
-                                <a href="#" class="btn btn-primary addToCart">ADD TO CART</a>
-                               
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-12 col-12 relatedElement" data-id="10">
-                                <a href="#"><img class="img-fluid" src="img/shop//poster_4_up.jpg" alt=""></a>
-                                <a href="#" class="relatedelementName">
-                                    <h4>SHIP YOUR IDEA</h4>
-                                </a>
-                                <hr>
-                                <p>$15.00</p>
-                                <a href="#" class="btn btn-primary addToCart">ADD TO CART</a>
-                                
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
-            </div>
+
         </section>
-        <section id="shopDetailResponsive">
+        <section id="contactReply">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-9 col-md-12 col-sm-12 col-12 leftSideShopDetail">
-                        <div class="col-lg-7 col-md-7 col-sm-12 col-12 imagesShopDetail">
-                            <img class="img-fluid" src="img/shop/poster_2_up.jpg" alt="">
-                            <div class="col-6 downImgShopDetail">
-                                <img class="img-fluid" src="img/shop/hoodie_3_front.jpg" alt="">
+                    <form class="col-lg-12 col-md-12 col-sm-12 col-12 form-group w-100 ">
+                        <div class="contactLiveReply">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-12 inputs">
+                                <input type="text" class="form-controll w-100" placeholder="Your Name*">
+                                <input type="text" class="form-controll w-100" placeholder="Your Email*">
+                                <input type="text" class="form-controll w-100" placeholder="Your Phone*">
                             </div>
-                            <div class="col-6 downImgShopDetail second">
-                                <img class="img-fluid" src="img/shop/poster_2_up.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="col-lg-5 col-md-5 col-sm-12 col-12 shoppingElementAbout">
-                            <h3>FLYING NINJA</h3>
-                            <p id="elementPrice">$12.00</p>
-                            <hr>
-                            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
-                                egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.
-                                Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris
-                                placerat eleifend leo.</p>
-                            <hr>
-                            <div id="elementCount">
-                                <ul>
-                                    <li><i class="fas fa-minus minus"></i></li>
-                                    <li id="liCount">0</li>
-                                    <li><i class="fas fa-plus plus"></i></li>
-                                </ul>
-
-                                <a href="#" class="btn btn-primary">ADD TO CART</a>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div class="col-lg-9 col-md-12 col-sm-12 col-12 shopDetailRelatedElements">
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-12">
-                            <h3>RELATED PRODUCTS</h3>
-                            <hr>
-                            <div class="col-lg-4 col-md-6 col-sm-12 col-12 relatedElement">
-                                <a href="#"><img class="img-fluid" src="img/shop/poster_1_up.jpg" alt=""></a>
-                                <a href="#" class="relatedelementName">
-                                    <h4>SHIP YOUR IDEA</h4>
-                                </a>
-                                <hr>
-                                <p>$15.00</p>
-                                <a href="#" class="btn btn-primary relatedAddCart">ADD TO CART</a>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-12 col-12 relatedElement">
-                                <a href="#"><img class="img-fluid" src="img/shop/poster_2_up.jpg" alt=""></a>
-                                <a href="#" class="relatedelementName">
-                                    <h4>SHIP YOUR IDEA</h4>
-                                </a>
-                                <hr>
-                                <p>$15.00</p>
-                                <a href="#" class="btn btn-primary relatedAddCart">ADD TO CART</a>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-12 col-12 relatedElement">
-                                <a href="#"><img class="img-fluid" src="img/shop/poster_3_up.jpg" alt=""></a>
-                                <a href="#" class="relatedelementName">
-                                    <h4>SHIP YOUR IDEA</h4>
-                                </a>
-                                <hr>
-                                <p>$15.00</p>
-                                <a href="#" class="btn btn-primary relatedAddCart">ADD TO CART</a>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-12 col-12 relatedElement">
-                                <a href="#"><img class="img-fluid" src="img/shop//poster_4_up.jpg" alt=""></a>
-                                <a href="#" class="relatedelementName">
-                                    <h4>SHIP YOUR IDEA</h4>
-                                </a>
-                                <hr>
-                                <p>$15.00</p>
-                                <a href="#" class="btn btn-primary relatedAddCart">ADD TO CART</a>
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-12 text">
+                                <textarea placeholder="Message*" ></textarea>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-12 col-12 shoipDetailRightSide">
-                        <h6>PRODUCT CATEGORIES</h6>
-                        <hr>
-                        <ul>
-                            <li><a href="#">ALBUMS</a></li>
-                            <li><a href="#">CLOTHING</a></li>
-                            <li><a href="#">HOODIES</a></li>
-                            <li><a href="#">MUSIC</a></li>
-                            <li><a href="#">POSTERS</a></li>
-                            <li><a href="#">SINGLES</a></li>
-                            <li><a href="#">T-SHIRTS</a></li>
-                        </ul>
-
-                    </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-12 replyBtn">
+                            <a href="#" class="btn btn-primary">SEND MESSAGE</a>
+                        </div>
+                        
+                    </form>
 
                 </div>
             </div>
@@ -580,6 +480,7 @@
         crossorigin="anonymous"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/script.js"></script>
+
 
 </body>
 

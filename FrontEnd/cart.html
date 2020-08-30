@@ -37,6 +37,7 @@
                         <li><a href="#"><i class="fab fa-twitter"></i></a></li>
                         <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
                         <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                        <sup id="bbb">0</sup>
                         <li><i class="fas fa-search searchIcon"></i></li>
                     </ul>
                     <form class="form-group searchForm d-none">
@@ -298,39 +299,39 @@
         <section id="cartDetail">
             <div class="container">
                 <div class="row">
-                    <div class="emptyCart d-none">
-                        <i class="far fa-window-maximize"></i>
-                        <span>Your cart is currently empty.</span>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                        <div class="emptyCart d-none">
+                            <i class="far fa-window-maximize"></i>
+                            <span>Your cart is currently empty.</span>
+                        </div>
+                        <div class="returnShopBtn d-none">
+                            <a href="#" class="btn btn-primary">RETURN TO SHOP</a>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                            <div class="cartDetailTable w-100">
+                                <table class="table table-striped " id="cartTable">
+                                    <thead>
+                                      <tr>
+                                        <th scope="col"></th>
+                                        <th scope="col">Preview</th>
+                                        <th scope="col">Product</th>
+                                        <th scope="col">Price</th>
+                                        <th scope="col">Quantity</th>
+                                        <th scope="col">Total</th>
+                                        <th scope="col"></th>
+                                      </tr>
+                                    </thead>
+                                    <tbody id="tb">
+                                      
+                                    </tbody>
+                                  </table>
+                            </div>
+                        </div>
+                        <div class="col-12 buttoncolumn">
+                            <a href="#" class="btn btn-primary">BUY</a>
+                        </div>
                     </div>
-                    <div class="returnShopBtn d-none">
-                        <a href="#" class="btn btn-primary">RETURN TO SHOP</a>
-                    </div>
-                    <div class="cartDetailTable w-100">
-                        <table class="table table-striped " id="cartTable">
-                            <thead>
-                              <tr>
-                                <th scope="col"></th>
-                                <th scope="col">Preview</th>
-                                <th scope="col">Product</th>
-                                <th scope="col">Price</th>
-                                <th scope="col">Quantity</th>
-                                <th scope="col">Total</th>
-                                <th scope="col"></th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <!-- <tr>
-                                 <td><i class="fas fa-times"></i></td>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
-                                <td></td>
-                                <td></td>
-                                <td></td> -->
-                              <!-- </tr> -->
-                            </tbody>
-                          </table>
-                    </div>
+                    
                 </div>
             </div>
         </section>

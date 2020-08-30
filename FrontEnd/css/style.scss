@@ -2477,10 +2477,9 @@ p{
     
                     }
                 }
-                .addToCart{
+                .addToCartDetail{
                     border: 1px solid #777;
                     border-radius: 0px;
-                    margin-left: 15px;
                     background: transparent;
                     color: #777;
                     display: flex;
@@ -2814,7 +2813,28 @@ p{
 }
 #cartDetail{
     margin-top: 45px;
-
+    .buttoncolumn{
+        display: flex;
+        justify-content: flex-end;
+        a{
+            border: 1px solid #F5F5F5;
+            border-radius: 0px;
+            background: transparent;
+            color: #777;
+            width: 139px;
+            height: 54px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 35px;
+            transition: 0.3s ease 0s;
+            &:hover{
+                background:#1E69B8 ;
+                color: white;
+                transition: 0.3s ease 0s;
+            }
+        }
+    }
     .emptyCart{
         width: 100%;
         height: 91px;
@@ -2833,6 +2853,7 @@ p{
             color: #777;
             font-size: 16px;
         }
+        
     }
     .returnShopBtn{
         margin-top: 38px;
@@ -2878,6 +2899,78 @@ p{
                     }
                 }
             }
+        }
+    }
+}
+#contactInform{
+    margin-top: 50px;
+
+    h5{
+        font-weight: 500;
+    }
+    #informContact{
+        display: flex;
+        i{
+            font-size: 30px;
+            margin-top: 15px;
+            margin-right: 27px;
+            color: #1E69B8;
+        }
+        ul{
+            padding: 0px;
+            li{ 
+                list-style: none;
+                font-size: 15px;
+                color: #777;
+                span{
+                    font-size: 15px;
+                color: #777;
+                }
+            }
+        }
+        span{
+            font-size: 15px;
+        color: #777;
+        }
+    }
+}
+@media only screen and (max-width:700px){
+    .inputs{
+        display: block !important;
+    }
+    .text{
+        display: block !important;
+    }
+}
+#contactReply{
+    margin-top: 50px;
+    .contactLiveReply{
+        input{
+            height: 40px;
+            margin-bottom: 13px;
+            border: 1px solid #F5F5F5;
+        }
+        textarea{
+            width: 100%;
+            resize: none;
+            height: 146px;
+            border: 1px solid #F5F5F5;
+        }
+
+    }
+    .replyBtn{
+        display: flex;
+        justify-content: flex-end;
+        margin-top:20px ;
+        a{
+            border: 1px solid #F5F5F5;
+            border-radius: 0px;
+            height: 58px;
+            width: 154px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #1E69B8;
         }
     }
 }

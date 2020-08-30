@@ -2932,10 +2932,9 @@ h1, h2, h3, h4, h5, h6 {
   color: #777;
 }
 
-#shopDetail .leftSideShopDetail .shoppingElementAbout .addToCart {
+#shopDetail .leftSideShopDetail .shoppingElementAbout .addToCartDetail {
   border: 1px solid #777;
   border-radius: 0px;
-  margin-left: 15px;
   background: transparent;
   color: #777;
   display: -webkit-box;
@@ -2953,7 +2952,7 @@ h1, h2, h3, h4, h5, h6 {
   transition: 0.3s ease 0s;
 }
 
-#shopDetail .leftSideShopDetail .shoppingElementAbout .addToCart:hover {
+#shopDetail .leftSideShopDetail .shoppingElementAbout .addToCartDetail:hover {
   background-color: #1E69B8;
   -webkit-transition: 0.3s ease 0s;
   transition: 0.3s ease 0s;
@@ -3355,6 +3354,43 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 45px;
 }
 
+#cartDetail .buttoncolumn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+#cartDetail .buttoncolumn a {
+  border: 1px solid #F5F5F5;
+  border-radius: 0px;
+  background: transparent;
+  color: #777;
+  width: 139px;
+  height: 54px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 35px;
+  -webkit-transition: 0.3s ease 0s;
+  transition: 0.3s ease 0s;
+}
+
+#cartDetail .buttoncolumn a:hover {
+  background: #1E69B8;
+  color: white;
+  -webkit-transition: 0.3s ease 0s;
+  transition: 0.3s ease 0s;
+}
+
 #cartDetail .emptyCart {
   width: 100%;
   height: 91px;
@@ -3425,5 +3461,99 @@ h1, h2, h3, h4, h5, h6 {
 
 #cartDetail .cartDetailTable table tbody tr td img {
   height: auto;
+}
+
+#contactInform {
+  margin-top: 50px;
+}
+
+#contactInform h5 {
+  font-weight: 500;
+}
+
+#contactInform #informContact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#contactInform #informContact i {
+  font-size: 30px;
+  margin-top: 15px;
+  margin-right: 27px;
+  color: #1E69B8;
+}
+
+#contactInform #informContact ul {
+  padding: 0px;
+}
+
+#contactInform #informContact ul li {
+  list-style: none;
+  font-size: 15px;
+  color: #777;
+}
+
+#contactInform #informContact ul li span {
+  font-size: 15px;
+  color: #777;
+}
+
+#contactInform #informContact span {
+  font-size: 15px;
+  color: #777;
+}
+
+@media only screen and (max-width: 700px) {
+  .inputs {
+    display: block !important;
+  }
+  .text {
+    display: block !important;
+  }
+}
+
+#contactReply {
+  margin-top: 50px;
+}
+
+#contactReply .contactLiveReply input {
+  height: 40px;
+  margin-bottom: 13px;
+  border: 1px solid #F5F5F5;
+}
+
+#contactReply .contactLiveReply textarea {
+  width: 100%;
+  resize: none;
+  height: 146px;
+  border: 1px solid #F5F5F5;
+}
+
+#contactReply .replyBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-top: 20px;
+}
+
+#contactReply .replyBtn a {
+  border: 1px solid #F5F5F5;
+  border-radius: 0px;
+  height: 58px;
+  width: 154px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #1E69B8;
 }
 /*# sourceMappingURL=style.css.map */
