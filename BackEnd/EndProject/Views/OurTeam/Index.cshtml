@@ -1,0 +1,122 @@
+﻿@model IEnumerable<OurTeam  >
+@{
+    ViewData["Title"] = "Index";
+}
+
+    <main>
+        <section id="ourTeamName">
+
+            <div class="container">
+                <div class="row">
+                    <h3>OUR TEAM</h3>
+                </div>
+            </div>
+        </section>
+        <section id="ourTeam">
+            <div class="container">
+                <div class="row">
+                    @foreach (OurTeam worker in Model)
+                    {
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-12 worker">
+                            <a asp-controller="OurTeam" asp-action="Detail" asp-route-id="@worker.Id"><img class="img-fluid" src="~/img/OurTeam/@worker.Image" alt=""></a>
+
+                            <div class="wrokerInformation">
+                                <h4><a asp-controller="OurTeam" asp-action="Detail" asp-route-id="@worker.Id">@worker.Fullname</a></h4>
+                                <span>@worker.Profession</span>
+                                <hr>
+                                <p>
+                                    Primus elite lectus tical at node. Porta commodo terminal forks sande. Nulla novum at
+                                    novelle.
+                                </p>
+                            </div>
+                            <div class="worker-socialMedia">
+                                <ul>
+                                    <li> <a href="@worker.FacebookAddress"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li> <a href="@worker.TwitterAddress"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="@worker.LinkedinAddress"><i class="fab fa-linkedin-in"></i></a></li>
+                                </ul>
+                            </div> 
+                        </div>
+                        
+                    
+                    }
+                </div>
+            </div>
+        </section>
+        <section id="progressbar">
+            <div class="container">
+                <div class="row ">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-12 ">
+                        <h3>OUR SKILLS</h3>
+                        <hr>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                        <div id="bar1" class="barfiller prog">
+                            <span class="tip"></span>
+                            <span class="fill" data-percentage="95"></span>
+                            <p>Tire and Wheel Services</p>
+                        </div>
+                        <div id="bar2" class="barfiller prog">
+                            <span class="tip"></span>
+                            <span class="fill" data-percentage="72"></span>
+                            <p>Lube, Oil and Filters</p>
+                        </div>
+                        <div id="bar3" class="barfiller prog">
+                            <span class="tip"></span>
+                            <span class="fill" data-percentage="60"></span>
+                            <p>Belts and Hoses</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                        <div id="bar4" class="barfiller prog">
+                            <span class="tip"></span>
+                            <span class="fill" data-percentage="92"></span>
+                            <p>Engine Diagnostics</p>
+                        </div>
+                        <div id="bar5" class="barfiller prog">
+                            <span class="tip"></span>
+                            <span class="fill" data-percentage="75"></span>
+                            <p>Brake Repair</p>
+                        </div>
+                        <div id="bar6" class="barfiller prog">
+                            <span class="tip"></span>
+                            <span class="fill" data-percentage="89"></span>
+                            <p>Air Conditioning</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script>
+        $(document).ready(function (){
+            $('#bar1').barfiller({
+                barColor:"#1E69B8",
+                duration:"2000"
+            });
+            $('#bar2').barfiller({
+                barColor:"#1E69B8",
+                duration:"2000"
+            });
+            $('#bar3').barfiller({
+                barColor:"#1E69B8",
+                duration:"2000"
+            });
+            $('#bar4').barfiller({
+                barColor:"#1E69B8",
+                duration:"2000"
+            });
+            $('#bar5').barfiller({
+                barColor:"#1E69B8",
+                duration:"2000"
+            });
+            $('#bar6').barfiller({
+                barColor:"#1E69B8",
+                duration:"2000"
+            });
+        });
+    </script>
+
+

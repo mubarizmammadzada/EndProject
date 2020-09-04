@@ -1,0 +1,75 @@
+﻿@model GalleryVM
+@{
+    ViewData["Title"] = "Detail";
+}
+
+<main>
+    <section id="galleryDetailName">
+        <div class="container">
+            <div class="row">
+                <h3>@Model.Servicee.Name</h3>
+            </div>
+        </div>
+    </section>
+    <section id="galleryDetail">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-6 leftcolumnGallery">
+                    @foreach (ServiceImage image in Model.ServiceImages)
+                    {
+                        <img class="img-fluid" src="~/img/services/@image.Image" alt="">
+                    }
+
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-6 rightcolumnGallery">
+                    <h3>BRIEF DESCRIPTION</h3>
+                    <hr>
+                    <p>
+                       @Model.Servicee.Description
+                    </p>
+                    <h3>AT A GLANCE</h3>
+                    <hr>
+                    <table class="table table-striped">
+                        <tbody>
+                            <tr>
+                                <td>Front Brakes Repair</td>
+                                <td>@Model.Servicee.FrontBrakesRepair</td>
+                            </tr>
+                            <tr>
+                                <td>Rear Brakes Repair	</td>
+                                <td>@Model.Servicee.RearBrakesRepair</td>
+                            </tr>
+                            <tr>
+                                <td>Rear Brake Shoes</td>
+                                <td>@Model.Servicee.RearBrakesShoes</td>
+                            </tr>
+                            <tr>
+                                <td>Axle</td>
+                                <td>@Model.Servicee.Axle</td>
+                            </tr>
+                            <tr>
+                                <td>Starters / Alternators	</td>
+                                <td>@Model.Servicee.StartersAlternators</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h3>SCOPE OF WORK</h3>
+                    <hr>
+                    <p>
+                        We offer full range of garage services to vehicle owners in Tucson. Our professionals know
+                        how to handle a wide range of car services. We can handle any problem on both foreign and
+                        domestic vehicles.
+                    </p>
+                    <ul>
+                        <li><i class="fas fa-check"></i>We make auto repair and maintenance more convenient for you</li>
+                        <li><i class="fas fa-check"></i>We are a friendly, helpful and professional group of people</li>
+                        <li><i class="fas fa-check"></i>Our professionals know how to handle a wide range of car services</li>
+                        <li><i class="fas fa-check"></i>We get the job done right — the first time</li>
+                        <li><i class="fas fa-check"></i>Same day service for most repairs and maintenance</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+

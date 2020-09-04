@@ -1,0 +1,45 @@
+﻿@model GalleryVM
+@{
+    ViewData["Title"] = "Index";
+}
+
+    <main>
+        <section id="galleryName">
+            <div class="container">
+                <div class="row">
+                    <h3>RECENT GALLERIES</h3>
+                </div>
+            </div>
+        </section>
+        <section id="gallery">
+            <div class="container">
+                <div class="row galleryNameList">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                        <ul>
+                            <li data-id="all" class="selected">All</li>
+                            @foreach (ServiceCategory category in @Model.ServiceCategories)
+                            {
+                                <li data-id="@category.Name.ToLower()">@category.Name</li>
+                            }
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="row galleries">
+                    @foreach (Service service in Model.Services)
+                    {
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-12 gallery " data-id="@service.ServiceCategory.Name.ToLower()">
+                            <img class="img-fluid" src="img/services/@service.ServiceImages.FirstOrDefault(s=>s.IsMain==true).Image" alt="">
+                            <div>
+                                <p>@service.Name</p>
+                                <a class="btn btn-primary" asp-controller="Gallery" asp-action="Detail" asp-route-id="@service.Id">READ MORE</a>
+                            </div>
+                        </div>
+                    }
+
+                </div>
+
+            </div>
+            </div>
+        </section>
+    </main>

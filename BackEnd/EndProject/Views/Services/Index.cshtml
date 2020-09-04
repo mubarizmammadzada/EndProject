@@ -1,0 +1,37 @@
+﻿@model IEnumerable<Service>
+@{
+    ViewData["Title"] = "Index";
+}
+
+    <main>
+        <section id="services-word">
+            <div class="container">
+                <div class="row ourServices">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                        <h1>Our Services</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="servicess">
+            <div class="container">
+                <div class="row">
+                    @foreach (Service service in Model)
+                    {
+                        <div class="col-lg-4 col-md-6 col-sm-12 col-12 service-type">
+                            <div>
+                                <a asp-controller="Services" asp-action="Detail" asp-route-id="@service.Id" asp-route-name="@service.Name"><img class="img-fluid service-img" src="~/img/services/@service.ServiceImages.FirstOrDefault(s=>s.IsMain==true).Image "alt=""></a>
+                                <div class="overlay-service"></div>
+                            </div>
+                            <h1><a href="#">@service.Name</a><a href="#"><i class="fas fa-chevron-right"></i></a> </h1>
+
+                        </div>
+                    }
+
+
+                </div>
+            </div>
+        </section>
+    </main>
+
