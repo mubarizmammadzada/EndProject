@@ -14,6 +14,8 @@ namespace EndProject.DAL
         public DbSet<ServiceImage> ServiceImages { get; set; }
         public DbSet<ServiceCategory> ServiceCategories { get; set; }
         public DbSet<OurTeam> OurTeams { get; set; }
+        public DbSet<Blog> Blogs { get; set; }
+        public DbSet<BlogCategory> BlogCategories { get; set; }
 
     }
 }

@@ -1,0 +1,98 @@
+﻿@model BlogVM
+@{
+    ViewData["Title"] = "Detail";
+}
+
+    <main>
+        <section id="blogdetailName">
+            <div class="container">
+                <div class="row">
+                    <h3>@Model.Blog.Name</h3>
+                </div>
+            </div>
+        </section>
+        <section id="blogdetail">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-9 col-md-9 col-sm-12 col-12 blogdetailLeftside">
+                        <a href="#">
+                            <img class="img-fluid" src="~/img/services/@Model.Blog.Image" alt="">
+                        </a>
+                        <div class="blogaboutInform">
+                            <span id="first">@Model.Blog.Date</span>
+                            <span id="last">By @Model.Blog.AuthorName</span>
+                        </div>
+                        <hr>
+                        <h4>@Model.Blog.Name</h4>
+                        <hr class="otherHr">
+                        <p>
+                            @Model.Blog.Description
+                        </p>
+                        <h4>LACUS MODEM ELEMENTUM</h4>
+                        <p>
+                            @Model.Blog.AboutBlog
+                        </p>
+                        <hr>
+                        <h4>LEAVE A REPLY</h4>
+                        <hr class="otherHr" style="width:45px;">
+                        <form action="#" class="form-group ">
+                            <div class="leavReplyBlogDetail">
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                    <input class="forom-control" type="text" placeholder="Your Name*">
+                                    <input class="forom-control" type="text" placeholder="Your Email*">
+                                    <input class="forom-control" type="text" placeholder="Your Website*">
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                    <textarea class="forom-control reply" placeholder="Reply*"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-12 sendmessage">
+                                <a href="#" class="btn btn-primary">SEND MESSAGE</a>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-12 col-12 blogdetailRightside">
+                        <h6>LATEST POST</h6>
+                        <hr>
+                        @foreach (Blog blog in Model.Blogs)
+                        {
+                            <div class="LatestPostBlogDetail">
+
+                                <div class="col-6 ">
+                                    <a class="blogdetailLatespostimg" asp-controller="Blog" asp-action="Detail" asp-route-id="@blog.Id">
+                                        <img class="img-fluid" src="~/img/services/@blog.Image" alt="">
+                                    </a>
+
+                                </div>
+                                <div class="col-6">
+                                    <a asp-controller="Blog" asp-action="Detail" asp-route-id="@blog.Id" class="aboutBlogDetail">
+                                        <span>@blog.Name</span>
+                                    </a>
+
+                                </div>
+                                
+
+                            </div>
+                        }
+
+                            <div class="categoriesBlogdetail">
+                                <h6>CATEGORIES</h6>
+                                <hr>
+                                <ul>
+                                    @foreach (BlogCategory category in Model.BlogCategories)
+                                    {
+                                        <li><a href="#">@category.Name</a></li>
+                                    }
+
+
+                                </ul>
+                            </div>
+                        </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+

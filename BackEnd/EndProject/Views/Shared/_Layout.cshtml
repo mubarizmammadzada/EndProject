@@ -115,56 +115,17 @@
                 <div class="col-lg-8 col-md-8 col-sm-8 col-8 header-nav">
                     <ul id="main-ul">
                         <li id="home" class="main-li">
-                            <a href="~/#">Home</a>
-                            <div id="home-content" class="d-none">
-                                <ul>
-                                    <li><a href="~/#">Home</a></li>
-                                </ul>
-                            </div>
+                            <a asp-controller="Home" asp-action="Index">Home</a>
                         </li>
                         <li id="services" class="main-li">
-                            <a href="~/service.html">Services</a>
-                            <div id="services-content" class="d-none">
-                                <ul>
-                                    <li><a href="~/#">Engine Diagnostics</a></li>
-                                    <hr class="w-100">
-                                    <li><a href="~/#">Lube Oil and Filters</a></li>
-                                    <hr class="w-100">
-                                    <li><a href="~/#">Belts and Hoses</a></li>
-                                    <hr class="w-100">
-                                    <li><a href="~/#">Air Conditioning</a></li>
-                                    <hr class="w-100">
-                                    <li><a href="~/#">Brake Repair</a></li>
-                                    <hr class="w-100">
-                                    <li><a href="~/#">Tire and Wheel Services</a></li>
-                                </ul>
-                            </div>
+                            <a asp-controller="Services" asp-action="index">Services</a>
                         </li>
                         <li id="gallery" class="main-li">
-                            <a href="~/#">Gallery</a>
-                            <div id="gallery-content" class="d-none">
-                                <ul>
-                                    <li><a href="~/#">Engine Diagnostics</a></li>
-                                    <hr class="w-100">
-                                    <li><a href="~/#">Oil Change</a></li>
-                                    <hr class="w-100">
-                                    <li><a href="~/#">Belts and Hoses</a></li>
-                                    <hr class="w-100">
-                                    <li><a href="~/#">Tire Change</a></li>
-                                    <hr class="w-100">
-                                    <li><a href="~/#">Wheel Services</a></li>
-                                    <hr class="w-100">
-                                    <li><a href="~/#">Lube Services</a></li>
-                                    <hr class="w-100">
-                                    <li><a href="~/#">Brake Repair</a></li>
-                                    <hr class="w-100">
-                                    <li><a href="~/#">Other Car Services</a></li>
-                                </ul>
-                            </div>
+                            <a asp-controller="Gallery" asp-action="Index">Gallery</a>
                         </li>
-                        <li class="main-li"><a href="~/#">Our Team</a></li>
+                        <li class="main-li"><a asp-controller="OurTeam" asp-action="Index" >Our Team</a></li>
                         <li id="blog" class="main-li">
-                            <a href="~/#">Blog</a>
+                            <a asp-controller="Blog" asp-action="Index">Blog</a>
                         </li>
                         <li id="shop" class="main-li">
                             <a href="~/#">Shop</a>
@@ -208,58 +169,19 @@
 
                     <ul>
                         <li class="mainLiResponsiveD">
-                            <a href="~/#">Home </a>
+                            <a asp-controller="Home" asp-action="Index">Home </a>
                             <i class="fas fa-angle-down"> <i class="fas fa-angle-up d-none"></i></i>
                         </li>
-                        <div class="responsive pre-ul">
-                            <ul>
-                                <li><a href="~/#">Home</a> </li>
-                            </ul>
-                        </div>
 
                         <li class="mainLiResponsiveD">
-                            <a href="~/#">Services </a>
+                            <a asp-controller="Services" asp-action="Index">Services </a>
                             <i class="fas fa-angle-down"></i> <i class="fas fa-angle-up d-none"></i>
                         </li>
-                        <div class="responsive pre-ul">
-                            <ul>
-                                <li><a href="~/#">Engine Diagnostics</a></li>
-                                <hr class="w-100">
-                                <li><a href="~/#">Lube Oil and Filters</a></li>
-                                <hr class="w-100">
-                                <li><a href="~/#">Belts and Hoses</a></li>
-                                <hr class="w-100">
-                                <li><a href="~/#">Air Conditioning</a></li>
-                                <hr class="w-100">
-                                <li><a href="~/#">Brake Repair</a></li>
-                                <hr class="w-100">
-                                <li><a href="~/#">Tire and Wheel Sevices</a></li>
-                            </ul>
-                        </div>
                         <li class="mainLiResponsiveD">
-                            <a href="~/#">Gallery </a>
+                            <a asp-controller="Gallery" asp-action="Index">Gallery </a>
                             <i class="fas fa-angle-down"></i> <i class="fas fa-angle-up d-none"></i>
                         </li>
-                        <div class="responsive pre-ul">
-                            <ul>
-                                <li><a href="~/#">Engine Diagnostics</a></li>
-                                <hr class="w-100">
-                                <li><a href="~/#">Oil Change</a></li>
-                                <hr class="w-100">
-                                <li><a href="~/#">Belts and Hoses</a></li>
-                                <hr class="w-100">
-                                <li><a href="~/#">Tire Change</a></li>
-                                <hr class="w-100">
-                                <li><a href="~/#">Wheel Services</a></li>
-                                <hr class="w-100">
-                                <li><a href="~/#">Lube Services</a></li>
-                                <hr class="w-100">
-                                <li><a href="~/#">Brake Repair</a></li>
-                                <hr class="w-100">
-                                <li><a href="~/#">Other Car Services</a></li>
-                            </ul>
-                        </div>
-                        <li class="mainLiResponsive"><a href="~/#">Our Team</a></li>
+                        <li class="mainLiResponsive"><a asp-controller="OurTeam" asp-action="Index">Our Team</a></li>
                         <li class="mainLiResponsive"><a href="~/#">Blog</a></li>
                         <li class="mainLiResponsiveD">
                             <a href="~/#">Appointment </a>

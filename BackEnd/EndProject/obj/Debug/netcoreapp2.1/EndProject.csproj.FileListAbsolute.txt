@@ -4,7 +4,6 @@ C:\Users\Admin\Desktop\CarService Backend\EndProject\EndProject\bin\Debug\netcor
 C:\Users\Admin\Desktop\CarService Backend\EndProject\EndProject\bin\Debug\netcoreapp2.1\EndProject.runtimeconfig.dev.json
 C:\Users\Admin\Desktop\CarService Backend\EndProject\EndProject\bin\Debug\netcoreapp2.1\EndProject.dll
 C:\Users\Admin\Desktop\CarService Backend\EndProject\EndProject\bin\Debug\netcoreapp2.1\EndProject.pdb
-C:\Users\Admin\Desktop\CarService Backend\EndProject\EndProject\obj\Debug\netcoreapp2.1\EndProject.csprojAssemblyReference.cache
 C:\Users\Admin\Desktop\CarService Backend\EndProject\EndProject\obj\Debug\netcoreapp2.1\EndProject.RazorAssemblyInfo.cache
 C:\Users\Admin\Desktop\CarService Backend\EndProject\EndProject\obj\Debug\netcoreapp2.1\EndProject.RazorAssemblyInfo.cs
 C:\Users\Admin\Desktop\CarService Backend\EndProject\EndProject\obj\Debug\netcoreapp2.1\EndProject.AssemblyInfoInputs.cache
@@ -31,3 +30,6 @@ C:\Users\Admin\Desktop\CarService Backend\EndProject\EndProject\obj\Debug\netcor
 C:\Users\Admin\Desktop\CarService Backend\EndProject\EndProject\obj\Debug\netcoreapp2.1\Razor\Views\Gallery\Detail.cshtml.g.cs
 C:\Users\Admin\Desktop\CarService Backend\EndProject\EndProject\obj\Debug\netcoreapp2.1\Razor\Views\OurTeam\Index.cshtml.g.cs
 C:\Users\Admin\Desktop\CarService Backend\EndProject\EndProject\obj\Debug\netcoreapp2.1\Razor\Views\OurTeam\Detail.cshtml.g.cs
+C:\Users\Admin\Desktop\CarService Backend\EndProject\EndProject\obj\Debug\netcoreapp2.1\Razor\Views\Blog\Index.cshtml.g.cs
+C:\Users\Admin\Desktop\CarService Backend\EndProject\EndProject\obj\Debug\netcoreapp2.1\EndProject.csprojAssemblyReference.cache
+C:\Users\Admin\Desktop\CarService Backend\EndProject\EndProject\obj\Debug\netcoreapp2.1\Razor\Views\Blog\Detail.cshtml.g.cs
