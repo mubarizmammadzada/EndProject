@@ -33,3 +33,8 @@ C:\Users\Admin\Desktop\CarService Backend\EndProject\EndProject\obj\Debug\netcor
 C:\Users\Admin\Desktop\CarService Backend\EndProject\EndProject\obj\Debug\netcoreapp2.1\Razor\Views\Blog\Index.cshtml.g.cs
 C:\Users\Admin\Desktop\CarService Backend\EndProject\EndProject\obj\Debug\netcoreapp2.1\EndProject.csprojAssemblyReference.cache
 C:\Users\Admin\Desktop\CarService Backend\EndProject\EndProject\obj\Debug\netcoreapp2.1\Razor\Views\Blog\Detail.cshtml.g.cs
+C:\Users\Admin\Desktop\CarService Backend\EndProject\EndProject\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Components\Header\Default.cshtml.g.cs
+C:\Users\Admin\Desktop\CarService Backend\EndProject\EndProject\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Components\Footer\Default.cshtml.g.cs
+C:\Users\Admin\Desktop\CarService Backend\EndProject\EndProject\obj\Debug\netcoreapp2.1\Razor\Views\Contact\Index.cshtml.g.cs
+C:\Users\Admin\Desktop\CarService Backend\EndProject\EndProject\obj\Debug\netcoreapp2.1\Razor\Views\Shop\Index.cshtml.g.cs
+C:\Users\Admin\Desktop\CarService Backend\EndProject\EndProject\obj\Debug\netcoreapp2.1\Razor\Views\Shop\Detail.cshtml.g.cs

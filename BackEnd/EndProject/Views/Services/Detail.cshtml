@@ -9,23 +9,8 @@
         
             <div class="container">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-12">
-                    <div class="row namme" data-id="1">
-                        <h3>ENGINE DIAGNOSTICS</h3>
-                    </div>
-                    <div class="row d-none namme" data-id="2">
-                        <h3 asp>LUBE, OIL AND FILTERS</h3>
-                    </div>
-                    <div class="row d-none namme" data-id="3">
-                        <h3>BELTS AND HOSES</h3>
-                    </div>
-                    <div class="row d-none namme" data-id="4">
-                        <h3>AIR CONDITIONING</h3>
-                    </div>
-                    <div class="row d-none namme" data-id="5">
-                        <h3>BRAKE REPAIR</h3>
-                    </div>
-                    <div class="row d-none namme" data-id="6">
-                        <h3>TIRE AND WHEEL SERVICES</h3>
+                    <div class="row namme" data-id="@Model.Servicee.Id">
+                        <h3>@Model.Servicee.Name</h3>
                     </div>
                 </div>
 
@@ -40,7 +25,7 @@
                         {
                             if (Model.Services[0] == service)
                             {
-                                <a asp-controller="Services" >
+                                <a asp-controller="Services" asp-action="Detail" asp-route-id="@service.Id" >
                                     <li class="selected" data-id="@service.Id">
                                         @service.Name <i class="fas fa-chevron-right"></i>
                                     </li>
@@ -50,7 +35,7 @@
                             }
                             else
                             {
-                                <a asp-controller="Services">
+                                <a asp-controller="Services" asp-action="Detail" asp-route-id="@service.Id">
                                     <li data-id="@service.Id">
                                         @service.Name <i class="fas fa-chevron-right"></i>
                                     </li>

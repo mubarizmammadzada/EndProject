@@ -1,0 +1,147 @@
+﻿@model ProductVM
+@{
+    ViewData["Title"] = "Index";
+}
+
+    <main>
+        <section id="shopName">
+            <div class="container">
+                <div class="row">
+                    <h3>SHOP</h3>
+                </div>
+            </div>
+        </section>
+        <section id="shoppingElements">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-9 shopLeftSide">
+                        @foreach (Product product in Model.Products)
+                        {
+                            <div class="col-lg-4 col-md-6 col-sm-12 col-12 shoppingElement">
+                                <a asp-controller="Shop" asp-action="Detail" asp-route-id="@product.Id"> <img class="img-fluid" src="~/img/shop/@product.ProductImages.FirstOrDefault(p=>p.IsMain==true).Image" alt=""></a>
+                                <a asp-controller="Shop" asp-action="Detail" asp-route-id="@product.Id">
+                                    <h4>@product.Name</h4>
+                                </a>
+                                <p>$@product.Price.00</p>
+                                <a href="#" class="btn btn-primary addToCart">ADD TO CART</a>
+
+                            </div>
+                        }
+
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-12 col-12 ShopRightSide">
+                        <div class="shopCategories">
+                            <h6>PRODUCT CATEGORIES</h6>
+                            <hr>
+                            <ul>
+                                @foreach (ProductCategory category in Model.ProductCategories)
+                                {
+                                    <li><a href="#">@category.Name</a></li>
+                                }
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-9 col-md-9 col-sm-12 col-12 shopPagination">
+                        <ul>
+                            <li><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                        </ul>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+        <section id="shoppingElementsResponsive">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-9 shopLeftSide">
+                        <div class="col-lg-4 col-md-6 col-sm-12 col-12 shoppingElement">
+                            <div class="image">
+                                <a href="#"> <img class="img-fluid" src="img/shop/hoodie_3_front.jpg" alt=""></a>
+                            </div>
+                            <a href="#">
+                                <h4>FLYING NINJA</h4>
+                            </a>
+                            <p>$12.00</p>
+                            <a href="#" class="btn btn-primary addToCart">ADD TO CART</a>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 col-12 shoppingElement">
+                            <div class="image">
+                                <a href="#"> <img class="img-fluid" src="img/shop/hoodie_4_front.jpg" alt=""></a>
+                            </div>
+                            <a href="#">
+                                <h4>FLYING NINJA</h4>
+                            </a>
+                            <p>$12.00</p>
+                            <a href="#" class="btn btn-primary addToCart">ADD TO CART</a>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 col-12 shoppingElement">
+                            <div class="image">
+                                <a href="#"> <img class="img-fluid" src="img/shop/hoodie_5_front.jpg" alt=""></a>
+                            </div>
+                            <a href="#">
+                                <h4>FLYING NINJA</h4>
+                            </a>
+                            <p>$12.00</p>
+                            <a href="#" class="btn btn-primary addToCart">ADD TO CART</a>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 col-12 shoppingElement">
+                            <div class="image">
+                                <a href="#"> <img class="img-fluid" src="img/shop/poster_2_up.jpg" alt=""></a>
+                            </div>
+                            <a href="#">
+                                <h4>FLYING NINJA</h4>
+                            </a>
+                            <p>$12.00</p>
+                            <a href="#" class="btn btn-primary addToCart">ADD TO CART</a>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 col-12 shoppingElement">
+                            <div class="image">
+                                <a href="#"> <img class="img-fluid" src="img/shop/T_5_front.jpg" alt=""></a>
+                            </div>
+                            <a href="#">
+                                <h4>FLYING NINJA</h4>
+                            </a>
+                            <p>$12.00</p>
+                            <a href="#" class="btn btn-primary addToCart">ADD TO CART</a>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 col-12 shoppingElement   ">
+                            <div class="image">
+                                <a href="#"> <img class="img-fluid" src="img/shop/T_7_front.jpg" alt=""></a>
+                            </div>
+                            <a href="#">
+                                <h4>FLYING NINJA</h4>
+                            </a>
+                            <p>$12.00</p>
+                            <a href="#" class="btn btn-primary addToCart">ADD TO CART</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-9 col-md-9 col-sm-12 col-12 shopPagination">
+                        <ul>
+                            <li><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-12 col-sm-12 col-12 ShopRightSide">
+                        <div class="shopCategories">
+                            <h6>PRODUCT CATEGORIES</h6>
+                            <hr>
+                            <ul>
+                                <li><a href="#">ALBUMS</a></li>
+                                <li><a href="#">CLOTHING</a></li>
+                                <li><a href="#">HOODIES</a></li>
+                                <li><a href="#">MUSIC</a></li>
+                                <li><a href="#">POSTERS</a></li>
+                                <li><a href="#">SINGLES</a></li>
+                                <li><a href="#">T-SHIRTS</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>

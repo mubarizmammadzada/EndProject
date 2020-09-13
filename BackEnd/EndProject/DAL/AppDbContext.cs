@@ -16,6 +16,10 @@ namespace EndProject.DAL
         public DbSet<OurTeam> OurTeams { get; set; }
         public DbSet<Blog> Blogs { get; set; }
         public DbSet<BlogCategory> BlogCategories { get; set; }
-
+        public DbSet<Bio> Bio { get; set; }
+        public DbSet<Product> Products { get; set; }
+        public DbSet<ProductCategory> ProductCategories { get; set; }
+        public DbSet<ProductImage> ProductImages { get; set; }
+        public DbSet<Slider> Sliders { get; set; }
     }
 }

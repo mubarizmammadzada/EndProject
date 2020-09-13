@@ -2832,6 +2832,10 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 15px;
 }
 
+#shopDetail .leftSideShopDetail .imagesShopDetail .downImgShopDetail img {
+  height: 212px;
+}
+
 #shopDetail .leftSideShopDetail .imagesShopDetail .second {
   position: relative;
   left: 15px;
@@ -3086,6 +3090,10 @@ h1, h2, h3, h4, h5, h6 {
   padding-left: 0px;
   cursor: pointer;
   margin-top: 15px;
+}
+
+#shopDetailResponsive .leftSideShopDetail .imagesShopDetail .downImgShopDetail img {
+  height: 212px;
 }
 
 #shopDetailResponsive .leftSideShopDetail .imagesShopDetail .second {

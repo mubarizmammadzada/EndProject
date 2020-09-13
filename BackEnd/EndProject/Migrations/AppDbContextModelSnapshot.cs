@@ -18,6 +18,41 @@ namespace EndProject.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+            modelBuilder.Entity("EndProject.Models.Bio", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Address")
+                        .IsRequired();
+
+                    b.Property<string>("AsistancePhoneNumber")
+                        .IsRequired();
+
+                    b.Property<string>("Email")
+                        .IsRequired();
+
+                    b.Property<string>("FacebookAddress")
+                        .IsRequired();
+
+                    b.Property<string>("LinkedinAddress")
+                        .IsRequired();
+
+                    b.Property<string>("PhoneNumber")
+                        .IsRequired();
+
+                    b.Property<string>("PinterestAddress")
+                        .IsRequired();
+
+                    b.Property<string>("TwitterAddress")
+                        .IsRequired();
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Bio");
+                });
+
             modelBuilder.Entity("EndProject.Models.Blog", b =>
                 {
                     b.Property<int>("Id")
@@ -121,6 +156,65 @@ namespace EndProject.Migrations
                     b.ToTable("OurTeams");
                 });
 
+            modelBuilder.Entity("EndProject.Models.Product", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("About")
+                        .IsRequired();
+
+                    b.Property<int>("Count");
+
+                    b.Property<string>("Name")
+                        .IsRequired();
+
+                    b.Property<int>("Price");
+
+                    b.Property<int>("ProductCategoryId");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ProductCategoryId");
+
+                    b.ToTable("Products");
+                });
+
+            modelBuilder.Entity("EndProject.Models.ProductCategory", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Name")
+                        .IsRequired();
+
+                    b.HasKey("Id");
+
+                    b.ToTable("ProductCategories");
+                });
+
+            modelBuilder.Entity("EndProject.Models.ProductImage", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Image")
+                        .IsRequired();
+
+                    b.Property<bool>("IsMain");
+
+                    b.Property<int>("ProductId");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ProductId");
+
+                    b.ToTable("ProductImages");
+                });
+
             modelBuilder.Entity("EndProject.Models.Service", b =>
                 {
                     b.Property<int>("Id")
@@ -191,11 +285,40 @@ namespace EndProject.Migrations
                     b.ToTable("ServiceImages");
                 });
 
+            modelBuilder.Entity("EndProject.Models.Slider", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Image");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Sliders");
+                });
+
             modelBuilder.Entity("EndProject.Models.Blog", b =>
                 {
                     b.HasOne("EndProject.Models.BlogCategory", "BlogCategory")
                         .WithMany("Blog")
                         .HasForeignKey("BlogCategoryId")
+                        .OnDelete(DeleteBehavior.Cascade);
+                });
+
+            modelBuilder.Entity("EndProject.Models.Product", b =>
+                {
+                    b.HasOne("EndProject.Models.ProductCategory", "ProductCategory")
+                        .WithMany("Products")
+                        .HasForeignKey("ProductCategoryId")
+                        .OnDelete(DeleteBehavior.Cascade);
+                });
+
+            modelBuilder.Entity("EndProject.Models.ProductImage", b =>
+                {
+                    b.HasOne("EndProject.Models.Product", "Product")
+                        .WithMany("ProductImages")
+                        .HasForeignKey("ProductId")
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 

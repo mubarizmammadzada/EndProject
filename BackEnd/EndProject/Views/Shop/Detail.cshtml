@@ -1,0 +1,182 @@
+﻿@model ProductVM
+@{
+    ViewData["Title"] = "Detail";
+}
+
+<main>
+    <section id="shopDetailName">
+        <div class="container">
+            <div class="row">
+                <h3>FLYING NINJA</h3>
+            </div>
+        </div>
+    </section>
+    <section id="shopDetail">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9 col-md-12 col-sm-12 col-12 leftSideShopDetail">
+                    <div class="col-lg-7 col-md-12 col-sm-12 col-12 imagesShopDetail">
+                        <img class="img-fluid" src="~/img/shop/@Model.ProductImages.FirstOrDefault(p=>p.IsMain==true).Image" alt="">
+
+                        <div class="col-6 downImgShopDetail">
+                            <img class="img-fluid" src="~/img/shop/@Model.ProductImages.FirstOrDefault(p=>p.IsMain==true).Image" alt="">
+                        </div>
+                        <div class="col-6 downImgShopDetail">
+                            <img class="img-fluid" src="~/img/shop/@Model.ProductImages.FirstOrDefault(p=>p.IsMain==false).Image" alt="">
+                        </div>
+
+
+                    </div>
+                    <div class="col-lg-5 col-md-12 col-sm-12 col-12 shoppingElementAbout" data-id="10">
+                        <h3>@Model.Productt.Name</h3>
+                        <p id="elementPrice">$@Model.Productt.Price.00</p>
+                        <hr>
+                        <p>
+                            @Model.Productt.About
+                        </p>
+                        <hr>
+                        <ul>
+                            <li><i class="fas fa-minus minus"></i></li>
+                            <li id="liCount">0</li>
+                            <li><i class="fas fa-plus plus"></i></li>
+                        </ul>
+
+                        <a href="#" class="btn btn-primary addToCartDetail" style="float: left;">ADD TO CART</a>
+
+
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-12 col-sm-12 col-12 shoipDetailRightSide">
+                    <h6>PRODUCT CATEGORIES</h6>
+                    <hr>
+                    <ul>
+                        @foreach (ProductCategory category in @Model.ProductCategories)
+                        {
+                            <li><a href="#">@category.Name</a></li>
+                        }
+
+                    </ul>
+
+                </div>
+                <div class="col-lg-9 col-md-12 col-sm-12 col-12 shopDetailRelatedElements">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                        <h3>RELATED PRODUCTS</h3>
+                        <hr>
+                        @foreach (Product product in Model.Products)
+                        {
+                            <div class="col-lg-4 col-md-6 col-sm-12 col-12 relatedElement" data-id="7">
+                                <a href="#"><img class="img-fluid" src="~/img/shop/@product.ProductImages.FirstOrDefault(p=>p.IsMain==true).Image" alt=""></a>
+                                <a href="#" class="relatedelementName w-100">
+                                    <h4>@product.Name</h4>
+                                </a>
+                                <hr>
+                                <p>$@product.Price.00</p>
+                                <a href="#" class="btn btn-primary addToCart">ADD TO CART</a>
+
+                            </div>
+                        }
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section id="shopDetailResponsive">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9 col-md-12 col-sm-12 col-12 leftSideShopDetail">
+                    <div class="col-lg-7 col-md-7 col-sm-12 col-12 imagesShopDetail">
+                        <img class="img-fluid" src="img/shop/poster_2_up.jpg" alt="">
+                        <div class="col-6 downImgShopDetail">
+                            <img class="img-fluid" src="img/shop/hoodie_3_front.jpg" alt="">
+                        </div>
+                        <div class="col-6 downImgShopDetail second">
+                            <img class="img-fluid" src="img/shop/poster_2_up.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-5 col-sm-12 col-12 shoppingElementAbout">
+                        <h3>FLYING NINJA</h3>
+                        <p id="elementPrice">$12.00</p>
+                        <hr>
+                        <p>
+                            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
+                            egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.
+                            Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris
+                            placerat eleifend leo.
+                        </p>
+                        <hr>
+                        <div id="elementCount">
+                            <ul>
+                                <li><i class="fas fa-minus minus"></i></li>
+                                <li id="liCount">0</li>
+                                <li><i class="fas fa-plus plus"></i></li>
+                            </ul>
+
+                            <a href="#" class="btn btn-primary">ADD TO CART</a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-9 col-md-12 col-sm-12 col-12 shopDetailRelatedElements">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                        <h3>RELATED PRODUCTS</h3>
+                        <hr>
+                        <div class="col-lg-4 col-md-6 col-sm-12 col-12 relatedElement">
+                            <a href="#"><img class="img-fluid" src="img/shop/poster_1_up.jpg" alt=""></a>
+                            <a href="#" class="relatedelementName">
+                                <h4>SHIP YOUR IDEA</h4>
+                            </a>
+                            <hr>
+                            <p>$15.00</p>
+                            <a href="#" class="btn btn-primary relatedAddCart">ADD TO CART</a>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 col-12 relatedElement">
+                            <a href="#"><img class="img-fluid" src="img/shop/poster_2_up.jpg" alt=""></a>
+                            <a href="#" class="relatedelementName">
+                                <h4>SHIP YOUR IDEA</h4>
+                            </a>
+                            <hr>
+                            <p>$15.00</p>
+                            <a href="#" class="btn btn-primary relatedAddCart">ADD TO CART</a>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 col-12 relatedElement">
+                            <a href="#"><img class="img-fluid" src="img/shop/poster_3_up.jpg" alt=""></a>
+                            <a href="#" class="relatedelementName">
+                                <h4>SHIP YOUR IDEA</h4>
+                            </a>
+                            <hr>
+                            <p>$15.00</p>
+                            <a href="#" class="btn btn-primary relatedAddCart">ADD TO CART</a>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 col-12 relatedElement">
+                            <a href="#"><img class="img-fluid" src="img/shop//poster_4_up.jpg" alt=""></a>
+                            <a href="#" class="relatedelementName">
+                                <h4>SHIP YOUR IDEA</h4>
+                            </a>
+                            <hr>
+                            <p>$15.00</p>
+                            <a href="#" class="btn btn-primary relatedAddCart">ADD TO CART</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-12 col-12 shoipDetailRightSide">
+                    <h6>PRODUCT CATEGORIES</h6>
+                    <hr>
+                    <ul>
+                        <li><a href="#">ALBUMS</a></li>
+                        <li><a href="#">CLOTHING</a></li>
+                        <li><a href="#">HOODIES</a></li>
+                        <li><a href="#">MUSIC</a></li>
+                        <li><a href="#">POSTERS</a></li>
+                        <li><a href="#">SINGLES</a></li>
+                        <li><a href="#">T-SHIRTS</a></li>
+                    </ul>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+</main>

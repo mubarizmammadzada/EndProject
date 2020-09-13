@@ -1115,106 +1115,89 @@ p{
         font-weight: 400;
     }
 }
-#sevicedetails {
-    .servicesNamesList {
-        .selected {
-            background-color: #1E69B8;
+#sevicedetails{
+    .servicesNamesList{
+        .selected{
+            background-color:#1E69B8 ;
             color: white;
         }
-
-        ul {
+        ul{
             padding: 0px;
-
-            a {
-                text-decoration:none;
-                li {
-                    list-style: none;
-                    display: flex;
-                    justify-content: space-between;
-                    background: transparent;
-                    border-bottom: 1px solid #E2E6E7;
-                    padding: 17px 18px 18px 19px;
-                    line-height: 24px;
+            li{
+                list-style: none;
+                display: flex;
+                justify-content: space-between;
+                background: transparent;
+                border-bottom: 1px solid #E2E6E7;
+                padding: 17px 18px 18px 19px;
+                line-height: 24px;
+                color: #777;
+                cursor: pointer;
+                i{
                     color: #777;
                     cursor: pointer;
-
-                    i {
-                        color: #777;
-                        cursor: pointer;
-                        color: #777;
-                        cursor: pointer;
-                        margin-top: 2px;
-                        font-size: 20px;
-                    }
+                    color: #777;
+                    cursor: pointer;
+                    margin-top: 2px;
+                    font-size: 20px;
                 }
             }
-
-            hr {
+            hr{
                 margin: 0px;
             }
         }
     }
+    .serviceDetails{
+        .servicesImages{
 
-    .serviceDetails {
-        .servicesImages {
-
-            img {
+            img{
                 transition: 0.7s;
-
-                &:hover {
+                &:hover{
                     opacity: 0.7;
                     transition: 0.7s;
                 }
             }
         }
-
-        .serviceDetailOverView {
+        .serviceDetailOverView{
             margin-top: 50px;
-
-            h3 {
+            h3{
                 font-size: 22px;
                 line-height: 34px;
                 font-weight: 400;
             }
-
-            hr {
+            hr{
                 margin: 0px;
                 margin-bottom: 25px;
                 width: 60px;
                 height: 2px;
                 background: #1E69B8;
+               
             }
-
-            p {
+            p{
                 font-weight: 400;
                 line-height: 26px;
                 margin-top: 24px;
                 padding: 0;
             }
         }
-
-        .serviceDetailPricing {
+        .serviceDetailPricing{
             margin-top: 40px;
-
-            h3 {
+            h3{
                 font-size: 22px;
                 line-height: 34px;
                 font-weight: 400;
             }
-
-            hr {
+            hr{
                 margin: 0px;
                 margin-bottom: 30px;
                 width: 79px;
                 height: 2px;
                 background: #1E69B8;
             }
-
-            table {
+            table{
                 width: 100%;
-
-                tr {
-                    .name {
+                tr{
+                    .name{
                         font-weight: 500;
                         padding: 18px 30px;
                         font-size: 14px;
@@ -1222,8 +1205,7 @@ p{
                         text-align: right;
                         border-left: none;
                     }
-
-                    .value {
+                    .value{
                         font-weight: 500;
                         padding: 18px 30px;
                         font-size: 14px;
@@ -1232,63 +1214,55 @@ p{
                     }
                 }
             }
+            
         }
-
-        .serviceDetailDropDown-WhyCooshe {
+        .serviceDetailDropDown-WhyCooshe{
             margin-top: 40px;
             display: flex;
-
-            .serviceWhyCooshe {
-                h3 {
+            .serviceWhyCooshe{
+                h3{
                     font-size: 24px;
                     font-weight: 400;
                 }
-
-                hr {
+                hr{
+                    
                     margin: 0px;
                     margin-bottom: 30px;
                     width: 59px;
                     height: 1px;
                     background-color: #1E69B8;
                 }
-
-                p {
+                p{
                     font-size: 15px;
                     font-weight: 400;
                 }
-
-                ul {
+                ul{
                     padding: 0px;
-
-                    li {
+                    li{
                         list-style: none;
                         color: #777;
-
-                        i {
+                        i{
                             color: #1E69B8;
                         }
                     }
                 }
             }
-
-            .serviceDetailDropDown {
-                .question {
-                    .header-question {
+            .serviceDetailDropDown{
+                .question{
+                    .header-question{
                         border-width: thin !important;
                         border: 1px solid;
                         height: 46px;
                         display: flex;
                         align-items: center;
-
-                        i {
+                        i{
                             float: left;
                             margin-right: 20px;
                             font-size: 24px;
                             color: #1E69B8;
                             text-indent: 0;
                         }
-
-                        span {
+                        span{
                             cursor: pointer;
                             font-weight: 300;
                             font-size: 18px;
@@ -1297,9 +1271,8 @@ p{
                             line-height: 28px;
                         }
                     }
-
-                    .body-question {
-                        .body-text {
+                    .body-question{
+                        .body-text{
                             border-width: thin !important;
                             border: 1px solid;
                             border-top: none;
@@ -1307,8 +1280,10 @@ p{
                     }
                 }
             }
+
         }
     }
+    
 }
 #galleryName{
     background-color: #F5F5F5;
@@ -1407,50 +1382,60 @@ p{
         line-height: 34px;
     }
 }
-#galleryDetail {
+#galleryDetail{
     margin-top: 60px;
+    .leftcolumnGallery{
+        img{
+        }
+        div{
+            margin-top: 15px;
+            margin-bottom: 15px ;
+            &:first-child{
+                padding-left: 0;
+            }
+            &:last-child{
+                padding-right: 0;
+            }
+            display: flex;
+            justify-content: space-between;
+            img{
 
-    .leftcolumnGallery {
-        img {
-            margin-bottom: 25px;
+            }
         }
     }
+    .rightcolumnGallery{
 
-    .rightcolumnGallery {
-
-        h3 {
+        h3{
             font-size: 22px;
             line-height: 34px;
             font-weight: 400;
         }
-
-        hr {
+        hr{
             margin: 0;
             width: 69px;
             height: 2px;
-            background: #1E69B8;
+            background:#1E69B8;
             margin-bottom: 30px;
         }
-
-        p {
+        p{
             margin-top: 25px;
             font-size: 15px;
             font-weight: 400;
         }
-
-        ul {
+        ul{
             padding: 0px;
-
-            li {
+            li{
                 list-style: none;
-
-                i {
+                i{
                     margin-right: 14px;
-                    color: #1E69B8;
+                    color:#1E69B8;
                 }
             }
         }
     }
+        
+    
+
 }
 
 #ourTeamName{
@@ -1821,7 +1806,6 @@ p{
         ul{
             display: flex;
             padding: 0px;
-            
             li{
                 list-style: none;   
                 border: 1px solid #F5F5F5;
@@ -2418,7 +2402,7 @@ p{
                 cursor: pointer;
                 margin-top: 15px;
                 img{
-                    
+                    height: 212px;
                 }
             }
             .second{
@@ -2625,7 +2609,7 @@ p{
                 cursor: pointer;
                 margin-top: 15px;
                 img{
-                    
+                    height: 212px;
                 }
             }
             .second{
