@@ -38,3 +38,4 @@ C:\Users\Admin\Desktop\CarService Backend\EndProject\EndProject\obj\Debug\netcor
 C:\Users\Admin\Desktop\CarService Backend\EndProject\EndProject\obj\Debug\netcoreapp2.1\Razor\Views\Contact\Index.cshtml.g.cs
 C:\Users\Admin\Desktop\CarService Backend\EndProject\EndProject\obj\Debug\netcoreapp2.1\Razor\Views\Shop\Index.cshtml.g.cs
 C:\Users\Admin\Desktop\CarService Backend\EndProject\EndProject\obj\Debug\netcoreapp2.1\Razor\Views\Shop\Detail.cshtml.g.cs
+C:\Users\Admin\Desktop\CarService Backend\EndProject\EndProject\obj\Debug\netcoreapp2.1\Razor\Views\Shop\Buy.cshtml.g.cs

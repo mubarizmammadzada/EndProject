@@ -14,11 +14,12 @@ namespace EndProject.Models
         [Required]
         public string About { get; set; }
         [Required]
-        public int Price { get; set; }
+        public decimal Price { get; set; }
         [Required]
         public int Count { get; set; }
         public int ProductCategoryId { get; set; }
         public ProductCategory ProductCategory { get; set; }
         public ICollection<ProductImage> ProductImages { get; set; }
+        public ICollection<SaleProduct> SaleProducts { get; set; }
     }
 }

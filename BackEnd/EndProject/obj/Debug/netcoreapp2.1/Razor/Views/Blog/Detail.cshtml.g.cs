@@ -89,7 +89,7 @@ using EndProject.ViewModels;
                             ");
             EndContext();
             BeginContext(555, 69, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "232c64675a5f46cdb584169f2b13d460", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "80fc8b3c02b94a6a80ffc80b5b0b3eb0", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -166,7 +166,7 @@ AddHtmlAttributeValue("", 598, Model.Blog.Image, 598, 17, false);
             WriteLiteral("\r\n                        </p>\r\n                        <hr>\r\n                        <h4>LEAVE A REPLY</h4>\r\n                        <hr class=\"otherHr\" style=\"width:45px;\">\r\n                        ");
             EndContext();
             BeginContext(1464, 1053, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "df0fc38004014e0783dfae8fdc2537ca", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f07d98988c8b47aa8b4f81df3d9cf929", async() => {
                 BeginContext(1501, 1009, true);
                 WriteLiteral(@"
                             <div class=""leavReplyBlogDetail"">
@@ -214,12 +214,12 @@ AddHtmlAttributeValue("", 598, Model.Blog.Image, 598, 17, false);
             WriteLiteral("                            <div class=\"LatestPostBlogDetail\">\r\n\r\n                                <div class=\"col-6 \">\r\n                                    ");
             EndContext();
             BeginContext(2957, 247, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "deb3885528b542b094dfcdba0e37315a", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "33704c00efcb451baa73769f166518fb", async() => {
                 BeginContext(3057, 42, true);
                 WriteLiteral("\r\n                                        ");
                 EndContext();
                 BeginContext(3099, 63, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "dda1d7df7ac446eebf0b375cdaee078d", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "b9356c437b88442696f1ffa8fbb7409a", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -279,7 +279,7 @@ AddHtmlAttributeValue("", 3142, blog.Image, 3142, 11, false);
             WriteLiteral("\r\n\r\n                                </div>\r\n                                <div class=\"col-6\">\r\n                                    ");
             EndContext();
             BeginContext(3337, 200, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c3bb38caaf18485f880e1ed82366edfa", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "676f1190f29f428ba7a4ed6f2de7dd5b", async() => {
                 BeginContext(3430, 48, true);
                 WriteLiteral("\r\n                                        <span>");
                 EndContext();

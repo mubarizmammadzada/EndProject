@@ -4,14 +4,16 @@ using EndProject.DAL;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace EndProject.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20200914220121_CreateSaleAndSaleProductTable")]
+    partial class CreateSaleAndSaleProductTable
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -171,7 +173,7 @@ namespace EndProject.Migrations
                     b.Property<string>("Name")
                         .IsRequired();
 
-                    b.Property<decimal>("Price");
+                    b.Property<int>("Price");
 
                     b.Property<int>("ProductCategoryId");
 
@@ -232,7 +234,9 @@ namespace EndProject.Migrations
                         .IsRequired()
                         .HasMaxLength(50);
 
-                    b.Property<decimal>("Total");
+                    b.Property<string>("ProductName");
+
+                    b.Property<int>("Total");
 
                     b.HasKey("Id");
 
@@ -247,7 +251,7 @@ namespace EndProject.Migrations
 
                     b.Property<int>("Count");
 
-                    b.Property<decimal>("Price");
+                    b.Property<int>("Price");
 
                     b.Property<int>("ProductId");
 
