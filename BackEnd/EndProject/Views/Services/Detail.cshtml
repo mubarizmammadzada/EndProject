@@ -23,17 +23,16 @@
                     <ul>
                         @foreach (Service service in Model.Services)
                         {
-                            if (Model.Services[0] == service)
+                            if (ViewContext.RouteData.Values["id"].ToString() == service.Id.ToString())
                             {
-                                <a asp-controller="Services" asp-action="Detail" asp-route-id="@service.Id" >
+                                <a asp-controller="Services" asp-action="Detail" asp-route-id="@service.Id">
                                     <li class="selected" data-id="@service.Id">
                                         @service.Name <i class="fas fa-chevron-right"></i>
                                     </li>
                                 </a>
-                                
+
                                 <hr>
-                            }
-                            else
+                            }else
                             {
                                 <a asp-controller="Services" asp-action="Detail" asp-route-id="@service.Id">
                                     <li data-id="@service.Id">

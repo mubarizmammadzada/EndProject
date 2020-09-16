@@ -88,12 +88,12 @@ using EndProject.ViewModels;
             WriteLiteral("                            <div class=\"col-lg-4 col-md-6 col-sm-12 col-12 shoppingElement\">\r\n                                ");
             EndContext();
             BeginContext(670, 187, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "be6d90fd07c24055a8a0443352ee544c", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5ed0de3f91cd4777896c563b2c3fd455", async() => {
                 BeginContext(742, 1, true);
                 WriteLiteral(" ");
                 EndContext();
                 BeginContext(743, 110, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "af938abe431b4bd99a4d1ce5e8aaa999", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "31788981791a4c42888630a3ec3f781c", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -149,7 +149,7 @@ AddHtmlAttributeValue("", 782, product.ProductImages.FirstOrDefault(p=>p.IsMain=
             WriteLiteral("\r\n                                ");
             EndContext();
             BeginContext(891, 170, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1ae6cbc485c54a68bd0e08243045b8fd", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "624f6a457b2d408b9c3e9cbe879ee92f", async() => {
                 BeginContext(963, 42, true);
                 WriteLiteral("\r\n                                    <h4>");
                 EndContext();
@@ -206,7 +206,7 @@ AddHtmlAttributeValue("", 782, product.ProductImages.FirstOrDefault(p=>p.IsMain=
             WriteLiteral("</p>\r\n                                ");
             EndContext();
             BeginContext(1151, 177, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f852c7f91b5c4c4d807786cdf3706e02", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5880db67516e4d7d8806266896b47ef8", async() => {
                 BeginContext(1313, 11, true);
                 WriteLiteral("ADD TO CART");
                 EndContext();

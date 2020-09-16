@@ -2825,6 +2825,10 @@ h1, h2, h3, h4, h5, h6 {
   float: left;
 }
 
+#shopDetail .leftSideShopDetail .imagesShopDetail img {
+  width: 100%;
+}
+
 #shopDetail .leftSideShopDetail .imagesShopDetail .downImgShopDetail {
   float: left;
   padding-left: 0px;
@@ -3563,5 +3567,109 @@ h1, h2, h3, h4, h5, h6 {
       -ms-flex-align: center;
           align-items: center;
   background-color: #1E69B8;
+}
+
+#loginWord {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #F5F5F5;
+  height: 96px;
+}
+
+#login {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#login .login-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#login .login-form form {
+  width: 50%;
+}
+
+#login .login-form form input {
+  width: 100%;
+  margin-top: 15px;
+}
+
+#login .login-form form button {
+  border: 1px solid #f5f5f5;
+  border-radius: 0px;
+  width: 120px;
+  height: 47px;
+  margin-top: 16px;
+  background-color: transparent;
+  color: #333;
+  -webkit-transition: 0.3s ease 0s;
+  transition: 0.3s ease 0s;
+  float: right;
+}
+
+#login .login-form form button:hover {
+  background-color: #1E69B8;
+  color: white;
+  -webkit-transition: 0.3s ease 0s;
+  transition: 0.3s ease 0s;
+}
+
+#registerWord {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #F5F5F5;
+  height: 96px;
+}
+
+#register .registerForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+#register .registerForm form {
+  width: 50%;
+}
+
+#register .registerForm form input {
+  width: 100%;
+  margin-top: 15px;
+}
+
+#register .registerForm form button {
+  border: 1px solid #f5f5f5;
+  border-radius: 0px;
+  width: 120px;
+  height: 47px;
+  margin-top: 16px;
+  background-color: transparent;
+  color: #333;
+  -webkit-transition: 0.3s ease 0s;
+  transition: 0.3s ease 0s;
+  float: right;
+}
+
+#register .registerForm form button:hover {
+  background-color: #1E69B8;
+  color: white;
+  -webkit-transition: 0.3s ease 0s;
+  transition: 0.3s ease 0s;
 }
 /*# sourceMappingURL=style.css.map */

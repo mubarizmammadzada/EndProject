@@ -142,7 +142,7 @@ using EndProject.ViewModels;
             WriteLiteral("\r\n                    </li>\r\n                    <li>\r\n                        <span>E-mail:</span>");
             EndContext();
             BeginContext(1631, 30, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "bdfbb44847cd4addb5ce41c76bf10299", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6864980215b340cdbc1861bcb25b3170", async() => {
                 BeginContext(1646, 11, false);
 #line 45 "C:\Users\Admin\Desktop\CarService Backend\EndProject\EndProject\Views\Shared\Components\Footer\Default.cshtml"
                                                      Write(Model.Email);

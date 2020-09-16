@@ -2394,7 +2394,7 @@ p{
         .imagesShopDetail{
             float: left;
             img{
-    
+                width: 100%;
             }
             .downImgShopDetail{
                 float: left;
@@ -2974,3 +2974,85 @@ p{
         }
     }
 }
+#loginWord{
+    display: flex;
+    align-items: center;
+    background-color: #F5F5F5;
+    height: 96px;
+    h3{
+
+    }
+}
+#login{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    .login-form{
+        display: flex;
+        justify-content: center;
+        form{
+            width: 50%;
+            input{
+                width: 100%;
+                margin-top: 15px;
+            }
+            button{
+                border: 1px solid #f5f5f5;
+                border-radius: 0px;
+                width: 120px;
+                height: 47px;
+                margin-top: 16px;
+                background-color: transparent;
+                color: #333;
+                transition: 0.3s ease 0s;
+                float: right;
+                &:hover{
+                    background-color: #1E69B8;
+                    color: white;
+                    transition: 0.3s ease 0s;
+                }
+            }
+        }
+    }
+    
+}
+#registerWord{
+    display: flex;
+    align-items: center;
+    background-color: #F5F5F5;
+    height: 96px;
+    h3{
+
+    }
+}
+#register{
+    .registerForm{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        form{
+            width: 50%;
+            input{
+                width: 100%;
+                margin-top: 15px;
+            }
+            button{
+                border: 1px solid #f5f5f5;
+                border-radius: 0px;
+                width: 120px;
+                height: 47px;
+                margin-top: 16px;
+                background-color: transparent;
+                color: #333;
+                transition: 0.3s ease 0s;
+                float: right;
+                &:hover{
+                    background-color: #1E69B8;
+                    color: white;
+                    transition: 0.3s ease 0s;
+                }
+            }
+
+        }
+    }
+}
+
