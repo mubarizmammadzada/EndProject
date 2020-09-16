@@ -13,18 +13,18 @@ namespace AspNetCore
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.AspNetCore.Mvc.Rendering;
     using Microsoft.AspNetCore.Mvc.ViewFeatures;
-#line 1 "C:\Users\Admin\Desktop\CarService Backend\EndProject\EndProject\_ViewImports.cshtml"
+#line 1 "C:\Users\Admin\Desktop\CarService Backend\EndProject\EndProject\Views\_ViewImports.cshtml"
 using EndProject.Models;
 
 #line default
 #line hidden
-#line 2 "C:\Users\Admin\Desktop\CarService Backend\EndProject\EndProject\_ViewImports.cshtml"
+#line 2 "C:\Users\Admin\Desktop\CarService Backend\EndProject\EndProject\Views\_ViewImports.cshtml"
 using EndProject.ViewModels;
 
 #line default
 #line hidden
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"acfef21b171e248f4910d9d0bcf9f9ce846b3501", @"/Views/Services/Detail.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"7aab7042ebd9a4d395ab334bdb4bcc8b4e7979ba", @"/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"cd43023b9219be13ba0c0f349e62ef93a996bd45", @"/Views/_ViewImports.cshtml")]
     public class Views_Services_Detail : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<ServiceVM>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("asp-controller", "Services", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -106,7 +106,7 @@ using EndProject.ViewModels;
             WriteLiteral("                                ");
             EndContext();
             BeginContext(945, 330, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e6d27edddf4143b9813afacbdaf50ad4", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5913d3518c7f4e6d9a87d70ce8102687", async() => {
                 BeginContext(1021, 68, true);
                 WriteLiteral("\r\n                                    <li class=\"selected\" data-id=\"");
                 EndContext();
@@ -175,7 +175,7 @@ using EndProject.ViewModels;
             WriteLiteral("                                ");
             EndContext();
             BeginContext(1415, 313, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "06c1ea3d8d024bbf96d457c3bbdc97a0", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0e3b91072cde45439e41438fcc0ad77a", async() => {
                 BeginContext(1491, 51, true);
                 WriteLiteral("\r\n                                    <li data-id=\"");
                 EndContext();
@@ -261,7 +261,7 @@ using EndProject.ViewModels;
             WriteLiteral("                            <div class=\"col-5\" >\r\n                                ");
             EndContext();
             BeginContext(2282, 66, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "1eed18db22f64aa59da02f8c7059cc47", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "4de781867a5e4a39aee72d9de3242c19", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();

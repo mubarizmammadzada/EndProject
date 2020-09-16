@@ -17,24 +17,40 @@ namespace EndProject.Controllers
         {
             _db = db;
         }
-        public IActionResult Index()
+        public IActionResult Index(int? page)
         {
-            BlogVM blogVM = new BlogVM()
+            ViewBag.Page = page;
+            ViewBag.PageCount = Math.Ceiling((decimal)_db.Blogs.Count() / 3);
+            if (page == null)
             {
-                Blogs = _db.Blogs.Take(3).OrderByDescending(b => b.Id).ToList(),
-                LatestBlogs = _db.Blogs.Include(b => b.BlogCategory).Take(4).OrderByDescending(b => b.Id).ToList(),
-                BlogCategories = _db.BlogCategories.ToList()
-        };
-            return View(blogVM);
+                BlogVM blogVM = new BlogVM()
+                {
+                    Blogs = _db.Blogs.Take(3).OrderByDescending(b => b.Id).ToList(),
+                    LatestBlogs = _db.Blogs.Include(b => b.BlogCategory).Take(4).OrderByDescending(b => b.Id).ToList(),
+                    BlogCategories = _db.BlogCategories.ToList()
+                };
+                return View(blogVM);
+            }
+            else
+            {
+                BlogVM blogVM = new BlogVM()
+                {
+                    Blogs = _db.Blogs.Skip(((int)page-1)*3).Take(3).OrderByDescending(b => b.Id).ToList(),
+                    LatestBlogs = _db.Blogs.Include(b => b.BlogCategory).Take(4).OrderByDescending(b => b.Id).ToList(),
+                    BlogCategories = _db.BlogCategories.ToList()
+                };
+                return View(blogVM);
+            }
+            
         }
         public IActionResult Detail(int? id)
         {
             if (id == null) return NotFound();
             BlogVM blogVM = new BlogVM()
             {
-                Blog=_db.Blogs.Find(id),
-                Blogs=_db.Blogs.Take(4).OrderByDescending(b=>b.Id).ToList(),
-                BlogCategories=_db.BlogCategories.ToList()
+                Blog = _db.Blogs.Find(id),
+                Blogs = _db.Blogs.Take(4).OrderByDescending(b => b.Id).ToList(),
+                BlogCategories = _db.BlogCategories.ToList()
             };
             return View(blogVM);
         }

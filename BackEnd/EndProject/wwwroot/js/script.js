@@ -133,20 +133,20 @@ $(document).ready(function () {
 
     }
     $(".gallery").mouseover(function () {
-        $(this).children().last().children().first().animate({
+        $(this).children().last().children().first().stop(true,true).animate({
             top: "20px"
 
         });
-        $(this).children().last().children().last().animate({
+        $(this).children().last().children().last().stop(true, true).animate({
             top: "17px",
         })
     })
     $(".gallery").mouseleave(function () {
-        $(this).children().last().children().first().animate({
+        $(this).children().last().children().first().stop(true, true).animate({
             top: "-20px"
 
         });
-        $(this).children().last().children().last().animate({
+        $(this).children().last().children().last().stop(true, true).animate({
             top: "60px",
         })
     })

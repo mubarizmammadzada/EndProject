@@ -3,104 +3,116 @@
     ViewData["Title"] = "Index";
 }
 
-    <main>
-        <section id="blogname">
-            <div class="container">
-                <div class="row">
-                    <h3>Blog</h3>
-                </div>
+<main>
+    <section id="blogname">
+        <div class="container">
+            <div class="row">
+                <h3>Blog</h3>
             </div>
-        </section>
-        <section id="blogabout">
-            <div class="container">
-                <div class="row">
+        </div>
+    </section>
+    <section id="blogabout">
+        <div class="container">
+            <div class="row">
 
-                    <div class="col-lg-9 col-md-9 col-sm-12 col-12 blog">
-                        @foreach (Blog blog in Model.Blogs)
-                        {
-                            <div class="blogIndex">
-                                <a class="a-image" asp-controller="Blog" asp-action="Detail" asp-route-id="@blog.Id">
-                                    <img class="img-fluid" src="img/services/@blog.Image" alt="">
-                                </a>
-                                <div class="blog-about">
-                                    <span id="firstspan">@blog.Date</span>
-                                    <span>By @blog.AuthorName</span>
-                                </div>
-                                <hr>
-                                <a  asp-controller="Blog" asp-action="Detail" asp-route-id="@blog.Id">
-                                    <h3>@blog.Name</h3>
-                                </a>
-                                <hr id="bluehr">
-                                <p>
-                                    @blog.Description
-                                </p>
-                                <a asp-controller="Blog" asp-action="Detail" asp-route-id="@blog.Id" class="btn btn-primary readButton">READ MORE</a>
+                <div class="col-lg-9 col-md-9 col-sm-12 col-12 blog">
+                    @foreach (Blog blog in Model.Blogs)
+                    {
+                        <div class="blogIndex">
+                            <a class="a-image" asp-controller="Blog" asp-action="Detail" asp-route-id="@blog.Id">
+                                <img class="img-fluid" src="img/services/@blog.Image" alt="">
+                            </a>
+                            <div class="blog-about">
+                                <span id="firstspan">@blog.Date</span>
+                                <span>By @blog.AuthorName</span>
                             </div>
-                           
-
-                        }
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-12 col-12 ">
-                        <div class="blogLatestPost">
-                            <h6>LATEST POSTS</h6>
-                            <hr class="afterh6blog">
-                            <div class="rightSidebarBlog">
-                                @foreach (Blog blog in Model.LatestBlogs)
-                                {
-                                    <div class="elements">
-
-                                        <div class="col-6">
-                                            <a class="a-image-side" asp-controller="Blog" asp-action="Index" asp-route-id="@blog.Id">
-                                                <img class="img-fluid"
-                                                     src="~/img/services/@blog.Image" alt="">
-                                            </a>
-                                        </div>
-                                        <div class="col-6">
-                                            <a class="a-paragraf" asp-controller="Blog" asp-action="Index" asp-route-id="@blog.Id">
-                                                <p>@blog.Name</p>
-                                            </a>
-                                        </div>
-                                    </div>
-                                }
-
-
-                            </div>
-                        </div>
-                        <div class="categoriesBlog">
-                            <h6>CATEGORIES</h6>
                             <hr>
-                            <ul>
-                                @foreach (BlogCategory category in Model.BlogCategories)
-                                {
-                                    <li><a href="#">@category.Name</a></li>
-                                }
-
-                            </ul>
+                            <a asp-controller="Blog" asp-action="Detail" asp-route-id="@blog.Id">
+                                <h3>@blog.Name</h3>
+                            </a>
+                            <hr id="bluehr">
+                            <p>
+                                @blog.Description
+                            </p>
+                            <a asp-controller="Blog" asp-action="Detail" asp-route-id="@blog.Id" class="btn btn-primary readButton">READ MORE</a>
                         </div>
 
-                    </div>
 
-                    <div class="col-lg-9 col-md-9 col-sm-12 col-12 paginationBlog">
+                    }
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-12 col-12 ">
+                    <div class="blogLatestPost">
+                        <h6>LATEST POSTS</h6>
+                        <hr class="afterh6blog">
+                        <div class="rightSidebarBlog">
+                            @foreach (Blog blog in Model.LatestBlogs)
+                            {
+                                <div class="elements">
+                                    <div class="col-6">
+                                        <a class="a-image-side" asp-controller="Blog" asp-action="Index" asp-route-id="@blog.Id">
+                                            <img class="img-fluid" src="~/img/services/@blog.Image" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="col-6">
+                                        <a class="a-paragraf" asp-controller="Blog" asp-action="Index" asp-route-id="@blog.Id">
+                                            <p>@blog.Name</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            }
+
+
+                        </div>
+                    </div>
+                    <div class="categoriesBlog">
+                        <h6>CATEGORIES</h6>
+                        <hr>
                         <ul>
-                            <li>
-                                <a href="#">
-                                    1
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    2
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    3
-                                </a>
-                            </li>
+                            @foreach (BlogCategory category in Model.BlogCategories)
+                            {
+
+                                <li><a href="#">@category.Name</a></li>
+                            }
+
                         </ul>
                     </div>
 
                 </div>
+
+                <div class="col-lg-9 col-md-9 col-sm-12 col-12 paginationBlog">
+                    <ul>
+                        @for (int i = 1; i <= ViewBag.PageCount; i++)
+                        {
+                            if (ViewBag.Page == null)
+                            {
+                                if (i == 1)
+                                {
+                                    <li style="pointer-events:none;"><a href="/blog/index?page=@i">@i</a></li>
+                                }
+                                else
+                                {
+                                    <li><a href="/blog/index?page=@i">@i</a></li>
+                                }
+                            }
+                            else
+                            {
+                                if (i == ViewBag.Page)
+                                {
+                                    <li  style="pointer-events:none;"><a href="/blog/index?page=@i">@i</a></li>
+                                }
+                                else
+                                {
+                                    <li><a href="/blog/index?page=@i">@i</a></li>
+                                }
+                            }
+
+                        }
+
+
+                    </ul>
+                </div>
+
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
+</main>

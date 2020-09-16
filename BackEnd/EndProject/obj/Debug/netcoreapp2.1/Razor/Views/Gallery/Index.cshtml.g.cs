@@ -13,18 +13,18 @@ namespace AspNetCore
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.AspNetCore.Mvc.Rendering;
     using Microsoft.AspNetCore.Mvc.ViewFeatures;
-#line 1 "C:\Users\Admin\Desktop\CarService Backend\EndProject\EndProject\_ViewImports.cshtml"
+#line 1 "C:\Users\Admin\Desktop\CarService Backend\EndProject\EndProject\Views\_ViewImports.cshtml"
 using EndProject.Models;
 
 #line default
 #line hidden
-#line 2 "C:\Users\Admin\Desktop\CarService Backend\EndProject\EndProject\_ViewImports.cshtml"
+#line 2 "C:\Users\Admin\Desktop\CarService Backend\EndProject\EndProject\Views\_ViewImports.cshtml"
 using EndProject.ViewModels;
 
 #line default
 #line hidden
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"cf627fa125bf83b9cdf5e3d7a3f2e86b6c283a8a", @"/Views/Gallery/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"7aab7042ebd9a4d395ab334bdb4bcc8b4e7979ba", @"/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"cd43023b9219be13ba0c0f349e62ef93a996bd45", @"/Views/_ViewImports.cshtml")]
     public class Views_Gallery_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<GalleryVM>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("class", new global::Microsoft.AspNetCore.Html.HtmlString("btn btn-primary"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -154,7 +154,7 @@ WriteAttributeValue("", 1254, service.ServiceImages.FirstOrDefault(s=>s.IsMain==
             WriteLiteral("</p>\r\n                                ");
             EndContext();
             BeginContext(1448, 112, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "86a79ea860164337a2c27c1a1eefa144", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4763c2a0c6214b79a6805165065db117", async() => {
                 BeginContext(1547, 9, true);
                 WriteLiteral("READ MORE");
                 EndContext();

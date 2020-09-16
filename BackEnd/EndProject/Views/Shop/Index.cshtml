@@ -44,9 +44,33 @@
                     </div>
                     <div class="col-lg-9 col-md-9 col-sm-12 col-12 shopPagination">
                         <ul>
-                            <li><a href="#">1</a></li>
-                            <li><a href="#">2</a></li>
-                            <li><a href="#">3</a></li>
+                            @for (int i = 1; i <= ViewBag.PageCountShop; i++)
+                            {
+                                if (ViewBag.PageShop == null)
+                                {
+                                    if (i == 1)
+                                    {
+                                        <li style="pointer-events:none;"><a href="/shop/index?page=@i">@i</a></li>
+                                    }
+                                    else
+                                    {
+                                        <li><a href="/shop/index?page=@i">@i</a></li>
+                                    }
+                                }
+                                else
+                                {
+                                    if (i == ViewBag.PageShop)
+                                    {
+                                        <li style="pointer-events:none;"><a href="/shop/index?page=@i">@i</a></li>
+                                    }
+                                    else
+                                    {
+                                        <li><a href="/shop/index?page=@i">@i</a></li>
+                                    }
+                                }
+                            }
+
+
                         </ul>
                     </div>
 

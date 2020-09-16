@@ -13,18 +13,18 @@ namespace AspNetCore
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.AspNetCore.Mvc.Rendering;
     using Microsoft.AspNetCore.Mvc.ViewFeatures;
-#line 1 "C:\Users\Admin\Desktop\CarService Backend\EndProject\EndProject\_ViewImports.cshtml"
+#line 1 "C:\Users\Admin\Desktop\CarService Backend\EndProject\EndProject\Views\_ViewImports.cshtml"
 using EndProject.Models;
 
 #line default
 #line hidden
-#line 2 "C:\Users\Admin\Desktop\CarService Backend\EndProject\EndProject\_ViewImports.cshtml"
+#line 2 "C:\Users\Admin\Desktop\CarService Backend\EndProject\EndProject\Views\_ViewImports.cshtml"
 using EndProject.ViewModels;
 
 #line default
 #line hidden
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"cf06d74b63c8fa8ee3899a2c1ae29580360fc92e", @"/Views/Home/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"7aab7042ebd9a4d395ab334bdb4bcc8b4e7979ba", @"/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"cd43023b9219be13ba0c0f349e62ef93a996bd45", @"/Views/_ViewImports.cshtml")]
     public class Views_Home_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<HomeVM>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("class", new global::Microsoft.AspNetCore.Html.HtmlString("d-block w-100"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -90,7 +90,7 @@ using EndProject.ViewModels;
             WriteLiteral("                                    <div class=\"carousel-item active\">\r\n                                        ");
             EndContext();
             BeginContext(676, 70, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "83a851beebdc4ad292ee3df1664dbf49", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "fbf7489588fa448794c29c466984bcb3", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -127,7 +127,7 @@ AddHtmlAttributeValue("", 699, slider.Image, 699, 13, false);
             WriteLiteral("                                    <div class=\"carousel-item \">\r\n                                        ");
             EndContext();
             BeginContext(1006, 70, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "844b60e8deda40bdba7663b4778a8673", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "1dc616baa9074cbfb92aa996df4d1509", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -221,7 +221,7 @@ AddHtmlAttributeValue("", 1029, slider.Image, 1029, 13, false);
                     ");
             EndContext();
             BeginContext(3967, 106, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("button", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "90296693b1b344168ebf7fbd72e1028e", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("button", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c5d47ea458e1481bbef94b6cc9dcaf6d", async() => {
                 BeginContext(4048, 16, true);
                 WriteLiteral("View All Service");
                 EndContext();
@@ -293,7 +293,7 @@ AddHtmlAttributeValue("", 1029, slider.Image, 1029, 13, false);
                                 ");
             EndContext();
             BeginContext(6656, 91, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "deb7384f71814775885860440b1b4d3d", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9639875b99974e38ab6469668e59a3ed", async() => {
                 BeginContext(6729, 14, true);
                 WriteLiteral("View Full List");
                 EndContext();
@@ -348,7 +348,7 @@ AddHtmlAttributeValue("", 1029, slider.Image, 1029, 13, false);
             WriteLiteral("                        <div class=\"col-4\">\r\n                            <a href=\"#\">\r\n                                ");
             EndContext();
             BeginContext(7627, 114, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "9d350f58388b4ec296ea7980697e8667", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "b62468cdc25a4f62bda3ce168b99a564", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -393,7 +393,7 @@ AddHtmlAttributeValue("", 7670, service.ServiceImages.FirstOrDefault(s=>s.IsMain
             WriteLiteral("\r\n                    <div class=\"col-12 all-service\">\r\n                        ");
             EndContext();
             BeginContext(8114, 142, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dbd7b9a924fb4604938f17c998991125", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1bcdd10880f446d0b99833436c74355c", async() => {
                 BeginContext(8162, 90, true);
                 WriteLiteral("\r\n                            <button>View All Services</button>\r\n                        ");
                 EndContext();
@@ -570,7 +570,7 @@ AddHtmlAttributeValue("", 7670, service.ServiceImages.FirstOrDefault(s=>s.IsMain
             WriteLiteral("                        <div class=\"col-3 col-sm-3 col-md-3 col-lg-3 servicesHome\">\r\n                            ");
             EndContext();
             BeginContext(15474, 114, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "8c69973903d7412194b3a52cb219ff52", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "e6217f4e615f45e69da2801a9c4c730b", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -607,7 +607,7 @@ AddHtmlAttributeValue("", 15517, service.ServiceImages.FirstOrDefault(s=>s.IsMai
             WriteLiteral("</h6>\r\n                                ");
             EndContext();
             BeginContext(15739, 113, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b05d962f0e52432ab5d870d04ec7bc68", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3725fa0ce1fa46608165dd1aafbb2ad3", async() => {
                 BeginContext(15839, 9, true);
                 WriteLiteral("Read More");
                 EndContext();

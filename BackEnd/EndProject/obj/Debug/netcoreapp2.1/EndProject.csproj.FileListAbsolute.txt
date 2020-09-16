@@ -24,7 +24,6 @@ C:\Users\Admin\Desktop\CarService Backend\EndProject\EndProject\bin\Debug\netcor
 C:\Users\Admin\Desktop\CarService Backend\EndProject\EndProject\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.cshtml.g.cs
 C:\Users\Admin\Desktop\CarService Backend\EndProject\EndProject\obj\Debug\netcoreapp2.1\Razor\Views\Services\Index.cshtml.g.cs
 C:\Users\Admin\Desktop\CarService Backend\EndProject\EndProject\obj\Debug\netcoreapp2.1\Razor\_ViewStart.cshtml.g.cs
-C:\Users\Admin\Desktop\CarService Backend\EndProject\EndProject\obj\Debug\netcoreapp2.1\Razor\_ViewImports.cshtml.g.cs
 C:\Users\Admin\Desktop\CarService Backend\EndProject\EndProject\obj\Debug\netcoreapp2.1\Razor\Views\Services\Detail.cshtml.g.cs
 C:\Users\Admin\Desktop\CarService Backend\EndProject\EndProject\obj\Debug\netcoreapp2.1\Razor\Views\Gallery\Index.cshtml.g.cs
 C:\Users\Admin\Desktop\CarService Backend\EndProject\EndProject\obj\Debug\netcoreapp2.1\Razor\Views\Gallery\Detail.cshtml.g.cs
@@ -41,3 +40,8 @@ C:\Users\Admin\Desktop\CarService Backend\EndProject\EndProject\obj\Debug\netcor
 C:\Users\Admin\Desktop\CarService Backend\EndProject\EndProject\obj\Debug\netcoreapp2.1\Razor\Views\Shop\Buy.cshtml.g.cs
 C:\Users\Admin\Desktop\CarService Backend\EndProject\EndProject\obj\Debug\netcoreapp2.1\Razor\Views\Account\Register.cshtml.g.cs
 C:\Users\Admin\Desktop\CarService Backend\EndProject\EndProject\obj\Debug\netcoreapp2.1\Razor\Views\Account\Login.cshtml.g.cs
+C:\Users\Admin\Desktop\CarService Backend\EndProject\EndProject\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Shared\_Adminlayout.cshtml.g.cs
+C:\Users\Admin\Desktop\CarService Backend\EndProject\EndProject\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\Admin\Desktop\CarService Backend\EndProject\EndProject\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\_ViewImports.cshtml.g.cs
+C:\Users\Admin\Desktop\CarService Backend\EndProject\EndProject\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\_ViewStart.cshtml.g.cs
+C:\Users\Admin\Desktop\CarService Backend\EndProject\EndProject\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Dashboard\Index.cshtml.g.cs

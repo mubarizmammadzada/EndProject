@@ -18,14 +18,29 @@ namespace EndProject.Controllers
         {
             _db = db;
         }
-        public IActionResult Index()
+        public IActionResult Index(int? page)
         {
-            ProductVM productVM = new ProductVM()
+            ViewBag.PageShop = page;
+            ViewBag.PageCountShop = Math.Ceiling((decimal)_db.Products.Count()/6);
+            if (page == null)
             {
-                Products = _db.Products.Include(p => p.ProductImages).ToList(),
-                ProductCategories = _db.ProductCategories.ToList()
-            };
-            return View(productVM);
+                ProductVM productVM = new ProductVM()
+                {
+                    Products = _db.Products.Include(p => p.ProductImages).Take(6).ToList(),
+                    ProductCategories = _db.ProductCategories.ToList()
+                };
+                return View(productVM);
+            }
+            else
+            {
+                ProductVM productVM = new ProductVM()
+                {
+                    Products = _db.Products.Include(p => p.ProductImages).Skip((int)(page - 1) * 6).Take(6).ToList(),
+                    ProductCategories = _db.ProductCategories.ToList()
+                };
+                return View(productVM);
+            }
+
         }
 
         public IActionResult Detail(int? id)
@@ -112,10 +127,10 @@ namespace EndProject.Controllers
                 total += product.Price * product.Count;
                 saleProduct.Add(new SaleProduct
                 {
-                    Count=product.Count,
-                    Price=product.Price,
-                    SaleId= sale.Id,
-                    ProductId=product.Id
+                    Count = product.Count,
+                    Price = product.Price,
+                    SaleId = sale.Id,
+                    ProductId = product.Id
                 });
 
             }

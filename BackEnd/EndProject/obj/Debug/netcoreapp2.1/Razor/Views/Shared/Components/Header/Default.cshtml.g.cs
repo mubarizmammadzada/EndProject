@@ -13,18 +13,18 @@ namespace AspNetCore
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.AspNetCore.Mvc.Rendering;
     using Microsoft.AspNetCore.Mvc.ViewFeatures;
-#line 1 "C:\Users\Admin\Desktop\CarService Backend\EndProject\EndProject\_ViewImports.cshtml"
+#line 1 "C:\Users\Admin\Desktop\CarService Backend\EndProject\EndProject\Views\_ViewImports.cshtml"
 using EndProject.Models;
 
 #line default
 #line hidden
-#line 2 "C:\Users\Admin\Desktop\CarService Backend\EndProject\EndProject\_ViewImports.cshtml"
+#line 2 "C:\Users\Admin\Desktop\CarService Backend\EndProject\EndProject\Views\_ViewImports.cshtml"
 using EndProject.ViewModels;
 
 #line default
 #line hidden
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"5a52ac319053bc602792af49498fb2932ec7f1c4", @"/Views/Shared/Components/Header/Default.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"7aab7042ebd9a4d395ab334bdb4bcc8b4e7979ba", @"/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"cd43023b9219be13ba0c0f349e62ef93a996bd45", @"/Views/_ViewImports.cshtml")]
     public class Views_Shared_Components_Header_Default : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<Bio>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("href", new global::Microsoft.AspNetCore.Html.HtmlString("~/#"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -87,7 +87,7 @@ using EndProject.ViewModels;
                         ");
             EndContext();
             BeginContext(387, 36, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8ba28a35a8934039a21a85ad262dad08", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "fb456497c4c041e0b7c166c900a6dc9f", async() => {
                 BeginContext(402, 17, false);
 #line 13 "C:\Users\Admin\Desktop\CarService Backend\EndProject\EndProject\Views\Shared\Components\Header\Default.cshtml"
                                  Write(Model.PhoneNumber);
@@ -112,7 +112,7 @@ using EndProject.ViewModels;
             WriteLiteral("\r\n                    </li>\r\n                    <li>\r\n                        <i class=\"far fa-envelope\"></i>\r\n                        ");
             EndContext();
             BeginContext(559, 30, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6647464d095841fe91fb12202ec52a2f", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1b1a8301f00945fab66f64cb4f08e37e", async() => {
                 BeginContext(574, 11, false);
 #line 17 "C:\Users\Admin\Desktop\CarService Backend\EndProject\EndProject\Views\Shared\Components\Header\Default.cshtml"
                                  Write(Model.Email);
@@ -177,7 +177,7 @@ WriteAttributeValue("", 1182, Model.PinterestAddress, 1182, 23, false);
             WriteLiteral("><i class=\"fab fa-pinterest\"></i></a></li>\r\n                    <li>");
             EndContext();
             BeginContext(1274, 82, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "11e347a14bdb4b24bdaf54e1f285b5c5", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6fed154376ea431195d4c1144d1da41d", async() => {
                 BeginContext(1316, 36, true);
                 WriteLiteral("<i class=\"fas fa-shopping-cart\"></i>");
                 EndContext();
@@ -201,7 +201,7 @@ WriteAttributeValue("", 1182, Model.PinterestAddress, 1182, 23, false);
             WriteLiteral("</li>\r\n                    <sup class=\"basketCount\">0</sup>\r\n                    <li><i class=\"fas fa-search searchIcon\"></i></li>\r\n                </ul>\r\n                ");
             EndContext();
             BeginContext(1527, 222, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "28096989df51400f82151d8e9a4a5035", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "fc50b830d2ac4084bf721b92f120c421", async() => {
                 BeginContext(1570, 172, true);
                 WriteLiteral("\r\n                    <input type=\"text\" class=\"form-control\" placeholder=\"Search\" id=\"search\">\r\n                    <i class=\"fas fa-search searchh\"></i>\r\n                ");
                 EndContext();
@@ -244,7 +244,7 @@ WriteAttributeValue("", 1182, Model.PinterestAddress, 1182, 23, false);
                             ");
             EndContext();
             BeginContext(2359, 36, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4a185d74904f4331a90f7bc2fb8cbeb4", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0a6c26946e4c43feb88b3403b11aea5b", async() => {
                 BeginContext(2374, 17, false);
 #line 57 "C:\Users\Admin\Desktop\CarService Backend\EndProject\EndProject\Views\Shared\Components\Header\Default.cshtml"
                                      Write(Model.PhoneNumber);
@@ -269,7 +269,7 @@ WriteAttributeValue("", 1182, Model.PinterestAddress, 1182, 23, false);
             WriteLiteral("\r\n                        </li>\r\n                        <li>\r\n                            <i class=\"far fa-envelope\"></i>\r\n                            ");
             EndContext();
             BeginContext(2547, 30, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a2e406ab21874281bbb4a816ee5fcca7", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "02c13c414ab04ad9aed4d044f648bd43", async() => {
                 BeginContext(2562, 11, false);
 #line 61 "C:\Users\Admin\Desktop\CarService Backend\EndProject\EndProject\Views\Shared\Components\Header\Default.cshtml"
                                      Write(Model.Email);
@@ -337,7 +337,7 @@ WriteAttributeValue("", 3244, Model.PinterestAddress, 3244, 23, false);
             WriteLiteral("><i class=\"fab fa-pinterest\"></i></a></li>\r\n                        <li>");
             EndContext();
             BeginContext(3340, 54, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0c2f27023ea14ee9a0abb7eb62d26198", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "96547a6f855240089d041b22e0045769", async() => {
                 BeginContext(3354, 36, true);
                 WriteLiteral("<i class=\"fas fa-shopping-cart\"></i>");
                 EndContext();
@@ -358,7 +358,7 @@ WriteAttributeValue("", 3244, Model.PinterestAddress, 3244, 23, false);
             WriteLiteral("</li>\r\n                        <li><i class=\"fas fa-search searchIconResponsive\"></i></li>\r\n                    </ul>\r\n                    ");
             EndContext();
             BeginContext(3533, 244, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "28402c3d26b34b609ade5a74b76632f8", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "924d358e7715445d83a84ba0d619e635", async() => {
                 BeginContext(3586, 184, true);
                 WriteLiteral("\r\n                        <input type=\"text\" class=\"form-control\" placeholder=\"Search\" id=\"search\">\r\n                        <i class=\"fas fa-search searchh\"></i>\r\n                    ");
                 EndContext();
@@ -397,7 +397,7 @@ WriteAttributeValue("", 3244, Model.PinterestAddress, 3244, 23, false);
                     ");
             EndContext();
             BeginContext(4118, 58, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "939aa1f3363543fb84b2f5772a40fe8a", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7fa46f5c7d294d049f7c6fe2550b85e1", async() => {
                 BeginContext(4162, 10, true);
                 WriteLiteral("CARSERVICE");
                 EndContext();
@@ -421,7 +421,7 @@ WriteAttributeValue("", 3244, Model.PinterestAddress, 3244, 23, false);
             WriteLiteral("\r\n                </h1>\r\n            </div>\r\n            <div class=\"col-lg-9 col-md-9 col-sm-9 col-9 header-nav\">\r\n                <ul id=\"main-ul\">\r\n                    <li id=\"home\" class=\"main-li\">\r\n                        ");
             EndContext();
             BeginContext(4403, 52, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "37ccf47502d14d4db5d4132017038a14", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8f3eb95e2f614feaaad10fa8aaed3769", async() => {
                 BeginContext(4447, 4, true);
                 WriteLiteral("Home");
                 EndContext();
@@ -445,7 +445,7 @@ WriteAttributeValue("", 3244, Model.PinterestAddress, 3244, 23, false);
             WriteLiteral("\r\n                    </li>\r\n                    <li id=\"services\" class=\"main-li\">\r\n                        ");
             EndContext();
             BeginContext(4564, 60, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1ca3b7986a2e4ec8a5533fc704c716cb", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7745ffa93076466e9daa17973c93a5ca", async() => {
                 BeginContext(4612, 8, true);
                 WriteLiteral("Services");
                 EndContext();
@@ -469,7 +469,7 @@ WriteAttributeValue("", 3244, Model.PinterestAddress, 3244, 23, false);
             WriteLiteral("\r\n                    </li>\r\n                    <li id=\"gallery\" class=\"main-li\">\r\n                        ");
             EndContext();
             BeginContext(4732, 58, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7c44f9fcd2e048b28d3390525cd59643", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ec44710e79e74894b866f33a8bc0527f", async() => {
                 BeginContext(4779, 7, true);
                 WriteLiteral("Gallery");
                 EndContext();
@@ -493,7 +493,7 @@ WriteAttributeValue("", 3244, Model.PinterestAddress, 3244, 23, false);
             WriteLiteral("\r\n                    </li>\r\n                    <li class=\"main-li\">");
             EndContext();
             BeginContext(4859, 59, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f22330e73e0e4c34868f7e74c5220cfd", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "bb5fd7ac0c66407e8913208bff6ad1f9", async() => {
                 BeginContext(4906, 8, true);
                 WriteLiteral("Our Team");
                 EndContext();
@@ -517,7 +517,7 @@ WriteAttributeValue("", 3244, Model.PinterestAddress, 3244, 23, false);
             WriteLiteral("</li>\r\n                    <li id=\"blog\" class=\"main-li\">\r\n                        ");
             EndContext();
             BeginContext(5001, 52, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "fb9405b2bfb74d72bf75695699b0c00e", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ce4547ee73aa4fc3aa8139d1fa23bbce", async() => {
                 BeginContext(5045, 4, true);
                 WriteLiteral("Blog");
                 EndContext();
@@ -541,7 +541,7 @@ WriteAttributeValue("", 3244, Model.PinterestAddress, 3244, 23, false);
             WriteLiteral("\r\n                    </li>\r\n                    <li id=\"shop\" class=\"main-li\">\r\n                        ");
             EndContext();
             BeginContext(5158, 52, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "71ec9c2ae0b9457e81ae8037d6729895", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4ad65344bc164bdfa6e23762047a0e83", async() => {
                 BeginContext(5202, 4, true);
                 WriteLiteral("Shop");
                 EndContext();
@@ -565,7 +565,7 @@ WriteAttributeValue("", 3244, Model.PinterestAddress, 3244, 23, false);
             WriteLiteral("\r\n                    </li>\r\n                    <li id=\"contact\" class=\"main-li\">\r\n                        ");
             EndContext();
             BeginContext(5318, 58, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2588dd9b4bf843ef871bbb280aeaa5cc", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6967c0432f674660a48588dde6111936", async() => {
                 BeginContext(5365, 7, true);
                 WriteLiteral("Contact");
                 EndContext();
@@ -608,7 +608,7 @@ WriteAttributeValue("", 3244, Model.PinterestAddress, 3244, 23, false);
             WriteLiteral("\r\n                        </li>\r\n                        <li id=\"contact\" class=\"main-li ml-3\" style=\"padding-right:21px\">\r\n                            ");
             EndContext();
             BeginContext(5779, 59, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "65a5ee38f19947268ac3e8c0d0245b80", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1d0c1e7f0fde45289e9e856abb6e2dcb", async() => {
                 BeginContext(5827, 7, true);
                 WriteLiteral("Log Out");
                 EndContext();
@@ -642,7 +642,7 @@ WriteAttributeValue("", 3244, Model.PinterestAddress, 3244, 23, false);
             WriteLiteral("                        <li id=\"contact\" class=\"main-li ml-3\" style=\"padding-right:18px\">\r\n                            ");
             EndContext();
             BeginContext(6062, 57, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4a3558a35fd5462daec01bf5e67b70c9", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e2526bea5c924f13b025f2f0e492cc1c", async() => {
                 BeginContext(6109, 6, true);
                 WriteLiteral("SignIn");
                 EndContext();
@@ -666,7 +666,7 @@ WriteAttributeValue("", 3244, Model.PinterestAddress, 3244, 23, false);
             WriteLiteral("\r\n                        </li>\r\n                        <li id=\"contact\" class=\"main-li ml-3\" style=\"padding-right:21px\">\r\n                            ");
             EndContext();
             BeginContext(6271, 60, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "818d887fa5014c59b245e68189c7912d", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3c27926fb0d2447a94603576554248d0", async() => {
                 BeginContext(6321, 6, true);
                 WriteLiteral("SignUp");
                 EndContext();
@@ -714,7 +714,7 @@ WriteAttributeValue("", 3244, Model.PinterestAddress, 3244, 23, false);
                         ");
             EndContext();
             BeginContext(6766, 58, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8f3eaef7d7bf48549dc78217f76de93d", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f4a2f35b362b41aa9e081123ff887be1", async() => {
                 BeginContext(6810, 10, true);
                 WriteLiteral("CARSERVICE");
                 EndContext();
@@ -752,7 +752,7 @@ WriteAttributeValue("", 3244, Model.PinterestAddress, 3244, 23, false);
                             ");
             EndContext();
             BeginContext(7292, 56, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c231210073274c67a61605deb412cbb5", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d24db4d134734c61b8b6cddab3173eaa", async() => {
                 BeginContext(7339, 5, true);
                 WriteLiteral("Login");
                 EndContext();
@@ -776,7 +776,7 @@ WriteAttributeValue("", 3244, Model.PinterestAddress, 3244, 23, false);
             WriteLiteral("\r\n                        </li>\r\n                        <li id=\"contact\" class=\"main-li ml-3\">\r\n                            ");
             EndContext();
             BeginContext(7473, 57, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "82ad0d40fa8647af9feed2a6f62beabf", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "14ea82e4b9484d45bc82bab8652a89ef", async() => {
                 BeginContext(7520, 6, true);
                 WriteLiteral("SignUp");
                 EndContext();
@@ -800,7 +800,7 @@ WriteAttributeValue("", 3244, Model.PinterestAddress, 3244, 23, false);
             WriteLiteral("\r\n                        </li>\r\n                    </div>\r\n                    <li class=\"mainLiResponsiveD\">\r\n                        ");
             EndContext();
             BeginContext(7667, 53, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "581c3da510244133bca23e0ddc464e89", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7fea7051be254e18bd5ecae07269f7bf", async() => {
                 BeginContext(7711, 5, true);
                 WriteLiteral("Home ");
                 EndContext();
@@ -824,7 +824,7 @@ WriteAttributeValue("", 3244, Model.PinterestAddress, 3244, 23, false);
             WriteLiteral("\r\n                        <i class=\"fas fa-angle-down\"> <i class=\"fas fa-angle-up d-none\"></i></i>\r\n                    </li>\r\n\r\n                    <li class=\"mainLiResponsiveD\">\r\n                        ");
             EndContext();
             BeginContext(7925, 61, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9872073e143f4920ad984d4e41ec03b5", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a8560fcaec014a1c9d5434d5b3f4d74d", async() => {
                 BeginContext(7973, 9, true);
                 WriteLiteral("Services ");
                 EndContext();
@@ -848,7 +848,7 @@ WriteAttributeValue("", 3244, Model.PinterestAddress, 3244, 23, false);
             WriteLiteral("\r\n                        <i class=\"fas fa-angle-down\"></i> <i class=\"fas fa-angle-up d-none\"></i>\r\n                    </li>\r\n                    <li class=\"mainLiResponsiveD\">\r\n                        ");
             EndContext();
             BeginContext(8189, 59, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c8f800c314734d32bddddef9acb2a83c", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5fce97076fee4fc096c4654384339363", async() => {
                 BeginContext(8236, 8, true);
                 WriteLiteral("Gallery ");
                 EndContext();
@@ -872,7 +872,7 @@ WriteAttributeValue("", 3244, Model.PinterestAddress, 3244, 23, false);
             WriteLiteral("\r\n                        <i class=\"fas fa-angle-down\"></i> <i class=\"fas fa-angle-up d-none\"></i>\r\n                    </li>\r\n                    <li class=\"mainLiResponsive\">");
             EndContext();
             BeginContext(8424, 59, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "76c27fad33af40699f8b1c24adc35b66", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "af2f83f1af654815a5d23297469a5ea0", async() => {
                 BeginContext(8471, 8, true);
                 WriteLiteral("Our Team");
                 EndContext();
@@ -896,7 +896,7 @@ WriteAttributeValue("", 3244, Model.PinterestAddress, 3244, 23, false);
             WriteLiteral("</li>\r\n                    <li class=\"mainLiResponsive\">");
             EndContext();
             BeginContext(8539, 52, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "11d76de758404ebfa8f3f8c0bc20f381", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4b567c267afd485192d9f02ee38fd202", async() => {
                 BeginContext(8583, 4, true);
                 WriteLiteral("Blog");
                 EndContext();
@@ -920,7 +920,7 @@ WriteAttributeValue("", 3244, Model.PinterestAddress, 3244, 23, false);
             WriteLiteral("</li>\r\n                    <li class=\"mainLiResponsiveD\">\r\n                        ");
             EndContext();
             BeginContext(8674, 53, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f3a14f27a9a040128dd8c5479ade152b", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9ca71d4ef09d4abba0a68214bcceeccd", async() => {
                 BeginContext(8718, 5, true);
                 WriteLiteral("Shop ");
                 EndContext();
@@ -944,7 +944,7 @@ WriteAttributeValue("", 3244, Model.PinterestAddress, 3244, 23, false);
             WriteLiteral("\r\n                        <i class=\"fas fa-angle-down\"></i><i class=\"fas fa-angle-up d-none\"></i>\r\n                    </li>\r\n                    <li class=\"mainLiResponsive\">");
             EndContext();
             BeginContext(8902, 58, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b3ec1d9168c348d3ac1a07da9300eb56", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "85865d040a13404390c3af7b5493739b", async() => {
                 BeginContext(8949, 7, true);
                 WriteLiteral("Contact");
                 EndContext();
