@@ -1,0 +1,56 @@
+﻿@model IEnumerable<OurTeam>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="row">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-12 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Our Team Table</h4>
+                <div class="table-responsive">
+                    <a asp-controller="OurTeamCRUD" asp-action="Create" class="btn btn-github mt-3">Create Worker</a>
+                    <table class="table table-striped">
+
+                        <thead>
+                            <tr>
+                                <th class="image">
+                                    Image
+                                </th>
+                                <th>Worker Name</th>
+                                <th>
+                                    Setting
+                                </th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (OurTeam team in Model)
+                            {
+                                <tr>
+                                    <td class="py-1 image">
+                                        <img style="width:150px !important;height:90px !important ;border-radius:0;" src="~/img/OurTeam/@team.Image" alt="image" />
+                                    </td>
+                                    @if (team.Fullname.Length < 16)
+                                    {
+                                        <td class="serviceName">@team.Fullname</td>
+                                    }
+                                    else
+                                    {
+                                        <td class="serviceName">@team.Fullname.Substring(0, 16)...</td>
+                                    }
+
+                                    <td>
+                                        <a asp-controller="OurTeamCRUD" asp-action="Edit" asp-route-id="@team.Id" class="btn btn-primary "><i class="mdi mdi-table-edit"></i></a>
+                                        <a asp-controller="OurTeamCRUD" asp-action="Delete" asp-route-id="@team.Id" class="btn btn-danger"><i class="mdi mdi-delete-forever"></i></a>
+                                    </td>
+                                </tr>
+                            }
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

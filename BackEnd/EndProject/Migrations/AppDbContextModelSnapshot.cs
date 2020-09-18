@@ -380,6 +380,8 @@ namespace EndProject.Migrations
 
                     b.Property<bool>("IsMain");
 
+                    b.Property<string>("Name");
+
                     b.Property<int>("ServiceId");
 
                     b.HasKey("Id");

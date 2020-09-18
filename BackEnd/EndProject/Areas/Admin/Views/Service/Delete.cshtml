@@ -1,0 +1,23 @@
+﻿@model Service
+@{
+    ViewData["Title"] = "Delete";
+}
+@if (@Model.ServiceImages.FirstOrDefault(s=>s.IsMain==true)!=null)
+{
+    <div>
+        <img style="width:200px !important;height:200px !important" src="~/img/services/@Model.ServiceImages.FirstOrDefault(s=>s.IsMain==true).Image" alt="Alternate Text" />
+    </div>
+}
+else
+{
+    <div>
+        <h3>@Model.Name</h3>
+    </div>
+}
+
+<div class="row mb-5">
+    <form class="forms-sample mt-3" method="post">
+        <button type="submit" class="btn btn-danger">Delete Service</button>
+    </form>
+    <a asp-action="Index" class="btn btn-dark mt-3 ml-3">Go Back</a>
+</div>

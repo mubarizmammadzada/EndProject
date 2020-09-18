@@ -1,0 +1,17 @@
+﻿@model BlogCategory
+@{
+    ViewData["Title"] = "Delete";
+}
+
+    <div>
+        <form method="post" style="display:flex">
+            <div class="mr-3">
+                <span>Name</span>
+                <input asp-for="Name" />
+                <span asp-validation-for="Name" class="alert-danger"></span>
+
+            </div>
+            <button type="submit" class="btn btn-danger">Delete Category</button>
+        </form>
+
+    </div>

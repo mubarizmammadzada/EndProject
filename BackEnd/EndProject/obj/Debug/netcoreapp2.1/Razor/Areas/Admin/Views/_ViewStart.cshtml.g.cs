@@ -18,8 +18,13 @@ using EndProject.Models;
 
 #line default
 #line hidden
+#line 2 "C:\Users\Admin\Desktop\CarService Backend\EndProject\EndProject\Areas\Admin\Views\_ViewImports.cshtml"
+using EndProject.ViewModels;
+
+#line default
+#line hidden
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"3df032ac4206ec80ee08cb0e27b483dcd8a9da11", @"/Areas/Admin/Views/_ViewStart.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"9d230c0bb4aebe275f15ef5f6bc2373e7e41450d", @"/Areas/Admin/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"cd43023b9219be13ba0c0f349e62ef93a996bd45", @"/Areas/Admin/Views/_ViewImports.cshtml")]
     public class Areas_Admin_Views__ViewStart : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #pragma warning disable 1998

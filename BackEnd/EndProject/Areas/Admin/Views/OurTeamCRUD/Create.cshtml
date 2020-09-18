@@ -1,0 +1,94 @@
+﻿@model OurTeam
+@{
+    ViewData["Title"] = "Create";
+}
+<div asp-validation-summary="ModelOnly"></div>
+<form method="post" enctype="multipart/form-data">
+    <div class="mt-3">
+        <input asp-for="Photo" class="form-control" />
+        <span asp-validation-for="Photo" class="alert-danger"></span>
+    </div>
+    <div class="mt-3">
+        <span>Fullname</span>
+        <input asp-for="Fullname" class="form-control" placeholder="Fullname*" />
+        <span asp-validation-for="Fullname" class="alert-danger"></span>
+    </div>
+    <div class="mt-3">
+        <span>Profession</span>
+        <input asp-for="Profession" class="form-control" placeholder="Profession" />
+        <span asp-validation-for="Profession" class="alert-danger"></span>
+    </div>
+    <div class="mt-3">
+        <span>Date Of Birth</span>
+        <input asp-for="DateOfBirth" class="form-control" placeholder="Date Of Birth*" />
+        <span asp-validation-for="DateOfBirth" class="alert-danger"></span>
+    </div>
+    <div class="mt-3">
+        <span>Address</span>
+        <input asp-for="Address" class="form-control" placeholder="Address*" />
+        <span asp-validation-for="Address" class="alert-danger"></span>
+    </div>
+    <div class="mt-3">
+        <span>Email</span>
+        <input asp-for="Email" class="form-control" placeholder="Email*" />
+        <span asp-validation-for="Email" class="alert-danger"></span>
+
+    </div>
+    <div class="mt-3">
+        <span>Phone Number</span>
+        <input asp-for="PhoneNumber" class="form-control" placeholder="Phone Number" />
+        <span asp-validation-for="PhoneNumber" class="alert-danger"></span>
+    </div>
+    <div class="mt-3">
+        <span>About</span>
+        <input asp-for="Description" class="form-control" placeholder="About*" />
+        <span asp-validation-for="Description" class="alert-danger"></span>
+    </div>
+    <div class="mt-3">
+        <span>Tire and Wheel Services</span>
+        <input asp-for="TireandWheelServices" class="form-control" max="100" min="0" placeholder="Tire and Wheel Services*" />
+        <span asp-validation-for="TireandWheelServices" class="alert-danger"></span>
+    </div>
+    <div class="mt-3">
+        <span>Lube, Oil and Filters</span>
+        <input asp-for="LubeOilandFilters" class="form-control" max="100" min="0" placeholder="Lube, Oil and Filters*" />
+        <span asp-validation-for="LubeOilandFilters" class="alert-danger"></span>
+    </div>
+    <div class="mt-3">
+        <span>Belts and Hoses</span>
+        <input asp-for="BeltsandHoses" class="form-control" max="100" min="0" placeholder="Belts and Hoses*" />
+        <span asp-validation-for="BeltsandHoses" class="alert-danger"></span>
+    </div>
+    <div class="mt-3">
+        <span>Engine Diagnostics</span>
+        <input asp-for="EngineDiagnostics" class="form-control" max="100" min="0" placeholder="Engine Diagnostics*" />
+        <span asp-validation-for="EngineDiagnostics" class="alert-danger"></span>
+    </div>
+    <div class="mt-3">
+        <span>Brake Repair</span>
+        <input asp-for="BrakeRepair" class="form-control" max="100" min="0" placeholder="Brake Repair*" />
+        <span asp-validation-for="BrakeRepair" class="alert-danger"></span>
+    </div>
+    <div class="mt-3">
+        <span>Air Conditioning</span>
+        <input asp-for="AirConditioning" class="form-control" max="100" min="0" placeholder="Air Conditioning*" />
+        <span asp-validation-for="AirConditioning" class="alert-danger"></span>
+    </div>
+    <div class="mt-3">
+        <span>Facebook Address</span>
+        <input asp-for="FacebookAddress" class="form-control"  placeholder="Facebook Address*" />
+        <span asp-validation-for="FacebookAddress" class="alert-danger"></span>
+    </div>
+    <div class="mt-3">
+        <span>Twitter Address</span>
+        <input asp-for="TwitterAddress" class="form-control"  placeholder="Twitter Address*" />
+        <span asp-validation-for="TwitterAddress" class="alert-danger"></span>
+    </div>
+    <div class="mt-3">
+        <span>Linkedin Address</span>
+        <input asp-for="LinkedinAddress" class="form-control"  placeholder="Linkedin Address*" />
+        <span asp-validation-for="LinkedinAddress" class="alert-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-success mt-5">Create Worker </button>
+</form>
+

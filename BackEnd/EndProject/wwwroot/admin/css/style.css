@@ -21088,4 +21088,13 @@ div.tagsinput {
   -webkit-flex-grow: 1;
   flex-grow: 1; }
 
+@media(max-width:550px){
+    .table .image  {
+       display:none;
+    }
+    .table .serviceName{
+        font-size:11px;
+    }
+}
+
 /*# sourceMappingURL=maps/style.css.map */

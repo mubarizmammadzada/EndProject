@@ -13,6 +13,7 @@ namespace EndProject.Models
         public string Image { get; set; }
         [Required]
         public bool IsMain { get; set; }
+        public string Name { get; set; }
         public int ServiceId { get; set; }
         public virtual Service Service { get; set; }
 

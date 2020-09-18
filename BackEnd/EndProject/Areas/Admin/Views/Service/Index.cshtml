@@ -1,0 +1,64 @@
+﻿@model IEnumerable<Service>
+@{
+    ViewData["Title"] = "Index";
+}
+
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-12 grid-margin stretch-card">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Slider Table</h4>
+                    <div class="table-responsive">
+                        <a asp-controller="Service" asp-action="Create" class="btn btn-github mt-3">Create Service</a>
+                        <table class="table table-striped">
+
+                            <thead>
+                                <tr>
+                                    <th class="image">
+                                        Image
+                                    </th>
+                                    <th>Service Name</th>
+                                    <th>
+                                        Setting
+                                    </th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (Service service in Model)
+                                {
+                                <tr>
+                                    @if (service.ServiceImages.FirstOrDefault(s => s.IsMain == true) != null)
+                                    {
+                                        <td class="py-1 image">
+                                            <img style="width:150px !important;height:90px !important ;border-radius:0;" src="~/img/services/@service.ServiceImages.FirstOrDefault(s=>s.IsMain==true).Image" alt="image" />
+                                        </td>
+                                    }
+                                    else
+                                    {
+                                        <td></td>
+                                    }
+                                    @if (service.Name.Length < 16)
+                                    {
+                                        <td class="serviceName">@service.Name</td>
+                                    }
+                                    else
+                                    {
+                                        <td class="serviceName">@service.Name.Substring(0, 16)...</td>
+                                    }
+
+                                    <td>
+                                        <a asp-controller="Service" asp-action="Edit" asp-route-id="@service.Id" class="btn btn-primary "><i class="mdi mdi-table-edit"></i></a>
+                                        <a asp-controller="Service" asp-action="Delete" asp-route-id="@service.Id" class="btn btn-danger"><i class="mdi mdi-delete-forever"></i></a>
+                                    </td>
+                                </tr>
+                                }
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+

@@ -148,15 +148,23 @@
                 <div class="row no-gutters" id="rep-row">
                     @foreach (Service service in Model.Services)
                     {
-                        <div class="col-4">
+                    <div class="col-4">
+                        @if (@service.ServiceImages.FirstOrDefault(s => s.IsMain == true) != null)
+                        {
                             <a href="#">
                                 <img class="img-fluid" src="~/img/services/@service.ServiceImages.FirstOrDefault(s=>s.IsMain==true).Image" alt="">
                             </a>
-                            <h4>
-                                <a href="#">@service.Name</a>
-                                <i class="fas fa-chevron-right"></i>
-                            </h4>
-                        </div>
+                        }
+                        else
+                        {
+                            
+                        }
+
+                        <h4>
+                            <a href="#">@service.Name</a>
+                            <i class="fas fa-chevron-right"></i>
+                        </h4>
+                    </div>
                     }
 
                     <div class="col-12 all-service">
