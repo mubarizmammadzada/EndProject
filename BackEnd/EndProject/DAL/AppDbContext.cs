@@ -24,5 +24,7 @@ namespace EndProject.DAL
         public DbSet<Slider> Sliders { get; set; }
         public DbSet<Sale> Sales { get; set; }
         public DbSet<SaleProduct> SaleProducts { get; set; }
+        public DbSet<Message> Messages { get; set; }
+
     }
 }

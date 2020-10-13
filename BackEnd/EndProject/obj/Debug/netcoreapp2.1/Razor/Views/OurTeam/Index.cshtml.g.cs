@@ -86,9 +86,9 @@ using EndProject.ViewModels;
             WriteLiteral("                    <div class=\"col-lg-4 col-md-4 col-sm-12 col-12 worker\">\r\n                        ");
             EndContext();
             BeginContext(529, 142, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "26628f7f40ac420fa7db3d559bd95833", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "04c15a32e7e94347a14e6d4ccbc70467", async() => {
                 BeginContext(603, 64, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "13292d9c183c496b841b9a8a3484b5a6", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "eba8f763e62c4026a72af76ae578fb78", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -144,7 +144,7 @@ AddHtmlAttributeValue("", 645, worker.Image, 645, 13, false);
             WriteLiteral("\r\n\r\n                        <div class=\"wrokerInformation\">\r\n                            <h4>");
             EndContext();
             BeginContext(764, 94, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "912b0b75cfb243da93751b9618a0f31b", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2f0883acfbb54c2bb168a6bf1e4db4e9", async() => {
                 BeginContext(839, 15, false);
 #line 24 "C:\Users\Admin\Desktop\CarService Backend\EndProject\EndProject\Views\OurTeam\Index.cshtml"
                                                                                                      Write(worker.Fullname);

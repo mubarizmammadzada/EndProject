@@ -17,7 +17,7 @@ namespace EndProject.Controllers
         }
         public IActionResult Index()
         {
-            List<OurTeam> team = _db.OurTeams.ToList();
+            List<OurTeam> team = _db.OurTeams.OrderBy(t=>t.Id).ToList();
             return View(team);
         }
         public IActionResult Detail(int? id)

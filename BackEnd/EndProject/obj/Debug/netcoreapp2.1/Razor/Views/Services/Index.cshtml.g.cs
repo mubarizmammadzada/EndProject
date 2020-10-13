@@ -88,9 +88,9 @@ using EndProject.ViewModels;
             WriteLiteral("                        <div class=\"col-lg-4 col-md-6 col-sm-12 col-12 service-type\">\r\n                            <div>\r\n                                ");
             EndContext();
             BeginContext(759, 237, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a8c50cfc79b24a7fb6239b6236be7b06", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ae03d8352c424f029b335212a8c72e61", async() => {
                 BeginContext(866, 126, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "7b7df76a3ace4ee0919d77d819af41f5", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "5daf3d333f6c4433ae229a2fd62154c1", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();

@@ -68,7 +68,7 @@ namespace EndProject
             {
                 routes.MapRoute(
                   name: "areas",
-                  template: "{area:exists}/{controller=Dashboard}/{action=Index}/{id?}"
+                  template: "{area:exists}/{controller=Sale}/{action=Index}/{id?}"
                 );
                 routes.MapRoute(
                 "default",

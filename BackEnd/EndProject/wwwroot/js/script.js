@@ -74,16 +74,15 @@ $(document).ready(function () {
     // $(".responsiveUl").addClass("d-none")
 
     $(".burger").click(function () {
+        $(this).parent().parent().next().slideToggle();
+        $(this).toggleClass("d-none");
+        $(this).next().toggleClass("d-none")
 
-        $(this).parent().parent().next().slideDown();
-        $(this).addClass("d-none");
-        $(this).next().removeClass("d-none")
     })
     $(".cancel").click(function () {
-
-        $(this).parent().parent().next().slideUp();
-        $(this).addClass("d-none");
-        $(this).prev().removeClass("d-none");
+        $(this).parent().parent().next().slideToggle();
+        $(this).toggleClass("d-none");
+        $(this).prev().toggleClass("d-none");
 
     })
 

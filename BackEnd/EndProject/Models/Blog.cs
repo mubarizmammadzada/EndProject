@@ -1,6 +1,8 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Http;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -21,7 +23,8 @@ namespace EndProject.Models
         public string Description { get; set; }
         [Required]
         public string AboutBlog { get; set; }
-
+        [NotMapped]
+        public IFormFile Photo { get; set; }
         public int BlogCategoryId { get; set; }
         public BlogCategory BlogCategory { get; set; }
     }

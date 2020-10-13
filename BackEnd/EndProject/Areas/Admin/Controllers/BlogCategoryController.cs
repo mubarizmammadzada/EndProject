@@ -4,11 +4,13 @@ using System.Linq;
 using System.Threading.Tasks;
 using EndProject.DAL;
 using EndProject.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace EndProject.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(Roles = "Admin")]
     public class BlogCategoryController : Controller
     {
         private readonly AppDbContext _db;
@@ -70,19 +72,7 @@ namespace EndProject.Areas.Admin.Controllers
             if (id == null) return NotFound();
             BlogCategory category = _db.BlogCategories.Find(id);
             if (category == null) return NotFound();
-            List<Blog> blogs = _db.Blogs.Where(b => b.BlogCategoryId == id).ToList();
-            if (blogs.Count != 0)
-            {
-                foreach (Blog blog in blogs)
-                {
-                    _db.Blogs.Remove(blog);
-                    _db.BlogCategories.Remove(category);
-                }
-            }
-            else
-            {
-                _db.BlogCategories.Remove(category);
-            }
+            _db.BlogCategories.Remove(category);
             await _db.SaveChangesAsync();
             return RedirectToAction("Index");
             

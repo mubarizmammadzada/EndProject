@@ -74,7 +74,7 @@ using EndProject.ViewModels;
             WriteLiteral("    <div>\r\n        ");
             EndContext();
             BeginContext(148, 165, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "92c434f56ec44089b9d566b59cef4f13", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "242205bf51374c7cab4e63836d7429d1", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -129,7 +129,7 @@ else
             WriteLiteral("\r\n<div class=\"row mb-5\">\r\n    ");
             EndContext();
             BeginContext(425, 137, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c7c19721a7354f30b429c83d725f6d26", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "abd90e9e1ce74d808f2fb292625d8184", async() => {
                 BeginContext(471, 84, true);
                 WriteLiteral("\r\n        <button type=\"submit\" class=\"btn btn-danger\">Delete Service</button>\r\n    ");
                 EndContext();
@@ -154,7 +154,7 @@ else
             WriteLiteral("\r\n    ");
             EndContext();
             BeginContext(568, 64, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c61a8109be784414b43cae2e2b0a2e8a", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3513ea4041b54d548622a664f50a29fd", async() => {
                 BeginContext(621, 7, true);
                 WriteLiteral("Go Back");
                 EndContext();

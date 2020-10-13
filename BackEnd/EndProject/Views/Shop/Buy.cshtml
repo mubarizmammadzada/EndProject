@@ -15,52 +15,62 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-12">
-                    <div class="emptyCart d-none">
-                        <i class="far fa-window-maximize"></i>
-                        <span>Your cart is currently empty.</span>
-                    </div>
-                    <div class="returnShopBtn d-none">
-                        <a asp-controller="Shop" asp-action="Index" class="btn btn-primary">RETURN TO SHOP</a>
-                    </div>
-                    <form method="post">
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-12">
-                            <div class="cartDetailTable w-100">
-                                <table class="table table-striped " id="cartTable">
-                                    <thead>
-                                        <tr>
-                                            <th scope="col">Preview</th>
-                                            <th scope="col">Product</th>
-                                            <th scope="col">Price</th>
-                                            <th scope="col">Quantity</th>
-                                            <th scope="col">Total</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody id="tb">
-                                        @foreach (ProducttVM product in Model.ProductVM)
-                                        {
-                                            <tr  style="vertical-align:baseline !important">
-                                                <td><img width="90" height="120" src="~/img/shop/@product.Image" /></td>
-                                                <td>@product.Name</td>
-                                                <td>@product.Price$</td>
-                                                <td>@product.Count</td>
-                                                <td>@(product.Price*product.Count)$</td>
+                    @if (Context.Request.Cookies["cart"] == null || Context.Request.Cookies["cart"].Length<5)
+                    {
+                        <div class="emptyCart">
+                            <i class="far fa-window-maximize"></i>
+                            <span>Your cart is currently empty.</span>
+                        </div>
+                        <div class="returnShopBtn">
+                            <a asp-controller="Shop" asp-action="Index" class="btn btn-primary">RETURN TO SHOP</a>
+                        </div>
+                    }
+                    else
+                    {
+                        <form method="post">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                                <div class="cartDetailTable w-100">
+                                    <table class="table table-striped " id="cartTable">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Preview</th>
+                                                <th scope="col">Product</th>
+                                                <th scope="col">Price</th>
+                                                <th scope="col">Quantity</th>
+                                                <th scope="col">Total</th>
+                                                <th scope="col">Delete</th>
                                             </tr>
-                                        }
-                                    </tbody>
-                                </table>
+                                        </thead>
+                                        <tbody id="tb">
+                                            @foreach (ProducttVM product in Model.ProductVM)
+                                            {
+                                                <tr style="vertical-align:baseline !important">
+                                                    <td><img width="90" height="120" src="~/img/shop/@product.Image" /></td>
+                                                    <td>@product.Name</td>
+                                                    <td>@product.Price$</td>
+                                                    <td>@product.Count</td>
+                                                    <td>@(product.Price * product.Count)$</td>
+                                                    <td><a asp-controller="Shop" asp-action="DeleteProduct" asp-route-id="@product.Id"><i class="fas fa-minus-circle" style="color:red;"></i></a> </td>
+                                                </tr>
+                                            }
+                                        </tbody>
+                                    </table>
+                                </div>
                             </div>
-                        </div>
 
-                        <div class="col-12">
-                            <input asp-for="FullName" class="form-control mb-3" placeholder="Enter Your FullName" />
-                            <span asp-validation-for="FullName" class="text-danger"></span>
-                            <input asp-for="PhoneNumber" class="form-control" placeholder="Enter Your Phone number" />
-                            <span asp-validation-for="PhoneNumber" class="text-danger"></span>
-                        </div>
-                        <div class="col-12 buttoncolumn">
-                            <button type="submit" class="btn btn-primary">BUY</button>
-                        </div>
-                    </form>
+                            <div class="col-12">
+                                <input asp-for="FullName" class="form-control mb-3" placeholder="Enter Your FullName" />
+                                <span asp-validation-for="FullName" class="text-danger"></span>
+                                <input asp-for="PhoneNumber" class="form-control" placeholder="Enter Your Phone number" />
+                                <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+                            </div>
+                            <div class="col-12 buttoncolumn">
+                                <button type="submit" class="btn btn-primary">BUY</button>
+                            </div>
+                        </form>
+                    }
+
+
 
                 </div>
 

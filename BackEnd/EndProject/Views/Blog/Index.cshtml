@@ -71,7 +71,7 @@
                             @foreach (BlogCategory category in Model.BlogCategories)
                             {
 
-                                <li><a href="#">@category.Name</a></li>
+                                <li><a asp-controller="Blog" asp-action="Index" asp-route-blogCategory="@category.Name">@category.Name</a></li>
                             }
 
                         </ul>

@@ -84,8 +84,16 @@ namespace EndProject.Controllers
                  ModelState.AddModelError("", "Qaqi get qeydiyyatdan kech");
                 return View(login);
             }
+            string role = (await _userManager.GetRolesAsync(loginUser))[0];
+            if (role == Helper.UserRoles.Admin.ToString())
+            {
+                return RedirectToAction("Index", "Sale", new { area = "admin" });
+            }
+            else
+            {
+                return RedirectToAction("Index", "Home");
+            }
 
-            return RedirectToAction("Index", "Home");
         }
         public async Task CreateRole()
         {

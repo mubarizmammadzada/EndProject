@@ -4,11 +4,13 @@ using System.Linq;
 using System.Threading.Tasks;
 using EndProject.DAL;
 using EndProject.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace EndProject.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(Roles = "Admin")]
     public class ServiceCategoryCRUDController : Controller
     {
         private readonly AppDbContext _db;
@@ -74,22 +76,7 @@ namespace EndProject.Areas.Admin.Controllers
             if (id == null) return NotFound();
             ServiceCategory category = _db.ServiceCategories.Find(id);
             if (category == null) return NotFound();
-            List<Service> services = _db.Services.Where(s => s.ServiceCategoryId == id).ToList();
-            if (services.Count!=0)
-            {
-                foreach (Service service in services)
-                {
-                    _db.Services.Remove(service);
-                    _db.ServiceCategories.Remove(category);
-                }
-                
-                
-            }
-            else
-            {
-                _db.ServiceCategories.Remove(category);
-            }
-            
+            _db.ServiceCategories.Remove(category);
             await _db.SaveChangesAsync();
             return RedirectToAction("Index");
         }

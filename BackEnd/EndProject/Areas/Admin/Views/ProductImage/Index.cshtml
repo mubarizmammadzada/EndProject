@@ -1,0 +1,48 @@
+﻿@model IEnumerable<ProductImage>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="row">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-12 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Slider Table</h4>
+                <div class="table-responsive">
+                    <a asp-controller="ProductImage" asp-action="Create" class="btn btn-github mt-3">Create Product Image</a>
+                    <table class="table table-striped">
+
+                        <thead>
+                            <tr>
+                                <th class="image">
+                                    Image
+                                </th>
+                                <th>
+                                    Setting
+                                </th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (ProductImage image in Model)
+                            {
+                                <tr>
+                                    <td>
+                                        <img style="width:120px;height:90px;" src="~/img/shop/@image.Image" />
+                                    </td>
+
+                                    <td>
+                                        <a asp-controller="ProductImage" asp-action="Edit" asp-route-id="@image.Id" class="btn btn-primary "><i class="mdi mdi-table-edit"></i></a>
+                                        <a asp-controller="ProductImage" asp-action="Delete" asp-route-id="@image.Id" class="btn btn-danger"><i class="mdi mdi-delete-forever"></i></a>
+                                    </td>
+                                </tr>
+                            }
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

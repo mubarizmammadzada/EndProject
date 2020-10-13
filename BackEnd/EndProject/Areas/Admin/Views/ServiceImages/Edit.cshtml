@@ -1,0 +1,57 @@
+﻿@model ServiceCRUDvm
+@{
+    ViewData["Title"] = "Edit";
+}
+<div asp-validation-summary="ModelOnly"></div>
+<form method="post" enctype="multipart/form-data">
+    <div mt-3>
+        <input asp-for="ServiceImage.Photo" />
+        <span asp-validation-for="ServiceImage.Photo"></span>
+    </div>
+    <div mt-3>
+        <span>Name</span>
+        <input asp-for="ServiceImage.Name" placeholder="Name" class="form-control" />
+        <span asp-validation-for="ServiceImage.Name"></span>
+    </div>
+    <div class="mt-3">
+        <select class="form-control" id="selectCategory" name="services">
+            @foreach (Service service in Model.Services)
+            {
+                if (Model.ServiceImage.ServiceId == service.Id)
+                {
+                    <option value="@service.Name" selected>@service.Name</option>
+                }
+                else
+                {
+                    <option value="@service.Name">@service.Name</option>
+                }
+
+            }
+
+        </select>
+    </div>
+    <div class="mt-3">
+        <select class="form-control" id="selectCategory" name="ismain">
+            @if (Model.ServiceImage.IsMain == true)
+            {
+                <option value="Main" selected>Main</option>
+            }
+            else
+            {
+
+                <option value="Main" selected>Main</option>
+            }
+            @if (Model.ServiceImage.IsMain == false)
+            {
+                <option value="Minor" selected>Minor</option>
+            }
+            else
+            {
+
+                <option value="Minor">Minor</option>
+            }
+        </select>
+    </div>
+    <button type="submit" class="btn btn-success">Create Service</button>
+</form>
+

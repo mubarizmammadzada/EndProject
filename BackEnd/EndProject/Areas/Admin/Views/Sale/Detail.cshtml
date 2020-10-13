@@ -1,0 +1,48 @@
+﻿@model Sale
+@{
+    ViewData["Title"] = "Detail";
+}
+
+<div class="container">
+    <div class="about">
+        <div>
+            <p><strong>Adı:</strong> @Model.FullName</p>
+            <p><strong>Mobil Nömrəsi:</strong> @Model.PhoneNumber</p>
+            <p><strong>Alış Tarixi:</strong> @Model.Date.ToString("dd/MM/yyyy")</p>
+            <p> <strong>Ümumi Məbləği:</strong> @Model.Total$</p>
+        </div>
+    </div>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">Image</th>
+                <th scope="col">Name</th>
+                <th scope="col">Price</th>
+                <th scope="col">Count</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (SaleProduct product in Model.SaleProducts)
+            {
+                <tr>
+
+                    <td>
+                        @if (product.Product.ProductImages.FirstOrDefault(s => s.IsMain == true) != null)
+                        {
+                           <img style="width:60px;height:90px; object-fit:cover"  src="~/img/shop/@product.Product.ProductImages.FirstOrDefault(s => s.IsMain == true).Image"/>
+                            
+                        }
+
+                    </td>
+                    <td>@product.Product.Name</td>
+                    <td>@product.Price$</td>
+                    <td>@product.Count</td>
+                </tr>
+            }
+
+        </tbody>
+    </table>
+
+
+</div>
+

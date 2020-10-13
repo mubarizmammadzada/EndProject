@@ -18,27 +18,54 @@ namespace EndProject.Controllers
         {
             _db = db;
         }
-        public IActionResult Index(int? page)
+        public IActionResult Index(int? page,string productCategory)
         {
-            ViewBag.PageShop = page;
-            ViewBag.PageCountShop = Math.Ceiling((decimal)_db.Products.Count()/6);
-            if (page == null)
+            if (productCategory!=null)
             {
-                ProductVM productVM = new ProductVM()
+                ViewBag.PageShop = page;
+                ViewBag.PageCountShop = Math.Ceiling((decimal)_db.Products.Where(p=>p.ProductCategory.Name== productCategory).Count() / 6);
+                if (page == null)
                 {
-                    Products = _db.Products.Include(p => p.ProductImages).Take(6).ToList(),
-                    ProductCategories = _db.ProductCategories.ToList()
-                };
-                return View(productVM);
+                    ProductVM productVM = new ProductVM()
+                    {
+                        Products = _db.Products.Where(p=>p.ProductCategory.Name.ToLower().Trim()== productCategory.ToLower().Trim()).Include(p => p.ProductImages).Take(6).ToList(),
+                        ProductCategories = _db.ProductCategories.ToList()
+                    };
+                    return View(productVM);
+                }
+                else
+                {
+                    ProductVM productVM = new ProductVM()
+                    {
+                        Products = _db.Products.Include(p => p.ProductImages).Skip((int)(page - 1) * 6).Take(6).ToList(),
+                        ProductCategories = _db.ProductCategories.ToList()
+                    };
+                    return View(productVM);
+                }
             }
             else
             {
-                ProductVM productVM = new ProductVM()
+
+                ViewBag.PageShop = page;
+                ViewBag.PageCountShop = Math.Ceiling((decimal)_db.Products.Count() / 6);
+                if (page == null)
                 {
-                    Products = _db.Products.Include(p => p.ProductImages).Skip((int)(page - 1) * 6).Take(6).ToList(),
-                    ProductCategories = _db.ProductCategories.ToList()
-                };
-                return View(productVM);
+                    ProductVM productVM = new ProductVM()
+                    {
+                        Products = _db.Products.Include(p => p.ProductImages).Take(6).ToList(),
+                        ProductCategories = _db.ProductCategories.ToList()
+                    };
+                    return View(productVM);
+                }
+                else
+                {
+                    ProductVM productVM = new ProductVM()
+                    {
+                        Products = _db.Products.Include(p => p.ProductImages).Skip((int)(page - 1) * 6).Take(6).ToList(),
+                        ProductCategories = _db.ProductCategories.ToList()
+                    };
+                    return View(productVM);
+                }
             }
 
         }
@@ -47,6 +74,7 @@ namespace EndProject.Controllers
         {
             if (id == null) return NotFound();
             Product product = _db.Products.Find(id);
+            if (product == null) return NotFound();
             ProductVM productVM = new ProductVM()
             {
                 Productt = _db.Products.Find(id),
@@ -57,7 +85,7 @@ namespace EndProject.Controllers
 
             return View(productVM);
         }
-        public IActionResult AddToCart(int? id, string queryString)
+        public IActionResult AddToCart(int? id, string actionName, string queryString)
         {
 
             if (id == null) return NotFound();
@@ -95,16 +123,33 @@ namespace EndProject.Controllers
             }
             string cart = JsonConvert.SerializeObject(products);
             Response.Cookies.Append("cart", cart, new Microsoft.AspNetCore.Http.CookieOptions { MaxAge = TimeSpan.FromDays(15) });
-            return Redirect(@"https://localhost:44318/Shop" + queryString);
+            
+            if (actionName.ToLower().Contains("detail"))
+            {
+                return Redirect("/Shop/Detail/" + id);
+            }
+            else
+            {
+                return Redirect("/Shop" + queryString);
+            }
+           
         }
         public IActionResult Buy()
         {
-
-            SaleVM saleVM = new SaleVM()
+           
+            if (Request.Cookies["cart"] != null)
             {
-                ProductVM = JsonConvert.DeserializeObject<List<ProducttVM>>(Request.Cookies["cart"])
-            };
-            return View(saleVM);
+                string b = Request.Cookies["cart"];
+                SaleVM saleVM = new SaleVM()
+                {
+                    ProductVM = JsonConvert.DeserializeObject<List<ProducttVM>>(b)
+                };
+               
+                return View(saleVM);
+            }
+            return View();
+            
+            
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -138,7 +183,33 @@ namespace EndProject.Controllers
             sale.SaleProducts = saleProduct;
             _db.Sales.Add(sale);
             await _db.SaveChangesAsync();
+            if (Request.Cookies["cart"] != null)
+            {
+                Response.Cookies.Delete("cart");
+            }
             return RedirectToAction("Index");
+        }
+        public IActionResult DeleteProduct(int? id)
+        {
+            if (id == null) return NotFound();
+             
+            if (Request.Cookies["cart"] == null) return NotFound();
+            string bas = Request.Cookies["cart"];
+            List<ProducttVM> products =JsonConvert.DeserializeObject<List<ProducttVM>>(bas);
+            foreach (ProducttVM product in products.ToList())
+            {
+
+                if (product.Id == id)
+                {
+                    products.Remove(product);
+                }
+            }
+            string cart = JsonConvert.SerializeObject(products);
+            Response.Cookies.Append("cart", cart, new  Microsoft.AspNetCore.Http.CookieOptions { MaxAge = TimeSpan.FromDays(15) });
+            return RedirectToAction("Buy");
+
+            
+
         }
     }
 }

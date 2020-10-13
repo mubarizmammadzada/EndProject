@@ -21,8 +21,8 @@ namespace EndProject.Controllers
             HomeVM home = new HomeVM()
             {
                 Sliders=_db.Sliders.OrderByDescending(s=>s.Id).ToList(),
-                Services=_db.Services.Include(s=>s.ServiceImages).OrderBy(s=>s.Id).ToList(),
-                Servicess=_db.Services.Include(s=>s.ServiceImages).OrderBy(s=>s.Id).ToList()
+                Services=_db.Services.Include(s=>s.ServiceImages).Take(3).OrderBy(s=>s.Id).ToList(),
+                Servicess=_db.Services.Include(s=>s.ServiceImages).Take(4).OrderBy(s=>s.Id).ToList()
             };
             return View(home);
         }

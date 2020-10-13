@@ -158,6 +158,29 @@ namespace EndProject.Migrations
                     b.ToTable("BlogCategories");
                 });
 
+            modelBuilder.Entity("EndProject.Models.Message", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Email")
+                        .IsRequired();
+
+                    b.Property<string>("MessageText")
+                        .IsRequired();
+
+                    b.Property<string>("Name")
+                        .IsRequired();
+
+                    b.Property<string>("PhoneNumber")
+                        .IsRequired();
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Messages");
+                });
+
             modelBuilder.Entity("EndProject.Models.OurTeam", b =>
                 {
                     b.Property<int>("Id")
@@ -263,6 +286,8 @@ namespace EndProject.Migrations
                         .IsRequired();
 
                     b.Property<bool>("IsMain");
+
+                    b.Property<string>("Name");
 
                     b.Property<int>("ProductId");
 

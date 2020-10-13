@@ -23,7 +23,7 @@
                                     <h4>@product.Name</h4>
                                 </a>
                                 <p>$@product.Price</p>
-                                <a asp-controller="Shop" asp-action="AddToCart" asp-route-id="@product.Id" asp-route-queryString="@Context.Request.QueryString" class="btn btn-primary addToCart">ADD TO CART</a>
+                                <a asp-controller="Shop" asp-action="AddToCart" asp-route-id="@product.Id" asp-route-queryString="@Context.Request.QueryString"  asp-route-actionName="@Context.Request.Path" class="btn btn-primary addToCart">ADD TO CART</a>
 
                             </div>
                         }
@@ -36,7 +36,7 @@
                             <ul>
                                 @foreach (ProductCategory category in Model.ProductCategories)
                                 {
-                                    <li><a href="#">@category.Name</a></li>
+                                    <li><a asp-controller="Shop" asp-action="Index" asp-route-productCategory="@category.Name">@category.Name</a></li>
                                 }
 
                             </ul>

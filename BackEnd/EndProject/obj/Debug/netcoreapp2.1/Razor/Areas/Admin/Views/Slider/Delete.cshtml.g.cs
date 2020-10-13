@@ -68,7 +68,7 @@ using EndProject.ViewModels;
             WriteLiteral("\r\n    <div>\r\n        ");
             EndContext();
             BeginContext(78, 131, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "1bc2bbbc82f44233812b6490da0faaad", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "228f8242ee4c41abb88ac9e253e32426", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -95,7 +95,7 @@ AddHtmlAttributeValue("", 172, Model.Image, 172, 12, false);
             WriteLiteral("\r\n        ");
             EndContext();
             BeginContext(219, 129, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f799951796d0463d89a1daa801202465", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4a1a2ed2287a4e75b111859ffae5d8dc", async() => {
                 BeginContext(265, 76, true);
                 WriteLiteral("\r\n            <button class=\"btn btn-danger\">Delete Photo</button>\r\n        ");
                 EndContext();
@@ -120,7 +120,7 @@ AddHtmlAttributeValue("", 172, Model.Image, 172, 12, false);
             WriteLiteral("\r\n        ");
             EndContext();
             BeginContext(358, 67, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3833a8d5617341e18bb6d56da8bfb470", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f9df6edec7b34738b4ce18e8911baf00", async() => {
                 BeginContext(414, 7, true);
                 WriteLiteral("Go Back");
                 EndContext();

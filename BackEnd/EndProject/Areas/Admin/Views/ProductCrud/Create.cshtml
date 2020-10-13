@@ -1,0 +1,50 @@
+﻿@model ProductCrudVM
+@{
+    ViewData["Title"] = "Create";
+}
+@section Css{
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
+}
+<form method="post">
+    <div class="mt-3">
+        <span>Product Name</span>
+        <input asp-for="Name" placeholder="Product Name*" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+    <div class="mt-3">
+        <span>Product Price</span>
+        <input asp-for="Price" placeholder="Product Price*" min="0" class="form-control" />
+        <span asp-validation-for="Price" class="text-danger"></span>
+    </div>
+    <div class="mt-3">
+        <span>Product Count</span>
+        <input asp-for="Count" placeholder="Product Count*" min="0" class="form-control" />
+        <span asp-validation-for="Count" class="text-danger"></span>
+    </div>
+    <div class="mt-3">
+        <span>Product About</span>
+        <input asp-for="About" placeholder="Product About*" class="form-control" />
+        <span asp-validation-for="About" class="text-danger"></span>
+    </div>
+    <div class="mt-3">
+        <select class="form-control" id="selectCategory" name="categories">
+            @foreach (ProductCategory category in Model.ProductCategories)
+            {
+                <option value="@category.Name">@category.Name</option>
+            }
+
+        </select>
+    </div>
+    <button type="submit" class="btn btn-success mt-3">Create Product</button>
+</form>
+@section Scripts{
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
+    <script>
+        $('.js-example-basic-multiple').select2();
+    </script>
+   
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.11/jquery.validate.unobtrusive.min.js"></script>
+    
+}
+

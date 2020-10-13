@@ -6,6 +6,7 @@ using EndProject.DAL;
 using EndProject.Helpers;
 using EndProject.Models;
 using EndProject.ViewModels;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -13,6 +14,7 @@ using Microsoft.EntityFrameworkCore;
 namespace EndProject.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(Roles = "Admin")]
     public class ServiceController : Controller
     {
         private readonly AppDbContext _db;

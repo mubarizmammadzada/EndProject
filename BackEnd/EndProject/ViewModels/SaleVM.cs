@@ -14,5 +14,7 @@ namespace EndProject.ViewModels
         public string PhoneNumber { get; set; }
         [Required]
         public string FullName { get; set; }
+        public Sale Sale { get; set; }
+        public ICollection<ProductImage> ProductImages { get; set; }
     }
 }

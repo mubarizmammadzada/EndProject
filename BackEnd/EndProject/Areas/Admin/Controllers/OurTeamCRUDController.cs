@@ -6,12 +6,14 @@ using EndProject.DAL;
 using EndProject.Extentions;
 using EndProject.Helpers;
 using EndProject.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 
 namespace EndProject.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(Roles = "Admin")]
     public class OurTeamCRUDController : Controller
     {
         private readonly AppDbContext _db;
